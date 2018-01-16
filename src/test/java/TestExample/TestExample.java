@@ -46,16 +46,19 @@ public class TestExample {
     		   cap = DesiredCapabilities.chrome();
     		   RemoteWebDriver driver = new RemoteWebDriver(new URL(urlToRemoteWD),cap);
     		   WebDriverRunner.setWebDriver(driver);
+    		   driver.manage().window().setSize(new Dimension(1650, 900));
      		} else if(browser.equals("firefox")) {
      			TestBrowser = "firefox";
      			cap = DesiredCapabilities.firefox();
      			RemoteWebDriver driver = new RemoteWebDriver(new URL(urlToRemoteWD),cap);
      			WebDriverRunner.setWebDriver(driver);
+     			driver.manage().window().setSize(new Dimension(1650, 900));
      		} else if(browser.equals("edge")) {
      			TestBrowser = "edge";
      			cap = DesiredCapabilities.edge();
      			RemoteWebDriver driver = new RemoteWebDriver(new URL(urlToRemoteWD),cap);
      			WebDriverRunner.setWebDriver(driver);
+     			driver.manage().window().setSize(new Dimension(1650, 900));
      		} else if(browser.equals("internetExplorer")) {
      			TestBrowser = "internetExplorer";
      			cap = DesiredCapabilities.internetExplorer();
@@ -65,7 +68,8 @@ public class TestExample {
      			cap.setCapability(InternetExplorerDriver.IE_ENSURE_CLEAN_SESSION, true); //ie 캐시 삭제를 위한 부분
      			RemoteWebDriver driver = new RemoteWebDriver(new URL(urlToRemoteWD),cap);
      			WebDriverRunner.setWebDriver(driver);
-     		} driver.manage().window().setSize(new Dimension(1400, 900));
+     			driver.manage().window().setSize(new Dimension(1650, 900));
+     		} 
        }
  	   
        @Test(priority = 0)
@@ -75,12 +79,10 @@ public class TestExample {
  	       $(".banner1").click();
  	       $(By.linkText("자세한 내용 보기")).click();
  	       $(".img1").click();
- 	       $("#uid").waitUntil(appear, 5000);
  	       open(blogspotUrl);
  	       $(".banner1").click();
  	       $(By.linkText("자세한 내용 보기")).click();
  	       $(".img2").click();
- 	       $(".banner1").waitUntil(appear, 5000);
  	       open(blogspotUrl);
  	       //내부배너 클릭
 	       int x = 1;
@@ -132,8 +134,16 @@ public class TestExample {
  	 		   //firefox는 지원한다고 작성되어 있는데 파일 다운이 안됨
  	 		   //edge는 다은이름으로 저장 때문에 다운 불가(그래도 다운수로 체크는 되려나?)
  	 	   }
+ 	 	   //검색
+ 	       String[] searchKeyword = {"Tel", "외부배너", "파일 다운로드", "마케팅", "일반", "네이버", "다음", "카카오", "구글", "인하우스", "바이럴", "이메일", "Talk", "전환" };
+ 	 	   $(".touch-icon-button").click();
+ 	 	   for(int i=0;i<=13;i++) {
+ 	 	 	   $(By.name("q")).setValue(searchKeyword[i]);
+ 	 	 	   System.out.println(searchKeyword[i] + " search result");
+ 	 	 	   $(".search-action").click();
+ 	 	   } 	 	   
  	   }
-       @Test(priority = 1)
+      // @Test(priority = 1)
        public void egloosTest() {
  	       open(egloosUrl);
  	       $(By.linkText("TestData")).click();

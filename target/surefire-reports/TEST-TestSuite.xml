@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="104.764" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="8.413" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -20,7 +20,7 @@
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jre-9.0.1\bin"/>
     <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
     <property name="jdk.debug" value="release"/>
-    <property name="maven.home" value="E:\Selenium\eclipse\eclipse-workspace\TestProject\EMBEDDED"/>
+    <property name="maven.home" value="E:\Selenium\eclipse\eclipse-workspace\BlogTest\EMBEDDED"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\최영권"/>
     <property name="user.language" value="ko"/>
@@ -45,9 +45,9 @@
     <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="C:\Users\최영권\AppData\Local\Temp\"/>
     <property name="java.version" value="9.0.1"/>
-    <property name="user.dir" value="E:\Selenium\eclipse\eclipse-workspace\TestProject"/>
+    <property name="user.dir" value="E:\Selenium\eclipse\eclipse-workspace\BlogTest"/>
     <property name="os.arch" value="amd64"/>
-    <property name="maven.multiModuleProjectDirectory" value="E:\Selenium\eclipse\eclipse-workspace\TestProject"/>
+    <property name="maven.multiModuleProjectDirectory" value="E:\Selenium\eclipse\eclipse-workspace\BlogTest"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="sun.os.patch.level" value=""/>
@@ -55,10 +55,9 @@
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="java.vm.version" value="9.0.1+11"/>
-    <property name="classworlds.conf" value="E:\Selenium\eclipse\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf14430393922971540434.tmp"/>
+    <property name="classworlds.conf" value="E:\Selenium\eclipse\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf10538171972893297018.tmp"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="53.0"/>
   </properties>
-  <testcase name="blogspotTest" classname="TestExample.TestExample" time="78.802"/>
-  <testcase name="egloosTest" classname="TestExample.TestExample" time="19.542"/>
+  <testcase name="blogspotTest" classname="TestExample.TestExample" time="3.029"/>
 </testsuite>
