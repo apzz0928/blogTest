@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="1" passed="0" failed="0" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2018-01-11T02:00:09Z" name="Suite" finished-at="2018-01-11T02:00:10Z" duration-ms="18">
+    <groups>
+    </groups>
+    <test started-at="2018-01-11T02:00:09Z" name="Test" finished-at="2018-01-11T02:00:10Z" duration-ms="18">
+      <class name="TestExample.TestExample">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:TestExample.TestExample@2b4bac49]" started-at="2018-01-11T11:00:09Z" name="beforeTest" finished-at="2018-01-11T11:00:09Z" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by @Configuration on method beforeTest but has not been marked @Optional or defined
+in E:\Selenium\eclipse\eclipse-workspace\TestProject\testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by @Configuration on method beforeTest but has not been marked @Optional or defined
+in E:\Selenium\eclipse\eclipse-workspace\TestProject\testng.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:201)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:178)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="marketing()[pri:0, instance:TestExample.TestExample@2b4bac49]" started-at="2018-01-11T11:00:09Z" name="marketing" finished-at="2018-01-11T11:00:09Z" duration-ms="3" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- marketing -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:TestExample.TestExample@2b4bac49]" started-at="2018-01-11T11:00:09Z" name="afterTest" finished-at="2018-01-11T11:00:09Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- TestExample.TestExample -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

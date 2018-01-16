@@ -1,0 +1,61 @@
+# Created on 2018-01-11T15:39:20.179
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(Unknown Source)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:386)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+
+# Created on 2018-01-11T15:39:26.792
+Unexpected IOException with stream: i is : 15 / x is : 16
+
+
+# Created on 2018-01-11T15:39:36.829
+Unexpected IOException with stream: i is : 16 / x is : 17
+
+
+# Created on 2018-01-11T15:39:39.884
+Unexpected IOException with stream: i is : 17 / x is : 18
+
+
+# Created on 2018-01-11T15:39:40.300
+Unexpected IOException with stream: i is : 18 / x is : 19
+
+
+# Created on 2018-01-11T15:39:40.689
+Unexpected IOException with stream: i is : 19 / x is : 20
+
+
+# Created on 2018-01-11T15:39:41.345
+Unexpected IOException with stream: i is : 20 / x is : 21
+
+
+# Created on 2018-01-11T15:39:41.740
+Unexpected IOException with stream: i is : 21 / x is : 22
+
+
+# Created on 2018-01-11T15:39:42.166
+Unexpected IOException with stream: i is : 22 / x is : 23
+
+
+# Created on 2018-01-11T15:39:42.564
+Unexpected IOException with stream: i is : 23 / x is : 24
+
+
+# Created on 2018-01-11T15:39:42.967
+Unexpected IOException with stream: i is : 24 / x is : 25
+
+
+# Created on 2018-01-11T15:39:42.968
+Unexpected IOException with stream: Y is : 65 바퀴
+
+
+# Created on 2018-01-11T15:39:43.364
+Unexpected IOException with stream: i is : 0 / x is : 1
+
+
+# Created on 2018-01-11T15:39:43.765
+Unexpected IOException with stream: i is : 1 / x is : 2
+
+
