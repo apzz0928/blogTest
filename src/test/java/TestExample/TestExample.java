@@ -5,7 +5,7 @@ import java.net.URL;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
-import org.openqa.selenium.JavascriptExecutor;
+//import org.openqa.selenium.JavascriptExecutor;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -26,7 +26,7 @@ import com.codeborne.selenide.testng.ScreenShooter;
 
 public class TestExample {      
  	   private static WebDriver driver;
- 	   private static JavascriptExecutor js;
+ 	   //private static JavascriptExecutor js;
  	   private static String blogspotUrl, egloosUrl, hubUrl;
        private static String TestBrowser;
        
@@ -82,7 +82,6 @@ public class TestExample {
  	       $(".img2").click();
  	       $(".banner1").waitUntil(appear, 5000);
  	       open(blogspotUrl);
- 	       
  	       //내부배너 클릭
 	       int x = 1;
     	   for(int i = 0;i<=3;i++) {
@@ -134,7 +133,6 @@ public class TestExample {
  	 		   //edge는 다은이름으로 저장 때문에 다운 불가(그래도 다운수로 체크는 되려나?)
  	 	   }
  	   }
-       
        @Test(priority = 1)
        public void egloosTest() {
  	       open(egloosUrl);
@@ -173,7 +171,6 @@ public class TestExample {
  	 		   //edge는 다은이름으로 저장 때문에 다운 불가(그래도 다운수로 체크는 되려나?)
  	       }
        }
-        
        @AfterClass
        public void afterTest() {
     	  closeWebDriver();
