@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 //import org.openqa.selenium.JavascriptExecutor;
 
-import org.openqa.selenium.WebDriver;
+//import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -25,7 +25,7 @@ import static com.codeborne.selenide.WebDriverRunner.*;
 import com.codeborne.selenide.testng.ScreenShooter;
 
 public class TestExample {      
- 	   private static WebDriver driver;
+ 	   //private static WebDriver driver;
  	   //private static JavascriptExecutor js;
  	   private static String blogspotUrl, egloosUrl, hubUrl;
        private static String TestBrowser;
