@@ -1,28 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="1" passed="1" failed="0" skipped="0">
+<testng-results total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-01-16T06:25:47Z" name="Suite" finished-at="2018-01-16T06:25:55Z" duration-ms="8045">
+  <suite started-at="2018-02-05T01:47:04Z" name="Suite" finished-at="2018-02-05T01:51:00Z" duration-ms="235878">
     <groups>
     </groups>
-    <test started-at="2018-01-16T06:25:47Z" name="Test" finished-at="2018-01-16T06:25:55Z" duration-ms="8045">
+    <test started-at="2018-02-05T01:47:04Z" name="Test" finished-at="2018-02-05T01:51:00Z" duration-ms="235878">
       <class name="TestExample.TestExample">
-        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:TestExample.TestExample@6c6cb480]" started-at="2018-01-16T15:25:47Z" name="beforeTest" finished-at="2018-01-16T15:25:52Z" duration-ms="4944" status="PASS">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:TestExample.TestExample@6c6cb480]" started-at="2018-02-05T10:47:04Z" name="beforeTest" finished-at="2018-02-05T10:47:07Z" duration-ms="3501" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[internetExplorer]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="blogspotTest()[pri:0, instance:TestExample.TestExample@6c6cb480]" started-at="2018-01-16T15:25:52Z" name="blogspotTest" finished-at="2018-01-16T15:25:55Z" duration-ms="3029" status="PASS">
+        <test-method signature="blogspotTest()[pri:0, instance:TestExample.TestExample@6c6cb480]" started-at="2018-02-05T10:47:07Z" name="blogspotTest" finished-at="2018-02-05T10:49:56Z" duration-ms="168386" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- blogspotTest -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:TestExample.TestExample@6c6cb480]" started-at="2018-01-16T15:25:55Z" name="afterTest" finished-at="2018-01-16T15:25:55Z" duration-ms="68" status="PASS">
+        <test-method signature="egloosTest()[pri:1, instance:TestExample.TestExample@6c6cb480]" started-at="2018-02-05T10:49:56Z" name="egloosTest" finished-at="2018-02-05T10:50:59Z" duration-ms="63763" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- egloosTest -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:TestExample.TestExample@6c6cb480]" started-at="2018-02-05T10:50:59Z" name="afterTest" finished-at="2018-02-05T10:51:00Z" duration-ms="222" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
