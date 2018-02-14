@@ -1,4 +1,28 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 236.215 s - in TestSuite
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 10.782 s <<< FAILURE! - in TestSuite
+blogspotTest(TestExample.TestExample)  Time elapsed: 1.459 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+'$' is not defined (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'DESKTOP-DPN1ULJ', ip: '10.77.129.79', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.1'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, InPrivate=false, pageLoadStrategy=normal, platform=WINDOWS, acceptSslCerts=true, browserVersion=41.16299.15.0, platformVersion=10, locationContextEnabled=true, webStorageEnabled=true, browserName=MicrosoftEdge, takesScreenshot=true, takesElementScreenshot=true, javascriptEnabled=true, platformName=WINDOWS}]
+Session ID: 1F2AFF10-9EF9-407D-9D69-9ECE0C5ED4EE
+	at TestExample.TestExample.js(TestExample.java:73)
+	at TestExample.TestExample.blogspotTest(TestExample.java:88)
+
+egloosTest(TestExample.TestExample)  Time elapsed: 1.892 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Unable to get property 'click' of undefined or null reference (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'DESKTOP-DPN1ULJ', ip: '10.77.129.79', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.1'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, InPrivate=false, pageLoadStrategy=normal, platform=WINDOWS, acceptSslCerts=true, browserVersion=41.16299.15.0, platformVersion=10, locationContextEnabled=true, webStorageEnabled=true, browserName=MicrosoftEdge, takesScreenshot=true, takesElementScreenshot=true, javascriptEnabled=true, platformName=WINDOWS}]
+Session ID: 1F2AFF10-9EF9-407D-9D69-9ECE0C5ED4EE
+	at TestExample.TestExample.js(TestExample.java:73)
+	at TestExample.TestExample.egloosTest(TestExample.java:181)
+

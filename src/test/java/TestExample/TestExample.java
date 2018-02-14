@@ -85,7 +85,8 @@ public class TestExample {
 		if (TestBrowser.equals("chrome") || TestBrowser.equals("firefox")) {
 			$(By.linkText("자세한 내용 보기")).click();
 		} else {
-			$(".jump-link").click();
+			js("$('.jump-link').click();");
+			//$(".jump-link").click();
 		}
 		$(".img1").click();
 		open(blogspotUrl);
