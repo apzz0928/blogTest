@@ -1,158 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="2" passed="0" failed="2" skipped="0">
+<testng-results total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-02-14T01:15:02Z" name="Suite" finished-at="2018-02-14T01:15:13Z" duration-ms="10461">
+  <suite started-at="2018-05-09T07:17:50Z" name="Suite" finished-at="2018-05-09T07:19:25Z" duration-ms="95485">
     <groups>
     </groups>
-    <test started-at="2018-02-14T01:15:02Z" name="Test" finished-at="2018-02-14T01:15:13Z" duration-ms="10461">
+    <test started-at="2018-05-09T07:17:50Z" name="Test" finished-at="2018-05-09T07:19:25Z" duration-ms="95485">
       <class name="TestExample.TestExample">
-        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:TestExample.TestExample@6c6cb480]" started-at="2018-02-14T10:15:02Z" name="beforeTest" finished-at="2018-02-14T10:15:07Z" duration-ms="4827" status="PASS">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:TestExample.TestExample@6c6cb480]" started-at="2018-05-09T16:17:50Z" name="beforeTest" finished-at="2018-05-09T16:17:56Z" duration-ms="6370" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[edge]]>
+                <![CDATA[firefox]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="blogspotTest()[pri:0, instance:TestExample.TestExample@6c6cb480]" started-at="2018-02-14T10:15:07Z" name="blogspotTest" finished-at="2018-02-14T10:15:08Z" duration-ms="1445" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA['$' is not defined (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'DESKTOP-DPN1ULJ', ip: '10.77.129.79', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.1'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{applicationCacheEnabled=true, InPrivate=false, pageLoadStrategy=normal, platform=WINDOWS, acceptSslCerts=true, browserVersion=41.16299.15.0, platformVersion=10, locationContextEnabled=true, webStorageEnabled=true, browserName=MicrosoftEdge, takesScreenshot=true, takesElementScreenshot=true, javascriptEnabled=true, platformName=WINDOWS}]
-Session ID: 1F2AFF10-9EF9-407D-9D69-9ECE0C5ED4EE]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: '$' is not defined (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'DESKTOP-DPN1ULJ', ip: '10.77.129.79', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.1'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{applicationCacheEnabled=true, InPrivate=false, pageLoadStrategy=normal, platform=WINDOWS, acceptSslCerts=true, browserVersion=41.16299.15.0, platformVersion=10, locationContextEnabled=true, webStorageEnabled=true, browserName=MicrosoftEdge, takesScreenshot=true, takesElementScreenshot=true, javascriptEnabled=true, platformName=WINDOWS}]
-Session ID: 1F2AFF10-9EF9-407D-9D69-9ECE0C5ED4EE
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:522)
-	at com.codeborne.selenide.Selenide.executeJavaScript(Selenide.java:465)
-	at TestExample.TestExample.js(TestExample.java:73)
-	at TestExample.TestExample.blogspotTest(TestExample.java:88)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method signature="blogspotTest()[pri:0, instance:TestExample.TestExample@6c6cb480]" started-at="2018-05-09T16:17:56Z" name="blogspotTest" finished-at="2018-05-09T16:19:25Z" duration-ms="88809" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- blogspotTest -->
-        <test-method signature="egloosTest()[pri:1, instance:TestExample.TestExample@6c6cb480]" started-at="2018-02-14T10:15:08Z" name="egloosTest" finished-at="2018-02-14T10:15:10Z" duration-ms="1897" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Unable to get property 'click' of undefined or null reference (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'DESKTOP-DPN1ULJ', ip: '10.77.129.79', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.1'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{applicationCacheEnabled=true, InPrivate=false, pageLoadStrategy=normal, platform=WINDOWS, acceptSslCerts=true, browserVersion=41.16299.15.0, platformVersion=10, locationContextEnabled=true, webStorageEnabled=true, browserName=MicrosoftEdge, takesScreenshot=true, takesElementScreenshot=true, javascriptEnabled=true, platformName=WINDOWS}]
-Session ID: 1F2AFF10-9EF9-407D-9D69-9ECE0C5ED4EE]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Unable to get property 'click' of undefined or null reference (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'DESKTOP-DPN1ULJ', ip: '10.77.129.79', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.1'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{applicationCacheEnabled=true, InPrivate=false, pageLoadStrategy=normal, platform=WINDOWS, acceptSslCerts=true, browserVersion=41.16299.15.0, platformVersion=10, locationContextEnabled=true, webStorageEnabled=true, browserName=MicrosoftEdge, takesScreenshot=true, takesElementScreenshot=true, javascriptEnabled=true, platformName=WINDOWS}]
-Session ID: 1F2AFF10-9EF9-407D-9D69-9ECE0C5ED4EE
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:522)
-	at com.codeborne.selenide.Selenide.executeJavaScript(Selenide.java:465)
-	at TestExample.TestExample.js(TestExample.java:73)
-	at TestExample.TestExample.egloosTest(TestExample.java:181)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- egloosTest -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:TestExample.TestExample@6c6cb480]" started-at="2018-02-14T10:15:10Z" name="afterTest" finished-at="2018-02-14T10:15:13Z" duration-ms="2278" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:TestExample.TestExample@6c6cb480]" started-at="2018-05-09T16:19:25Z" name="afterTest" finished-at="2018-05-09T16:19:25Z" duration-ms="301" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="10.782" tests="2" errors="0" skipped="0" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="95.805" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -7,7 +7,7 @@
     <property name="file.encoding.pkg" value="sun.io"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="MS949"/>
-    <property name="java.class.path" value="C:\Users\최영권\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_1.8.2.20171007-0216\jars\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.class.path" value="C:\Users\최영권\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_1.8.3.20180227-2135\jars\plexus-classworlds-2.5.2.jar"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -51,41 +51,13 @@
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="sun.os.patch.level" value=""/>
-    <property name="java.library.path" value="C:\Program Files\Java\jre-9.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Git\cmd;C:\Users\최영권\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Bandizip\;C:\Program Files\Java\jdk-9.0.1bin;C:\Program Files\Java\apache-maven-3.5.2\bin;;C:\Program Files\Microsoft VS Code\bin;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jre-9.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Git\cmd;C:\Users\최영권\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Bandizip\;C:\Program Files\Java\jdk-9.0.1bin;C:\Program Files\Java\apache-maven-3.5.2\bin;;C:\Program Files\Microsoft VS Code\bin;C:\Users\최영권\AppData\Local\Programs\Fiddler;."/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="java.vm.version" value="9.0.1+11"/>
-    <property name="classworlds.conf" value="E:\Selenium\eclipse\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf14139719467910959865.tmp"/>
+    <property name="classworlds.conf" value="E:\000. Selenium\eclipse\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf14031337556419967738.tmp"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="53.0"/>
   </properties>
-  <testcase name="blogspotTest" classname="TestExample.TestExample" time="1.459">
-    <failure message="&apos;$&apos; is not defined (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 0 milliseconds&#10;Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;&#10;System info: host: &apos;DESKTOP-DPN1ULJ&apos;, ip: &apos;10.77.129.79&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;9.0.1&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities [{applicationCacheEnabled=true, InPrivate=false, pageLoadStrategy=normal, platform=WINDOWS, acceptSslCerts=true, browserVersion=41.16299.15.0, platformVersion=10, locationContextEnabled=true, webStorageEnabled=true, browserName=MicrosoftEdge, takesScreenshot=true, takesElementScreenshot=true, javascriptEnabled=true, platformName=WINDOWS}]&#10;Session ID: 1F2AFF10-9EF9-407D-9D69-9ECE0C5ED4EE" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
-'$' is not defined (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'DESKTOP-DPN1ULJ', ip: '10.77.129.79', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.1'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{applicationCacheEnabled=true, InPrivate=false, pageLoadStrategy=normal, platform=WINDOWS, acceptSslCerts=true, browserVersion=41.16299.15.0, platformVersion=10, locationContextEnabled=true, webStorageEnabled=true, browserName=MicrosoftEdge, takesScreenshot=true, takesElementScreenshot=true, javascriptEnabled=true, platformName=WINDOWS}]
-Session ID: 1F2AFF10-9EF9-407D-9D69-9ECE0C5ED4EE
-	at TestExample.TestExample.js(TestExample.java:73)
-	at TestExample.TestExample.blogspotTest(TestExample.java:88)
-</failure>
-    <system-err><![CDATA[2월 14, 2018 10:15:05 오전 org.openqa.selenium.remote.ProtocolHandshake createSession
-정보: Detected dialect: OSS
-]]></system-err>
-  </testcase>
-  <testcase name="egloosTest" classname="TestExample.TestExample" time="1.892">
-    <failure message="Unable to get property &apos;click&apos; of undefined or null reference (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 0 milliseconds&#10;Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;&#10;System info: host: &apos;DESKTOP-DPN1ULJ&apos;, ip: &apos;10.77.129.79&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;9.0.1&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities [{applicationCacheEnabled=true, InPrivate=false, pageLoadStrategy=normal, platform=WINDOWS, acceptSslCerts=true, browserVersion=41.16299.15.0, platformVersion=10, locationContextEnabled=true, webStorageEnabled=true, browserName=MicrosoftEdge, takesScreenshot=true, takesElementScreenshot=true, javascriptEnabled=true, platformName=WINDOWS}]&#10;Session ID: 1F2AFF10-9EF9-407D-9D69-9ECE0C5ED4EE" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
-Unable to get property 'click' of undefined or null reference (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'DESKTOP-DPN1ULJ', ip: '10.77.129.79', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.1'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{applicationCacheEnabled=true, InPrivate=false, pageLoadStrategy=normal, platform=WINDOWS, acceptSslCerts=true, browserVersion=41.16299.15.0, platformVersion=10, locationContextEnabled=true, webStorageEnabled=true, browserName=MicrosoftEdge, takesScreenshot=true, takesElementScreenshot=true, javascriptEnabled=true, platformName=WINDOWS}]
-Session ID: 1F2AFF10-9EF9-407D-9D69-9ECE0C5ED4EE
-	at TestExample.TestExample.js(TestExample.java:73)
-	at TestExample.TestExample.egloosTest(TestExample.java:181)
-</failure>
-  </testcase>
+  <testcase name="blogspotTest" classname="TestExample.TestExample" time="88.809"/>
 </testsuite>

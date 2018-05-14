@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test name="Default test" verbose="2">
     <classes>
       <class name="TestExample.TestExample"/>
     </classes>
-  </test> <!-- Test -->
-  <test name="Test(failed)">
+  </test> <!-- Default test -->
+  <test name="Default test(failed)">
     <classes>
       <class name="TestExample.TestExample">
         <methods>
-          <include name="marketing"/>
+          <include name="Test"/>
         </methods>
       </class> <!-- TestExample.TestExample -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

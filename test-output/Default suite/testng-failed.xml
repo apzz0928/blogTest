@@ -10,7 +10,7 @@
     <classes>
       <class name="TestExample.TestExample">
         <methods>
-          <include name="marketing"/>
+          <include name="Test"/>
         </methods>
       </class> <!-- TestExample.TestExample -->
     </classes>

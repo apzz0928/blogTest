@@ -14,6 +14,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.WebDriverRunner;
 
 import static com.codeborne.selenide.Selenide.*;
@@ -72,7 +73,7 @@ public class TestExample {
 	private static void js(String javaScriptSource) {
 		executeJavaScript(javaScriptSource);
 	}
-
+	
 	@Test(priority = 0)
 	public void blogspotTest() {
 		open(blogspotUrl);
@@ -81,14 +82,25 @@ public class TestExample {
 		 * $(By.name("btnK")).click(); $(By.linkText("전환-5단계2 - Blogspot")).click();
 		 */
 		// 외부배너 클릭
+		/*String pp = "APZZ092";
+		String qq = "";
+		
+		qq = $(".profile-link").text();
+		qq.trim();
+		
+		if(qq.equals(pp)) {
+			System.out.println(qq + "찾았다!!!!!!" + pp);
+			System.out.println(qq + "찾았다!!!!!!");
+		} else {
+			closeWebDriver();
+		}
 		$(".banner1").click();
 		if (TestBrowser.equals("chrome") || TestBrowser.equals("firefox")) {
 			$(By.linkText("자세한 내용 보기")).click();
 		} else {
 			js("$('.jump-link').click();");
 			//$(".jump-link").click();
-		}
-		$(".img1").click();
+		}*/
 		open(blogspotUrl);
 		$(".banner1").click();
 		if (TestBrowser.equals("chrome") || TestBrowser.equals("firefox")) {
@@ -166,7 +178,7 @@ public class TestExample {
 		}
 	}
 
-	@Test(priority = 1)
+	//@Test(priority = 1)
 	public void egloosTest() {
 		open(egloosUrl);
 		if (TestBrowser.equals("chrome") || TestBrowser.equals("firefox")) {
