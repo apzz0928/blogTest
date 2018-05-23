@@ -178,7 +178,7 @@ public class TestExample {
 		}
 	}
 
-	//@Test(priority = 1)
+	@Test(priority = 1)
 	public void egloosTest() {
 		open(egloosUrl);
 		if (TestBrowser.equals("chrome") || TestBrowser.equals("firefox")) {
