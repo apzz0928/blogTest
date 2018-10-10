@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="313.921" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="1,604.02" tests="9" errors="0" skipped="0" failures="1">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -18,7 +18,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="KR"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-9.0.1\bin"/>
-    <property name="sun.java.command" value="C:\Users\최영권\AppData\Local\Temp\surefire4069405544733397671\surefirebooter10883302875795415328.jar C:\Users\최영권\AppData\Local\Temp\surefire4069405544733397671 2018-10-10T14-09-59_782-jvmRun1 surefire7498648320595813167tmp surefire_05303828501063054948tmp"/>
+    <property name="sun.java.command" value="C:\Users\최영권\AppData\Local\Temp\surefire16337083310158270299\surefirebooter3775372740731326051.jar C:\Users\최영권\AppData\Local\Temp\surefire16337083310158270299 2018-10-10T14-35-14_337-jvmRun1 surefire3998324332318188294tmp surefire_014081004963380076322tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="E:\000. Selenium\eclipse\eclipse-workspace\BlogTest\target\test-classes;E:\000. Selenium\eclipse\eclipse-workspace\BlogTest\target\classes;C:\Users\최영권\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\최영권\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\최영권\.m2\repository\org\testng\testng\6.10\testng-6.10.jar;C:\Users\최영권\.m2\repository\com\beust\jcommander\1.48\jcommander-1.48.jar;C:\Users\최영권\.m2\repository\org\seleniumhq\selenium\selenium-java\3.12.0\selenium-java-3.12.0.jar;C:\Users\최영권\.m2\repository\org\seleniumhq\selenium\selenium-api\3.12.0\selenium-api-3.12.0.jar;C:\Users\최영권\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.12.0\selenium-chrome-driver-3.12.0.jar;C:\Users\최영권\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.12.0\selenium-edge-driver-3.12.0.jar;C:\Users\최영권\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.12.0\selenium-firefox-driver-3.12.0.jar;C:\Users\최영권\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.12.0\selenium-ie-driver-3.12.0.jar;C:\Users\최영권\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.12.0\selenium-opera-driver-3.12.0.jar;C:\Users\최영권\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.12.0\selenium-remote-driver-3.12.0.jar;C:\Users\최영권\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.12.0\selenium-safari-driver-3.12.0.jar;C:\Users\최영권\.m2\repository\org\seleniumhq\selenium\selenium-support\3.12.0\selenium-support-3.12.0.jar;C:\Users\최영권\.m2\repository\net\bytebuddy\byte-buddy\1.8.3\byte-buddy-1.8.3.jar;C:\Users\최영권\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\최영권\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\최영권\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\최영권\.m2\repository\com\google\code\gson\gson\2.8.2\gson-2.8.2.jar;C:\Users\최영권\.m2\repository\com\google\guava\guava\23.6-jre\guava-23.6-jre.jar;C:\Users\최영권\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\최영권\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\최영권\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\최영권\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\최영권\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\최영권\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar;C:\Users\최영권\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar;C:\Users\최영권\.m2\repository\com\squareup\okhttp3\okhttp\3.9.1\okhttp-3.9.1.jar;C:\Users\최영권\.m2\repository\com\squareup\okio\okio\1.13.0\okio-1.13.0.jar;C:\Users\최영권\.m2\repository\com\codeborne\selenide\4.11.4\selenide-4.11.4.jar;C:\Users\최영권\.m2\repository\io\github\bonigarcia\webdrivermanager\2.2.1\webdrivermanager-2.2.1.jar;C:\Users\최영권\.m2\repository\commons-io\commons-io\2.5\commons-io-2.5.jar;C:\Users\최영권\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\최영권\.m2\repository\org\rauschig\jarchivelib\0.7.1\jarchivelib-0.7.1.jar;C:\Users\최영권\.m2\repository\org\apache\commons\commons-compress\1.9\commons-compress-1.9.jar;C:\Users\최영권\.m2\repository\org\jsoup\jsoup\1.10.2\jsoup-1.10.2.jar;C:\Users\최영권\.m2\repository\net\lightbody\bmp\browsermob-core\2.1.5\browsermob-core-2.1.5.jar;C:\Users\최영권\.m2\repository\net\lightbody\bmp\littleproxy\1.1.0-beta-bmp-17\littleproxy-1.1.0-beta-bmp-17.jar;C:\Users\최영권\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.8.9\jackson-core-2.8.9.jar;C:\Users\최영권\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.8.9\jackson-databind-2.8.9.jar;C:\Users\최영권\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.8.9\jackson-annotations-2.8.9.jar;C:\Users\최영권\.m2\repository\dnsjava\dnsjava\2.1.8\dnsjava-2.1.8.jar;C:\Users\최영권\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.25\jcl-over-slf4j-1.7.25.jar;C:\Users\최영권\.m2\repository\com\jcraft\jzlib\1.1.3\jzlib-1.1.3.jar;C:\Users\최영권\.m2\repository\io\netty\netty-all\4.0.51.Final\netty-all-4.0.51.Final.jar;C:\Users\최영권\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.58\bcprov-jdk15on-1.58.jar;C:\Users\최영권\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.58\bcpkix-jdk15on-1.58.jar;C:\Users\최영권\.m2\repository\net\lightbody\bmp\mitm\2.1.5\mitm-2.1.5.jar;C:\Users\최영권\.m2\repository\org\apache\logging\log4j\log4j-core\2.11.0\log4j-core-2.11.0.jar;C:\Users\최영권\.m2\repository\org\apache\logging\log4j\log4j-api\2.11.0\log4j-api-2.11.0.jar;C:\Users\최영권\.m2\repository\org\apache\logging\log4j\log4j-slf4j-impl\2.11.0\log4j-slf4j-impl-2.11.0.jar;C:\Users\최영권\.m2\repository\org\slf4j\slf4j-api\1.8.0-alpha2\slf4j-api-1.8.0-alpha2.jar;C:\Users\최영권\.m2\repository\org\apache\maven\surefire\surefire-testng-utils\2.21.0\surefire-testng-utils-2.21.0.jar;C:\Users\최영권\.m2\repository\org\apache\maven\surefire\surefire-grouper\2.21.0\surefire-grouper-2.21.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,7 +33,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\최영권\AppData\Local\Temp\surefire4069405544733397671\surefirebooter10883302875795415328.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\최영권\AppData\Local\Temp\surefire16337083310158270299\surefirebooter3775372740731326051.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="9.0.1+11"/>
@@ -59,7 +59,64 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="53.0"/>
   </properties>
-  <testcase name="뷰필터광고코드설정naver" classname="TestExample.TestExample" time="101.23"/>
-  <testcase name="뷰필터광고코드설정daum" classname="TestExample.TestExample" time="121.624"/>
-  <testcase name="뷰필터광고코드설정bookmark" classname="TestExample.TestExample" time="82.815"/>
+  <testcase name="뷰필터광고코드설정naver" classname="TestExample.TestExample" time="102.078"/>
+  <testcase name="뷰필터광고코드설정daum" classname="TestExample.TestExample" time="114.31"/>
+  <testcase name="뷰필터광고코드설정bookmark" classname="TestExample.TestExample" time="85.746"/>
+  <testcase name="뷰필터광고코드설정_네이버블로그" classname="TestExample.TestExample" time="283.101"/>
+  <testcase name="뷰필터광고코드설정https_본인url" classname="TestExample.TestExample" time="240.608"/>
+  <testcase name="뷰필터광고코드설정http" classname="TestExample.TestExample" time="151.616"/>
+  <testcase name="뷰필터광고코드설정https" classname="TestExample.TestExample" time="174.396"/>
+  <testcase name="뷰필터광고코드설정1http" classname="TestExample.TestExample" time="192.109">
+    <failure message="ElementClickInterceptedException: Element &lt;a id=&quot;categoryMar-5&quot; class=&quot;sub5&quot; href=&quot;/search/label/inHouse-Talk?nac_md=sms_mkt&amp;nac_cpi=view500222-4&amp;nac_sm=view_____talk&quot;&gt; is not clickable at point (56.89167022705078,9.5) because another element &lt;header class=&quot;centered-top-container sticky animating&quot;&gt; obscures it&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;DESKTOP-DPN1ULJ&apos;, ip: &apos;10.77.129.79&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;9.0.1&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 23744, moz:profile: C:\Users\최영권\AppData\Local\..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}&#10;Session ID: 5cd9771e-3af5-4e15-87c3-4b621469401a" type="com.codeborne.selenide.ex.InvalidStateException"><![CDATA[com.codeborne.selenide.ex.InvalidStateException: 
+ElementClickInterceptedException: Element <a id="categoryMar-5" class="sub5" href="/search/label/inHouse-Talk?nac_md=sms_mkt&nac_cpi=view500222-4&nac_sm=view_____talk"> is not clickable at point (56.89167022705078,9.5) because another element <header class="centered-top-container sticky animating"> obscures it
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'DESKTOP-DPN1ULJ', ip: '10.77.129.79', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.1'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 23744, moz:profile: C:\Users\최영권\AppData\Local\..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 5cd9771e-3af5-4e15-87c3-4b621469401a
+	at TestExample.TestExample.뷰필터광고코드설정1http(TestExample.java:678)
+Caused by: org.openqa.selenium.ElementClickInterceptedException: 
+Element <a id="categoryMar-5" class="sub5" href="/search/label/inHouse-Talk?nac_md=sms_mkt&nac_cpi=view500222-4&nac_sm=view_____talk"> is not clickable at point (56.89167022705078,9.5) because another element <header class="centered-top-container sticky animating"> obscures it
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'DESKTOP-DPN1ULJ', ip: '10.77.129.79', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.1'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 23744, moz:profile: C:\Users\최영권\AppData\Local\..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 5cd9771e-3af5-4e15-87c3-4b621469401a
+	at TestExample.TestExample.뷰필터광고코드설정1http(TestExample.java:678)
+]]></failure>
+    <system-out><![CDATA[마케팅 유입 설정 0번 : 1번째 접근
+마케팅 유입 설정 0번 : 2번째 접근
+마케팅 유입 설정 0번 : 3번째 접근
+마케팅 유입 설정 0번 : 4번째 접근
+마케팅 유입 설정 0번 : 5번째 접근
+마케팅 유입 설정 0번 : 6번째 접근
+마케팅 유입 설정 0번 : 7번째 접근
+마케팅 유입 설정 0번 : 8번째 접근
+마케팅 유입 설정 0번 : 9번째 접근
+마케팅 유입 설정 0번 : 10번째 접근
+1인하우스마케팅-바이럴 : 1번째 접근
+1인하우스마케팅-바이럴 : 2번째 접근
+1인하우스마케팅-바이럴 : 3번째 접근
+1인하우스마케팅-바이럴 : 4번째 접근
+1인하우스마케팅-바이럴 : 5번째 접근
+1인하우스마케팅-바이럴 : 6번째 접근
+1인하우스마케팅-바이럴 : 7번째 접근
+1인하우스마케팅-바이럴 : 8번째 접근
+1인하우스마케팅-바이럴 : 9번째 접근
+1인하우스마케팅-이메일 : 1번째 접근
+1인하우스마케팅-이메일 : 2번째 접근
+1인하우스마케팅-이메일 : 3번째 접근
+1인하우스마케팅-이메일 : 4번째 접근
+1인하우스마케팅-이메일 : 5번째 접근
+1인하우스마케팅-이메일 : 6번째 접근
+1인하우스마케팅-이메일 : 7번째 접근
+1인하우스마케팅-이메일 : 8번째 접근
+1인하우스마케팅-Talk : 1번째 접근
+1인하우스마케팅-Talk : 2번째 접근
+1인하우스마케팅-Talk : 3번째 접근
+1인하우스마케팅-Talk : 4번째 접근
+1인하우스마케팅-Talk : 5번째 접근
+]]></system-out>
+  </testcase>
+  <testcase name="뷰필터광고코드설정1https" classname="TestExample.TestExample" time="251.122"/>
 </testsuite>

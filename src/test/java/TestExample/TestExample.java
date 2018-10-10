@@ -438,7 +438,7 @@ public class TestExample {
 		}
 	}
 	@Test(priority = 3)
-	public void 뷰필터광고코드설정1http() {
+	public void 뷰필터광고코드설정_네이버블로그() {
 		for(int i=1;i<=10;i++) { //마케팅 유입 설정0
 			open("https://blog.naver.com/apzz0928/221374542306");
 			sleep(1000);
@@ -508,7 +508,7 @@ public class TestExample {
 		}
 	}
 	@Test(priority = 4)
-	public void 뷰필터광고코드설정1https() {
+	public void 뷰필터광고코드설정https_본인url() {
 		for(int i=1;i<=10;i++) { //마케팅 유입 설정0
 			open("https://apzz0928.blogspot.com");
 			sleep(1000);
@@ -516,7 +516,7 @@ public class TestExample {
 			$(".sub1").click();
 			sleep(1000);
 			open("http://apzz0928.egloos.com");
-			System.out.println("마케팅 유입 설정 0번 : " + i + "번째 접근");
+			System.out.println("https_본인url 마케팅 유입 설정 0번 : " + i + "번째 접근");
 		}
 		for(int i=1;i<=9;i++) { //바이럴
 			open("https://apzz0928.blogspot.com");
@@ -525,7 +525,7 @@ public class TestExample {
 			$(".sub3").click();
 			sleep(1000);
 			open("http://apzz0928.egloos.com");
-			System.out.println("인하우스마케팅-바이럴 : " + i + "번째 접근");
+			System.out.println("https_본인url 인하우스마케팅-바이럴 : " + i + "번째 접근");
 		}
 		for(int i=1;i<=8;i++) { //이메일
 			open("https://apzz0928.blogspot.com");
@@ -534,7 +534,7 @@ public class TestExample {
 			$(".sub4").click();
 			sleep(1000);
 			open("http://apzz0928.egloos.com");
-			System.out.println("인하우스마케팅-이메일 : " + i + "번째 접근");
+			System.out.println("https_본인url 인하우스마케팅-이메일 : " + i + "번째 접근");
 		}
 		for(int i=1;i<=7;i++) { //Talk
 			open("https://apzz0928.blogspot.com");
@@ -543,7 +543,7 @@ public class TestExample {
 			$(".sub5").click();
 			sleep(1000);
 			open("http://apzz0928.egloos.com");
-			System.out.println("인하우스마케팅-Talk : " + i + "번째 접근");
+			System.out.println("https_본인url 인하우스마케팅-Talk : " + i + "번째 접근");
 		}
 		for(int i=1;i<=6;i++) { //콘텐츠 > 내부배너 설정
 			open("https://apzz0928.blogspot.com");
@@ -552,14 +552,204 @@ public class TestExample {
 			$(".sub6").click();
 			sleep(1000);
 			open("http://apzz0928.egloos.com");
-			System.out.println("내부배너 설정 : " + i + "번째 접근");
+			System.out.println("https_본인url 내부배너 설정 : " + i + "번째 접근");
 		}
 		for(int i=1;i<=5;i++) { //콘텐츠 > 외부배너 설정
 			open("https://apzz0928.blogspot.com");
 			$(".banner-outer").scrollTo();
 			$(".banner-outer").click();
 			open("http://apzz0928.egloos.com");
-			System.out.println("외부배너 설정 : " + i + "번째 접근");
+			System.out.println("https_본인url 외부배너 설정 : " + i + "번째 접근");
+		}
+    }
+    @Test(priority = 5)
+	public void 뷰필터광고코드설정http() {
+		for(int i=1;i<=10;i++) { //마케팅 유입 설정0
+			open("http://apzz0928.blogspot.com");
+			open("http://apzz0928.blogspot.com/search/label/marketing-normal?nac_md=normal_mkt&nac_cpi=view500222-1&nac_sm=view_____mkt_____0");
+			open("http://apzz0928.egloos.com");
+			System.out.println("http-마케팅 유입 설정 0번 : " + i + "번째 접근");
+		}
+		for(int i=1;i<=9;i++) { //바이럴
+			open("http://apzz0928.blogspot.com");
+			open("http://apzz0928.blogspot.com/search/label/inHouse-viral?nac_md=viral_mkt&nac_cpi=view500222-2&nac_sm=view_____viral");
+			open("http://apzz0928.egloos.com");
+			System.out.println("http-인하우스마케팅-바이럴 : " + i + "번째 접근");
+		}
+		for(int i=1;i<=8;i++) { //이메일
+			open("http://apzz0928.blogspot.com");
+			open("http://apzz0928.blogspot.com/search/label/inHouse-Email?nac_md=email_mkt&nac_cpi=view500222-3");
+			open("http://apzz0928.egloos.com");
+			System.out.println("http-인하우스마케팅-이메일 : " + i + "번째 접근");
+		}
+		for(int i=1;i<=7;i++) { //Talk
+			open("http://apzz0928.blogspot.com");
+			open("http://apzz0928.blogspot.com/search/label/inHouse-Talk?nac_md=sms_mkt&nac_cpi=view500222-4&nac_sm=view_____talk");
+			open("http://apzz0928.egloos.com");
+			System.out.println("http-인하우스마케팅-Talk : " + i + "번째 접근");
+		}
+		for(int i=1;i<=6;i++) { //콘텐츠 > 내부배너 설정
+			open("http://apzz0928.blogspot.com");
+			open("http://apzz0928.blogspot.com/search/label/banner-inner?nac_inbc=view500222-1&nac_inbs=view_____innerbanner");
+			open("http://apzz0928.egloos.com");
+			System.out.println("http-내부배너 설정 : " + i + "번째 접근");
+		}
+		for(int i=1;i<=5;i++) { //콘텐츠 > 외부배너 설정
+			open("http://apzz0928.blogspot.com");
+			$(".banner-outer").scrollTo();
+			$(".banner-outer").click();
+			open("http://apzz0928.egloos.com");
+			System.out.println("http-외부배너 설정 : " + i + "번째 접근");
+		}
+	}
+	@Test(priority = 6)
+	public void 뷰필터광고코드설정https() {
+		for(int i=1;i<=10;i++) { //마케팅 유입 설정0
+			open("https://apzz0928.blogspot.com");
+			open("https://apzz0928.blogspot.com/search/label/marketing-normal?nac_md=normal_mkt&nac_cpi=view500222-1&nac_sm=view_____mkt_____0");
+			open("http://apzz0928.egloos.com");
+			System.out.println("https-마케팅 유입 설정 0번 : " + i + "번째 접근");
+		}
+		for(int i=1;i<=9;i++) { //바이럴
+			open("https://apzz0928.blogspot.com");
+			open("https://apzz0928.blogspot.com/search/label/inHouse-viral?nac_md=viral_mkt&nac_cpi=view500222-2&nac_sm=view_____viral");
+			open("http://apzz0928.egloos.com");
+			System.out.println("https-인하우스마케팅-바이럴 : " + i + "번째 접근");
+		}
+		for(int i=1;i<=8;i++) { //이메일
+			open("https://apzz0928.blogspot.com");
+			open("https://apzz0928.blogspot.com/search/label/inHouse-Email?nac_md=email_mkt&nac_cpi=view500222-3");
+			open("http://apzz0928.egloos.com");
+			System.out.println("https-인하우스마케팅-이메일 : " + i + "번째 접근");
+		}
+		for(int i=1;i<=7;i++) { //Talk
+			open("https://apzz0928.blogspot.com");
+			open("https://apzz0928.blogspot.com/search/label/inHouse-Talk?nac_md=sms_mkt&nac_cpi=view500222-4&nac_sm=view_____talk");
+			open("http://apzz0928.egloos.com");
+			System.out.println("https-인하우스마케팅-Talk : " + i + "번째 접근");
+		}
+		for(int i=1;i<=6;i++) { //콘텐츠 > 내부배너 설정
+			open("https://apzz0928.blogspot.com");
+			open("https://apzz0928.blogspot.com/search/label/banner-inner?nac_inbc=view500222-1&nac_inbs=view_____innerbanner");
+			open("http://apzz0928.egloos.com");
+			System.out.println("https-내부배너 설정 : " + i + "번째 접근");
+		}
+		for(int i=1;i<=5;i++) { //콘텐츠 > 외부배너 설정
+			open("https://apzz0928.blogspot.com");
+			$(".banner-outer").scrollTo();
+			$(".banner-outer").click();
+			open("http://apzz0928.egloos.com");
+			System.out.println("https-외부배너 설정 : " + i + "번째 접근");
+		}
+	}
+	@Test(priority = 7)
+	public void 뷰필터광고코드설정1http() {
+		for(int i=1;i<=10;i++) { //마케팅 유입 설정0
+			open("http://apzz0928.blogspot.com");
+			sleep(1000);
+			$(".sub1").scrollTo();
+			$(".sub1").click();
+			sleep(1000);
+			open("http://apzz0928.egloos.com");
+			System.out.println("마케팅 유입 설정 0번 : " + i + "번째 접근");
+		}
+		for(int i=1;i<=9;i++) { //바이럴
+			open("http://apzz0928.blogspot.com");
+			sleep(1000);
+			$(".sub3").scrollTo();
+			$(".sub3").click();
+			sleep(1000);
+			open("http://apzz0928.egloos.com");
+			System.out.println("1인하우스마케팅-바이럴 : " + i + "번째 접근");
+		}
+		for(int i=1;i<=8;i++) { //이메일
+			open("http://apzz0928.blogspot.com");
+			sleep(1000);
+			$(".sub4").scrollTo();
+			$(".sub4").click();
+			sleep(1000);
+			open("http://apzz0928.egloos.com");
+			System.out.println("1인하우스마케팅-이메일 : " + i + "번째 접근");
+		}
+		for(int i=1;i<=7;i++) { //Talk
+			open("http://apzz0928.blogspot.com");
+			sleep(1000);
+			$(".sub5").scrollTo();
+			$(".sub5").click();
+			sleep(1000);
+			open("http://apzz0928.egloos.com");
+			System.out.println("1인하우스마케팅-Talk : " + i + "번째 접근");
+		}
+		for(int i=1;i<=6;i++) { //콘텐츠 > 내부배너 설정
+			open("http://apzz0928.blogspot.com");
+			sleep(1000);
+			$(".sub6").scrollTo();
+			$(".sub6").click();
+			sleep(1000);
+			open("http://apzz0928.egloos.com");
+			System.out.println("1내부배너 설정 : " + i + "번째 접근");
+		}
+		for(int i=1;i<=5;i++) { //콘텐츠 > 외부배너 설정
+			open("http://apzz0928.blogspot.com");
+			$(".banner-outer").scrollTo();
+			$(".banner-outer").click();
+			open("http://apzz0928.egloos.com");
+			System.out.println("1외부배너 설정 : " + i + "번째 접근");
+		}
+	}
+	@Test(priority = 8)
+	public void 뷰필터광고코드설정1https() {
+		for(int i=1;i<=10;i++) { //마케팅 유입 설정0
+			open("https://apzz0928.blogspot.com");
+			sleep(1000);
+			$(".sub1").scrollTo();
+			$(".sub1").click();
+			sleep(1000);
+			open("http://apzz0928.egloos.com");
+			System.out.println("2마케팅 유입 설정 0번 : " + i + "번째 접근");
+		}
+		for(int i=1;i<=9;i++) { //바이럴
+			open("https://apzz0928.blogspot.com");
+			sleep(1000);
+			$(".sub3").scrollTo();
+			$(".sub3").click();
+			sleep(1000);
+			open("http://apzz0928.egloos.com");
+			System.out.println("2인하우스마케팅-바이럴 : " + i + "번째 접근");
+		}
+		for(int i=1;i<=8;i++) { //이메일
+			open("https://apzz0928.blogspot.com");
+			sleep(1000);
+			$(".sub4").scrollTo();
+			$(".sub4").click();
+			sleep(1000);
+			open("http://apzz0928.egloos.com");
+			System.out.println("2인하우스마케팅-이메일 : " + i + "번째 접근");
+		}
+		for(int i=1;i<=7;i++) { //Talk
+			open("https://apzz0928.blogspot.com");
+			sleep(1000);
+			$(".sub5").scrollTo();
+			$(".sub5").click();
+			sleep(1000);
+			open("http://apzz0928.egloos.com");
+			System.out.println("2인하우스마케팅-Talk : " + i + "번째 접근");
+		}
+		for(int i=1;i<=6;i++) { //콘텐츠 > 내부배너 설정
+			open("https://apzz0928.blogspot.com");
+			sleep(1000);
+			$(".sub6").scrollTo();
+			$(".sub6").click();
+			sleep(1000);
+			open("http://apzz0928.egloos.com");
+			System.out.println("2내부배너 설정 : " + i + "번째 접근");
+		}
+		for(int i=1;i<=5;i++) { //콘텐츠 > 외부배너 설정
+			open("https://apzz0928.blogspot.com");
+			$(".banner-outer").scrollTo();
+			$(".banner-outer").click();
+			open("http://apzz0928.egloos.com");
+			System.out.println("2외부배너 설정 : " + i + "번째 접근");
 		}
 	}
 	@AfterClass
