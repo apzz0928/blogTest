@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
-  <parameter name="browser" value="firefox"/>
-  <test thread-count="5" name="Test">
+  <test name="Test(failed)">
     <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="TestExample.TestExample"/>
+      <class name="TestExample.TestExample">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="뷰필터광고코드설정1http"/>
+        </methods>
+      </class> <!-- TestExample.TestExample -->
     </classes>
-  </test> <!-- Test -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

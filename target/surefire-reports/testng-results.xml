@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-05-23T01:42:00Z" name="Suite" finished-at="2018-05-23T01:44:45Z" duration-ms="164855">
+  <suite started-at="2018-10-10T05:10:02Z" name="Suite" finished-at="2018-10-10T05:15:15Z" duration-ms="313359">
     <groups>
     </groups>
-    <test started-at="2018-05-23T01:42:00Z" name="Test" finished-at="2018-05-23T01:44:45Z" duration-ms="164855">
+    <test started-at="2018-10-10T05:10:02Z" name="Test" finished-at="2018-10-10T05:15:15Z" duration-ms="313359">
       <class name="TestExample.TestExample">
-        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:TestExample.TestExample@4afcd809]" started-at="2018-05-23T10:42:00Z" name="beforeTest" finished-at="2018-05-23T10:42:06Z" duration-ms="5349" status="PASS">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:TestExample.TestExample@75d4a5c2]" started-at="2018-10-10T14:10:02Z" name="beforeTest" finished-at="2018-10-10T14:10:08Z" duration-ms="6495" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="blogspotTest()[pri:0, instance:TestExample.TestExample@4afcd809]" started-at="2018-05-23T10:42:06Z" name="blogspotTest" finished-at="2018-05-23T10:43:35Z" duration-ms="89593" status="PASS">
+        <test-method signature="뷰필터광고코드설정naver()[pri:0, instance:TestExample.TestExample@75d4a5c2]" started-at="2018-10-10T14:10:08Z" name="뷰필터광고코드설정naver" finished-at="2018-10-10T14:11:49Z" duration-ms="101229" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- blogspotTest -->
-        <test-method signature="egloosTest()[pri:1, instance:TestExample.TestExample@4afcd809]" started-at="2018-05-23T10:43:35Z" name="egloosTest" finished-at="2018-05-23T10:44:45Z" duration-ms="69518" status="PASS">
+        </test-method> <!-- 뷰필터광고코드설정naver -->
+        <test-method signature="뷰필터광고코드설정daum()[pri:1, instance:TestExample.TestExample@75d4a5c2]" started-at="2018-10-10T14:11:49Z" name="뷰필터광고코드설정daum" finished-at="2018-10-10T14:13:51Z" duration-ms="121625" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- egloosTest -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:TestExample.TestExample@4afcd809]" started-at="2018-05-23T10:44:45Z" name="afterTest" finished-at="2018-05-23T10:44:45Z" duration-ms="387" status="PASS">
+        </test-method> <!-- 뷰필터광고코드설정daum -->
+        <test-method signature="뷰필터광고코드설정bookmark()[pri:2, instance:TestExample.TestExample@75d4a5c2]" started-at="2018-10-10T14:13:51Z" name="뷰필터광고코드설정bookmark" finished-at="2018-10-10T14:15:14Z" duration-ms="82815" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 뷰필터광고코드설정bookmark -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:TestExample.TestExample@75d4a5c2]" started-at="2018-10-10T14:15:14Z" name="afterTest" finished-at="2018-10-10T14:15:15Z" duration-ms="1184" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
