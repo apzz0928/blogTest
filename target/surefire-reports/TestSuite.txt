@@ -1,22 +1,15 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 9, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1,604.02 s <<< FAILURE! - in TestSuite
-뷰필터광고코드설정1http(TestExample.TestExample)  Time elapsed: 192.109 s  <<< FAILURE!
-com.codeborne.selenide.ex.InvalidStateException: 
-ElementClickInterceptedException: Element <a id="categoryMar-5" class="sub5" href="/search/label/inHouse-Talk?nac_md=sms_mkt&nac_cpi=view500222-4&nac_sm=view_____talk"> is not clickable at point (56.89167022705078,9.5) because another element <header class="centered-top-container sticky animating"> obscures it
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 338.562 s <<< FAILURE! - in TestSuite
+비밀번호정기변경_레이어노출확인(TestExample.TestScript)  Time elapsed: 332.102 s  <<< FAILURE!
+org.openqa.selenium.JavascriptException: 
+ReferenceError: ace is not defined
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
 System info: host: 'DESKTOP-DPN1ULJ', ip: '10.77.129.79', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.1'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 23744, moz:profile: C:\Users\최영권\AppData\Local\..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 5cd9771e-3af5-4e15-87c3-4b621469401a
-	at TestExample.TestExample.뷰필터광고코드설정1http(TestExample.java:678)
-Caused by: org.openqa.selenium.ElementClickInterceptedException: 
-Element <a id="categoryMar-5" class="sub5" href="/search/label/inHouse-Talk?nac_md=sms_mkt&nac_cpi=view500222-4&nac_sm=view_____talk"> is not clickable at point (56.89167022705078,9.5) because another element <header class="centered-top-container sticky animating"> obscures it
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'DESKTOP-DPN1ULJ', ip: '10.77.129.79', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.1'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 23744, moz:profile: C:\Users\최영권\AppData\Local\..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 5cd9771e-3af5-4e15-87c3-4b621469401a
-	at TestExample.TestExample.뷰필터광고코드설정1http(TestExample.java:678)
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 9856, moz:profile: C:\Users\최영권\AppData\Local\..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 86b430c6-35e9-4e40-b042-36a6404b86d6
+	at TestExample.TestScript.js(TestScript.java:103)
+	at TestExample.TestScript.비밀번호정기변경_레이어노출확인(TestScript.java:471)
 

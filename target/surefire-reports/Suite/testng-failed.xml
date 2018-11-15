@@ -4,13 +4,13 @@
   <test name="Test(failed)">
     <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="TestExample.TestExample">
+      <class name="TestExample.TestScript">
         <methods>
-          <include name="beforeTest"/>
           <include name="afterTest"/>
-          <include name="뷰필터광고코드설정1http"/>
+          <include name="beforeTest"/>
+          <include name="비밀번호정기변경_레이어노출확인"/>
         </methods>
-      </class> <!-- TestExample.TestExample -->
+      </class> <!-- TestExample.TestScript -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
