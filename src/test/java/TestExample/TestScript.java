@@ -198,8 +198,7 @@ public class TestScript {
   	
 	@Test(priority = 0)
 	public void 비밀번호정기변경_레이어노출확인() {
-		String[] pageURL = new String[230];
-		String URL = "http://10.77.129.52:8083";
+		String[] pageURL = new String[229];
 		pageURL[0]	=	"	 /common/front  	"	;
 		pageURL[1]	=	"	 /common/front/product/intro  	"	;
 		pageURL[2]	=	"	 /common/front/product/info/1  	"	;
@@ -429,25 +428,25 @@ public class TestScript {
 		pageURL[226]	=	"	 /help/svcCenter/faqList  	"	;
 		pageURL[227]	=	"	 /help/svcCenter/inquiryForm  	"	;
 		pageURL[228]	=	"	 /help/svcCenter/viewInquiryList  	"	;
-		pageURL[229]	=	"	 /help/svcCenter/viewInquiry?idx=369&board_kind_cd=210  	"	;
 
-		for(int i=0;i<=229;i++) { //URL 공백 제거
+		String URL = "http://10.77.129.52:8083";
+		for(int i=0;i<=228;i++) { //URL 공백 제거
   			pageURL[i] = pageURL[i].trim().replace(" ", "");
   		}
 		int ckPageNum = 0; // 필수 상태 도메인별 레이어 노출 여부 체크를 위한 값
-		String accStatus = "정상";
+		String accStatus = "3개월";
 		String ID = "";
 		switch(accStatus) {
-		case "정상": //144번까지 확인됨
+		case "정상": // 세그먼트 빼고 확인됨
 			ID = "apzza10";
 			break;
-		case "다음": //32번까지 확인됨
+		case "다음": // 세그먼트 빼고 확인
 			ID = "apzz09287";
 			break;
-		case "3개월":
-			ID = "apzz09287";
+		case "3개월": // 다음에변경(1) 확인 필요
+			ID = "apzz09282";
 			break;
-		case "필수":
+		case "필수": // 세그먼트 빼고 확인
 			ID = "apzz09288";
 			break;
 		}
@@ -456,7 +455,7 @@ public class TestScript {
 		$("#upw").setValue("qordlf!@34");
 		$(".btn_login").click();
 		sleep(1000);
-		for(int i=145;i<=229;i++) { // 페이지 접근
+		for(int i=0;i<=228;i++) { // 페이지 접근
 			open(URL + pageURL[i]);
 			ckPageNum = i;
 			sleep(1300);
@@ -471,65 +470,77 @@ public class TestScript {
 					js("ace.alert($('h3').text());");
 					sleep(1000);
 					String layerLoadCheck = $$("p").last().text();
+					((SelenideElement) $$("p")).click();
 					if(!layerLoadCheck.equals("에이스카운터 주요기능개인정보 보호를 위한 비밀번호 변경 안내에이스카운터 비밀번호 변경")) {
-						System.out.println(accStatus + " 상태 / 레이어 *미노출* 페이지 주소 : " + pageURL[i]);
+						System.out.println(accStatus + " 상태 / 레이어 *미노출* 페이지 주소 : " + pageURL[i] + " index : " + ckPageNum);
 					} else {
-						System.out.println(accStatus + " 상태 / 레이어 *노출* 페이지 주소 : " + pageURL[i] + "*************");
+						System.out.println(accStatus + " 상태 / 레이어 *노출* 페이지 주소 : " + pageURL[i] + " index : " + ckPageNum + "*************");
 						driver.quit();
 					}
 				} else if (accStatus.equals("3개월")) { // 3개월 상태는 메인페이지만 레이어 노출 O
-					if(pageURL[i] == pageURL[0]) { //3개월 메인페이지 레이어 노출 확인
+					if(pageURL[i] == pageURL[0] || pageURL[i] == pageURL[80] || pageURL[i] == pageURL[103] || pageURL[i] == pageURL[111]) { //3개월 메인페이지 레이어 노출 확인
+						sleep(1000);
 						js("ace.alert($('h3').text());");
+						sleep(1000);
 						String layerLoadCheck = $$("p").last().text();
 						if(layerLoadCheck.equals("에이스카운터 주요기능개인정보 보호를 위한 비밀번호 변경 안내에이스카운터 비밀번호 변경")) {
-							System.out.println(accStatus + " 상태 / 레이어 *노출* 페이지 주소 : " + pageURL[i]);
+							System.out.println(accStatus + " 상태 / 레이어 *노출* 페이지 주소 : " + pageURL[i] + " index : " + ckPageNum);
 						} else {
-							System.out.println(accStatus + " 상태 / 레이어 *미노출* 페이지 주소 : " + pageURL[i] + "*************");
+							System.out.println(accStatus + " 상태 / 레이어 *미노출* 페이지 주소 : " + pageURL[i] + " index : " + ckPageNum + "*************");
 							close();
 						}
 					} else { //3개월 메인페이지가 아닐때 레이어 미노출 확인
+						sleep(1000);
 						js("ace.alert($('h3').text());");
+						sleep(1000);
 						String layerLoadCheck = $$("p").last().text();
 						if(!layerLoadCheck.equals("에이스카운터 주요기능개인정보 보호를 위한 비밀번호 변경 안내에이스카운터 비밀번호 변경")) {
-							System.out.println(accStatus + " 상태 / 레이어 *미노출* 페이지 주소 : " + pageURL[i]);
+							System.out.println(accStatus + " 상태 / 레이어 *미노출* 페이지 주소 : " + pageURL[i] + " index : " + ckPageNum);
 						} else {
-							System.out.println(accStatus + " 상태 / 레이어 *노출* 페이지 주소 : " + pageURL[i] + "*************");
+							System.out.println(accStatus + " 상태 / 레이어 *노출* 페이지 주소 : " + pageURL[i] + " index : " + ckPageNum + "*************");
 							close();
 						}
 					}
 					
 				} else if(accStatus.equals("필수")) { // 비밀번호 필수 변경 계정 확인용
-					if(ckPageNum != 0 || ckPageNum <= 21) { // 프론트 페이지 레이어 노출 확인, 레이어 노출되면 Fail
+					if(ckPageNum != 0 && ckPageNum <= 21) { // 프론트 페이지 레이어 노출 확인, 레이어 노출되면 Fail
+						sleep(1000);
 						js("ace.alert($('h3').text());");
+						sleep(1000);
 						String layerLoadCheck = $$("p").last().text();
 						if(!layerLoadCheck.equals("에이스카운터 주요기능개인정보 보호를 위한 비밀번호 변경 안내에이스카운터 비밀번호 변경")) {
-							System.out.println(accStatus + " 상태 / 레이어 *미노출* 프론트 페이지 주소 : " + pageURL[i]);
+							System.out.println(accStatus + " 상태 / 레이어 *미노출* 프론트 페이지 주소 : " + pageURL[i] + " index : " + ckPageNum);
 						} else {
-							System.out.println(accStatus + " 상태 / 레이어 *노출* 프론트 페이지 주소 : " + pageURL[i] + "*************");
+							System.out.println(accStatus + " 상태 / 레이어 *노출* 프론트 페이지 주소 : " + pageURL[i] + " index : " + ckPageNum + "*************");
 							close();
 						}
 					} else if (ckPageNum == 0 || ckPageNum <= 147){ // 통계 페이지 레이어 노출 확인, 레이어 미노출이면 Fail
+						sleep(1000);
 						js("ace.alert($('h3').text());");
+						sleep(1000);
 						String layerLoadCheck = $$("p").last().text();
 						if(layerLoadCheck.equals("에이스카운터 주요기능개인정보 보호를 위한 비밀번호 변경 안내에이스카운터 비밀번호 변경")) {
-							System.out.println(accStatus + " 상태 / 레이어 *노출* 통계 페이지 주소 : " + pageURL[i]);
+							System.out.println(accStatus + " 상태 / 레이어 *노출* 통계 페이지 주소 : " + pageURL[i] + " index : " + ckPageNum);
 						} else {
-							System.out.println(accStatus + " 상태 / 레이어 *미노출* 통계 페이지 주소 : " + pageURL[i] + "*************");
+							System.out.println(accStatus + " 상태 / 레이어 *미노출* 통계 페이지 주소 : " + pageURL[i] + " index : " + ckPageNum + "*************");
 							close();
 						}
-					} else if (ckPageNum != 0 || ckPageNum <= 229) {// 도움말 페이지 레이어 노출 확인, 레이어 노출되면 Fail
+					} else if (ckPageNum != 0 && ckPageNum <= 229) {// 도움말 페이지 레이어 노출 확인, 레이어 노출되면 Fail
+						sleep(1000);
 						js("ace.alert($('h3').text());");
+						sleep(1000);
 						String layerLoadCheck = $$("p").last().text();
 						if(!layerLoadCheck.equals("에이스카운터 주요기능개인정보 보호를 위한 비밀번호 변경 안내에이스카운터 비밀번호 변경")) {
-							System.out.println(accStatus + " 상태 / 레이어 *미노출* 도움말 페이지 주소 : " + pageURL[i]);
+							System.out.println(accStatus + " 상태 / 레이어 *미노출* 도움말 페이지 주소 : " + pageURL[i] + " index : " + ckPageNum);
 						} else {
-							System.out.println(accStatus + " 상태 / 레이어 *노출* 도움말 페이지 주소 : " + pageURL[i] + "*************");
+							System.out.println(accStatus + " 상태 / 레이어 *노출* 도움말 페이지 주소 : " + pageURL[i] + " index : " + ckPageNum + "*************");
 							close();
 						}
 					}
 				}	
 			}
 		}
+		System.out.println("페이지 접근 시 " + accStatus + " 상태의 레이어 노출 여부 모두 확인");
 	}
   	
   	//@Test(priority = 0)
