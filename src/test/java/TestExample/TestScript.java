@@ -1,9 +1,11 @@
 package TestExample; //프로젝트QA할때 간편한 테스트를 자동화하기위해 사용하는 파일
 
 import java.io.IOException;
+import java.lang.reflect.Array;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
@@ -196,7 +198,7 @@ public class TestScript {
   		}
 	}
   	
-	@Test(priority = 0)
+	//@Test(priority = 0)
 	public void 비밀번호정기변경_레이어노출확인() {
 		String[] pageURL = new String[229];
 		pageURL[0]	=	"	 /common/front  	"	;
@@ -806,6 +808,96 @@ public class TestScript {
 			js("window.scroll(0,0);");
 		}
 	}
+	
+	//@Test(priority = 0)
+	public void 트라이얼정책변경_테스트계정() {
+		String ID[] = new String[60];
+		ID[0] = ("	ap1023094520	");
+		ID[1] = ("	ap1029094518	");
+		ID[2] = ("	ap1025024616	");
+		ID[3] = ("	ap1031024517	");
+		ID[4] = ("	ap1019024516	");
+		ID[5] = ("	ap1024104853	");
+		ID[6] = ("	ap1030094518	");
+		ID[7] = ("	ap1018094518	");
+		ID[8] = ("	ap1022024518	");
+		ID[9] = ("	ap1026024517	");
+		ID[10] = ("	ap1025094516	");
+		ID[11] = ("	ap1031094517	");
+		ID[12] = ("	ap1019094517	");
+		ID[13] = ("	ap1023024518	");
+		ID[14] = ("	ap1029024617	");
+		ID[15] = ("	ap1026094517	");
+		ID[16] = ("	ap1022094523	");
+		ID[17] = ("	ap1024024618	");
+		ID[18] = ("	ap1030024518	");
+		ID[19] = ("	ap1018024518	");
+		ID[20] = ("	ap1011024520	");
+		ID[21] = ("	ap1004024549	");
+		ID[22] = ("	ap1016094611	");
+		ID[23] = ("	ap1002024551	");
+		ID[24] = ("	ap1010094521	");
+		ID[25] = ("	ap1012024520	");
+		ID[26] = ("	ap1005024615	");
+		ID[27] = ("	ap1004094548	");
+		ID[28] = ("	ap1011094522	");
+		ID[29] = ("	ap1017024518	");
+		ID[30] = ("	ap1015024612	");
+		ID[31] = ("	ap1002094552	");
+		ID[32] = ("	ap1008024611	");
+		ID[33] = ("	ap1012094519	");
+		ID[34] = ("	ap1005094622	");
+		ID[35] = ("	ap1004085045	");
+		ID[36] = ("	ap1010024522	");
+		ID[37] = ("	ap1017094519	");
+		ID[38] = ("	ap1015094611	");
+		ID[39] = ("	ap1008094612	");
+		ID[40] = ("	ap1108094519	");
+		ID[41] = ("	ap1114094519	");
+		ID[42] = ("	ap1120094521	");
+		ID[43] = ("	ap1106024517	");
+		ID[44] = ("	ap1112024520	");
+		ID[45] = ("	ap1109094518	");
+		ID[46] = ("	ap1115094518	");
+		ID[47] = ("	ap1107024518	");
+		ID[48] = ("	ap1113024518	");
+		ID[49] = ("	ap1112094524	");
+		ID[50] = ("	ap1119094519	");
+		ID[51] = ("	ap1106094518	");
+		ID[52] = ("	ap1108024519	");
+		ID[53] = ("	ap1114024518	");
+		ID[54] = ("	ap1120024517	");
+		ID[55] = ("	ap1107094518	");
+		ID[56] = ("	ap1113094520	");
+		ID[57] = ("	ap1109024618	");
+		ID[58] = ("	ap1115024618	");
+		ID[59] = ("	ap1105024517	");
+		
+		for(int i=0;i<=59;i++){
+			open("https://new.acecounter.com/common/front");
+			sleep(1500);
+			$("#uid", 0).setValue(ID[i].trim());
+			$("#upw", 0).setValue("qordlf!@34");
+			$(".btn_login").click();
+			sleep(1500);
+			open("https://new.acecounter.com/manage/my_member_modify");
+			$("#pwd").waitUntil(visible, 10000);
+			$("#pwd").setValue("qordlf!@34");
+			$("#btn-ok").click();
+			sleep(1500);
+			$("label", 8).scrollTo();
+			$("label", 8).click();
+			$("label", 9).click();
+			$("label", 10).click();
+			$(".w200", 1).click();
+			System.out.println(ID[i].trim() + " 계정 메일 수신 변경");
+			sleep(1500);
+			open("https://new.acecounter.com/common/front");
+			$(".btn_logout").click();
+			$(".btn_logout").waitUntil(hidden, 10000);
+			sleep(1500);
+		}
+  	}
 	
 	@AfterClass
 	public void afterTest() {

@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-11-16T06:15:43Z" name="Suite" finished-at="2018-11-16T06:31:32Z" duration-ms="948926">
+  <suite started-at="2018-11-28T01:52:44Z" name="Suite" finished-at="2018-11-28T01:58:34Z" duration-ms="349947">
     <groups>
     </groups>
-    <test started-at="2018-11-16T06:15:43Z" name="Test" finished-at="2018-11-16T06:31:32Z" duration-ms="948926">
-      <class name="TestExample.TestScript">
-        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:TestExample.TestScript@7c7a06ec]" started-at="2018-11-16T15:15:43Z" name="beforeTest" finished-at="2018-11-16T15:15:49Z" duration-ms="6430" status="PASS">
+    <test started-at="2018-11-28T01:52:44Z" name="Test" finished-at="2018-11-28T01:58:34Z" duration-ms="349947">
+      <class name="TestExample.BlogTest">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:TestExample.BlogTest@75d4a5c2]" started-at="2018-11-28T10:52:44Z" name="beforeTest" finished-at="2018-11-28T10:52:51Z" duration-ms="7167" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="비밀번호정기변경_레이어노출확인()[pri:0, instance:TestExample.TestScript@7c7a06ec]" started-at="2018-11-16T15:15:49Z" name="비밀번호정기변경_레이어노출확인" finished-at="2018-11-16T15:31:31Z" duration-ms="941605" status="PASS">
+        <test-method signature="도메인변경인덱스정보업데이트()[pri:0, instance:TestExample.BlogTest@75d4a5c2]" started-at="2018-11-28T10:52:51Z" name="도메인변경인덱스정보업데이트" finished-at="2018-11-28T10:58:33Z" duration-ms="342195" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- 비밀번호정기변경_레이어노출확인 -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:TestExample.TestScript@7c7a06ec]" started-at="2018-11-16T15:31:31Z" name="afterTest" finished-at="2018-11-16T15:31:32Z" duration-ms="884" status="PASS">
+        </test-method> <!-- 도메인변경인덱스정보업데이트 -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:TestExample.BlogTest@75d4a5c2]" started-at="2018-11-28T10:58:33Z" name="afterTest" finished-at="2018-11-28T10:58:34Z" duration-ms="572" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- TestExample.TestScript -->
+      </class> <!-- TestExample.BlogTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

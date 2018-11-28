@@ -2,6 +2,7 @@ package TestExample;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.Random;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
@@ -234,6 +235,77 @@ public class BlogTest {
 		}
 	}
 	@Test(priority = 0)
+	public void 도메인변경인덱스정보업데이트() {
+		open("http://apzz0928.blogspot.com");
+		for(int x=1;x<=5;x++) {
+			for(int i=1;i<=42;i++) {
+				$(".sub" + i).click();
+				System.out.println("클릭한 메뉴는 sub" + i + " 입니다.");
+				if(i == 36) {
+					open("http://apzz0928.blogspot.com");
+				}
+				sleep(800);
+			}
+			System.out.println("전체 메뉴를 총 " + x + "번 클릭하였습니다.");			
+		}
+	}
+	//@Test(priority = 0)
+	public void blog_ac1_시나리오_마케팅() {
+		for(int i=0;i<=9;i++) {
+			String URL1 = "http://apzz0928.blogspot.com";
+			String URL2 = "http://apzz0928.egloos.com";
+			open(URL1 + "/search/label/marketing-normal?nac_md=normal_mkt&nac_cpi=28&nac_sm=marketing-normal");
+			open(URL1 + "/search/label/marketing-naverBrand?nac_md=naver_br&nac_cpi=29&nac_kw=marketing-naverbrand");
+			open(URL1 + "/search/label/marketing-daumBrand?nac_md=daum_br&nac_cpi=31&nac_kw=marketing-daumbrand");
+			open(URL1 + "/search/label/marketing-kakaoTalk?nac_md=kakao_ta&nac_cpi=32&nac_sm=marketing-kakaotalk");
+			open(URL1 + "/search/label/marketing-google?nac_md=google_ad&nac_cpi=33&nac_kw=marketing-google");
+			open(URL1 + "/search/label/banner-inner?src=text&kw=000001");
+			open(URL1 + "/?src=email&kw=000002");
+			open(URL1 + "/?src=viral&kw=000003");
+			open(URL1 + "/?src=qrcode&kw=000004");
+			open(URL1 + "/?src=netpia&kw=000005");
+			$("#ac1_mkt-6").click();
+			System.out.println("블로거_마케팅 " + (i+1) + " 번째");
+			open(URL2 + "/?src=text&kw=000001");
+			open(URL2 + "/?src=email&kw=000002");
+			open(URL2 + "/?src=viral&kw=000003");
+			open(URL2 + "/?src=qrcode&kw=000004");
+			open(URL2 + "/?src=netpia&kw=000005");
+			open(URL2 + "/?src=text&amp;kw=000001");
+			open(URL2 + "/?src=email&amp;kw=000002");
+			open(URL2 + "/?src=viral&amp;kw=000003");
+			open(URL2 + "/?src=qrcode&amp;kw=000004");
+			open(URL2 + "/?src=netpia&amp;kw=000005");
+			$("#ac1_mkt-6").click();
+			System.out.println("이글루스_마케팅 " + (i+1) + " 번째");
+			open(URL1 + "/search/label/change-order");
+			open(URL1 + "/search/label/change-signIn");
+			open(URL1 + "/search/label/change-booking");
+			open(URL1 + "/search/label/change-request");
+			open(URL1 + "/search/label/change-step-1.3");
+			open(URL1 + "/search/label/change-step-2.0");
+			open(URL1 + "/search/label/인코딩-주문");
+			System.out.println("블로거_전환 " + (i+1) + " 번째");
+			open(URL2 + "/?src=text&kw=000001");
+			open(URL2 + "/?src=email&kw=000002");
+			open(URL2 + "/?src=viral&kw=000003");
+			open(URL2 + "/?src=qrcode&kw=000004");
+			open(URL2 + "/?src=netpia&kw=000005");
+			System.out.println("이글루스_전환 " + (i+1) + " 번째");
+		}
+	}
+	//@Test(priority = 0)
+	public void blog_랜덤페이지방문() {
+		String URL1 = "http://apzz0928.blogspot.com";
+		Random random = new Random();
+		open(URL1);
+		for(int i=0;i<=9;i++) {
+			/*$(".sub" + random.nextInt(40) + 1).click();*/		
+			System.out.println(random.nextInt(40) + 1);
+		}
+
+	}
+	//@Test(priority = 0)
 	public void blogspot_전환_URL설정() {
 		for(int i=0;i<=90;i++) {
 			open("http://apzz0928.blogspot.com/search/label/Category1");
@@ -263,7 +335,7 @@ public class BlogTest {
 			System.out.println("blogspot_전환_URL설정 " + (i+1) + " 번째");
 		}
 	}
-	@Test(priority = 1)
+	//@Test(priority = 1)
 	public void egloos_전환_URL설정() {
 		for(int i=0;i<=500;i++) {
 			open("http://apzz0928.egloos.com");

@@ -4,8 +4,8 @@
   <test thread-count="5" name="Test">
   <parameter name="browser" value="firefox" />
     <classes>
-      <!-- <class name="TestExample.BlogTest"/> -->
-      <class name="TestExample.TestScript"/>
+      <class name="TestExample.BlogTest"/>
+      <!-- <class name="TestExample.TestScript"/> -->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
