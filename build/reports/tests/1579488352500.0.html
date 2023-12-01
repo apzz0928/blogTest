@@ -1,0 +1,670 @@
+<html lang="ko"><head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="csrf-token" content="Gs4sDBFfL6vSO8sgYjvv71bVhNNrxmWCjoPmBx9y">
+
+	<title>Dighty Campaign Manageri - 영역</title>
+	<link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="/css/common.css">
+	<link rel="stylesheet" type="text/css" href="/css/layout.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap-datepicker.standalone.css">
+    <link rel="stylesheet" type="text/css" href="/css/ace.dual-calendar.css">
+	<link rel="stylesheet" type="text/css" href="/css/themes/default.css">
+	<link rel="stylesheet" type="text/css" href="/css/alertify.css">
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap-popover.css">
+        
+    <script typ="text/javascript">
+        var client = "파트너";
+        var campaign = "캠페인";
+    </script>
+
+    <script src="/js/jquery-1.11.3.js"></script>
+	<script src="/js/jquery-ui.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+    <script src="/js/bootstrap-tooltip.js"></script>
+    <script src="/js/bootstrap-toggle.min.js"></script>
+    <script src="/js/ace.tools.js"></script>
+    <script src="/js/common.js"></script>
+    <script src="/js/moment.min.js"></script>
+    <script src="/js/highcharts.js"></script>
+    <script src="/js/no-data-to-display.js"></script>
+    <script src="/js/alertify.js"></script>
+    <script src="/js/josa.js"></script>
+    <script src="/js/alert.js"></script>
+    <script src="/js/bootstrap-popover.js"></script>
+    <script src="/js/bootstrap-modal.js"></script>
+</head>
+
+<body>
+<div class="wrap">
+    <div class="main_top_wrap" style="display: none;">
+        <div class="inner">
+            <span class="inner_txt">Dighty 서비스는 Chrome 최신 브라우저에 최적화 되어있습니다.</span>
+            <button class="btn_line_white" onclick="location.href='https://www.google.com/intl/ko/chrome/'">Chrome 다운로드</button>
+        </div>
+        <a href="javascript:closeWrap();" class="btn_close"><img src="/img/top_banner_close.png" style="vertical-align:top"></a>
+    </div>
+
+	<!-- [D] HEADER -->
+        <header id="header" class="dighty_header">
+            <h1 class="dighty_logo">
+                <a href="/" class="dighty_logo_link">Dighty Campaign Manager</a>
+                <a href="/" class="dighty_brand"><img src="/img/ace_cdp_cm.png" style="vertical-align:top"></a>
+            </h1>
+
+            <div class="cm_family" id="brand_layer">
+                <a href="/" class="tit"><img src="/img/cm.png"><span class="ico_arr">목록 열기 버튼</span></a>
+                <ul class="cm_lst_family">
+                    <li><a href="https://am.dighty.com" target="_blank"><img src="/img/am.png"></a></li>
+                </ul>
+            </div>
+            <div class="cm_info">
+                <a href="#" class="info_id_link"><strong>amzsoft </strong>님</a>
+                <a href="/auth/logout"><button type="submit" class="btn_logout"><span>Logout</span></button></a>
+            </div>
+        </header>
+        <!-- //[D] HEADER -->	<!-- container -->
+	<div id="container" class="bg-middle">
+		<!-- [D] NAV -->
+        <nav class="dighty_nav">
+            <div class="dighty_nav_inner" id="accordian" style="min-height: 600px; height: 953px;">
+                <ul class="nav">
+		                                <li class="nav_item ">
+                        <a href="/dashboard" class="nav_link"><span class="ico_nav_ico1"></span>대시보드</a>
+                        <ul class="nav_sub">
+			                                            <li class="nav_sub_item "><a href="/dashboard" class="nav_sub_link">성과 분석</a></li>
+			                                            <li class="nav_sub_item "><a href="/status/list" class="nav_sub_link">집행 현황</a></li>
+			                                        </ul>
+                    </li>
+		                                <li class="nav_item ">
+                        <a href="/campaign/list" class="nav_link"><span class="ico_nav_ico2"></span>배너 관리</a>
+                        <ul class="nav_sub">
+			                                            <li class="nav_sub_item "><a href="/campaign/list" class="nav_sub_link">캠페인</a></li>
+			                                            <li class="nav_sub_item "><a href="/banner/list" class="nav_sub_link">배너</a></li>
+			                                        </ul>
+                    </li>
+		                                <li class="nav_item  is_selected">
+                        <a href="/site/list" class="nav_link"><span class="ico_nav_ico3"></span>영역 관리</a>
+                        <ul class="nav_sub">
+			                                            <li class="nav_sub_item "><a href="/site/list" class="nav_sub_link">사이트</a></li>
+			                                            <li class="nav_sub_item  is_selected "><a href="/zone/list" class="nav_sub_link">영역</a></li>
+			                                        </ul>
+                    </li>
+		                                <li class="nav_item ">
+                        <a href="/segment/list" class="nav_link"><span class="ico_nav_ico4"></span>세그먼트 관리</a>
+                        <ul class="nav_sub">
+			                                            <li class="nav_sub_item "><a href="/segment/list" class="nav_sub_link">세그먼트 전송내역</a></li>
+			                                        </ul>
+                    </li>
+		                                
+                </ul>
+            </div>
+            <div class="nav_banner">
+                <ul>
+                    <li><a href="" target="_blank"><img src="/img/banner1.png"></a></li>
+                    <li><a href="" target="_blank"><img src="/img/banner2.png"></a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- //[D] NAV -->
+		<!-- content -->
+		<main id="content" class="content_wrap">
+		<section class="content_main">
+		<div class="bg-middle content content_inner">
+			<h2 class="h_tit">영역<a href="https://dighty.com/help/cm/3_3" target="_blank" class="icon_guide"><i><span class="blind">도움말</span></i></a></h2>
+
+
+
+<div class="land land_bg1 land_mt1">
+    <ul class="form_inline">
+	<li class="field">
+		<div class="field_inner">
+			<span class="inp_lable lable_wid4">사이트 선택</span>
+				<div class="select pad3t">
+                    <!--[D] 셀렉트 오픈 시 .is_opened 클래스 추가 -->
+                                        <button type="button" class="btn btn_select select_wid8 ">
+						egloos( http://apzz0928.egloos.com/ )
+                        <span class="sp">목록 열기</span>
+                    </button>
+                    <ul class="select_option">
+                                            <li class="option_item">
+                            <a href="#" title="다이티 캠페인매니저 (https://rcm.dighty.com)" onclick="change_options('affiliateid','18')" class="option_link">
+							다이티 캠페인매니저 (https://rcm.dighty.com)
+							</a>
+                        </li>
+                                            <li class="option_item">
+                            <a href="#" title="일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구구 (http://www.ddd.ff.gg)" onclick="change_options('affiliateid','17')" class="option_link">
+							일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구구 (http://www.ddd.ff.gg)
+							</a>
+                        </li>
+                                            <li class="option_item">
+                            <a href="#" title="test1231233123 (http://cm.acecloud.co.kr/site/detail?agencyid=1)" onclick="change_options('affiliateid','13')" class="option_link">
+							test1231233123 (http://cm.acecloud.co.kr/site/detail?agencyid=1)
+							</a>
+                        </li>
+                                            <li class="option_item">
+                            <a href="#" title="일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십 (http://12341234.com)" onclick="change_options('affiliateid','12')" class="option_link">
+							일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십 (http://12341234.com)
+							</a>
+                        </li>
+                                            <li class="option_item">
+                            <a href="#" title="dfsdfsdfz (http://dsgfsdf.co.kr)" onclick="change_options('affiliateid','10')" class="option_link">
+							dfsdfsdfz (http://dsgfsdf.co.kr)
+							</a>
+                        </li>
+                                            <li class="option_item">
+                            <a href="#" title="tsettestset (http://etswetss.co.kr)" onclick="change_options('affiliateid','9')" class="option_link">
+							tsettestset (http://etswetss.co.kr)
+							</a>
+                        </li>
+                                            <li class="option_item">
+                            <a href="#" title="testtest (http://test.test.co)" onclick="change_options('affiliateid','8')" class="option_link">
+							testtest (http://test.test.co)
+							</a>
+                        </li>
+                                            <li class="option_item">
+                            <a href="#" title="SITEQWERTYSITEQWERTYSITEQWERTYSITEQWERTYSITEQWERTY (http://SITEQWERTYSITEQWERTYSITEQWERTYSITEQWERTYSITEQWERTYSITEQWERTYSITEQWERTYSITEQWERTYSITEQWERTYSITEQWERTY.com)" onclick="change_options('affiliateid','7')" class="option_link">
+							SITEQWERTYSITEQWERTYSITEQWERTYSITEQWERTYSITEQWERTY (http://SITEQWERTYSITEQWERTYSITEQWERTYSITEQWERTYSITEQWERTYSITEQWERTYSITEQWERTYSITEQWERTYSITEQWERTYSITEQWERTY.com)
+							</a>
+                        </li>
+                                            <li class="option_item">
+                            <a href="#" title="영역 0개 사이트 (http://zonezone.com)" onclick="change_options('affiliateid','6')" class="option_link">
+							영역 0개 사이트 (http://zonezone.com)
+							</a>
+                        </li>
+                                            <li class="option_item">
+                            <a href="#" title="egloos (http://apzz0928.egloos.com/)" onclick="change_options('affiliateid','4')" class="option_link">
+							egloos (http://apzz0928.egloos.com/)
+							</a>
+                        </li>
+                                            <li class="option_item">
+                            <a href="#" title="blogspot (http://apzz0928.blogspot.com/)" onclick="change_options('affiliateid','3')" class="option_link">
+							blogspot (http://apzz0928.blogspot.com/)
+							</a>
+                        </li>
+                                            <li class="option_item">
+                            <a href="#" title="다이티 기본 배너 나오는 사이트 (http://www.test.co.kr)" onclick="change_options('affiliateid','2')" class="option_link">
+							다이티 기본 배너 나오는 사이트 (http://www.test.co.kr)
+							</a>
+                        </li>
+                                            <li class="option_item">
+                            <a href="#" title="test (http://alpha-rcm.dighty.com/site/detail?agencyid=1)" onclick="change_options('affiliateid','1')" class="option_link">
+							test (http://alpha-rcm.dighty.com/site/detail?agencyid=1)
+							</a>
+                        </li>
+                                        </ul>
+                    				</div>   
+		</div>
+    </li>
+    </ul>
+</div>
+
+<input type="hidden" name="pagetype" value="existing">
+<input type="hidden" name="offset" value="10">
+<input type="hidden" name="affiliateid" value="4">
+<input type="hidden" name="querytype" value="">
+
+
+<div class="land">
+    <div class="tbl_t_area">
+	<div class="f_left w_at">
+            <div class="btn_area mg3">
+                <button type="button" class="btn btn_lg btn_point btn_wid1" onclick="check_site();">추가</button>
+                                <button type="button" id="delbtn" class="btn btn_lg btn_disable btn_wid1" onclick="delete_precheck(ar_415);" style="cursor: default;">삭제</button>
+                            </div>
+	</div>
+        <div class="f_right">
+            <div class="select">
+				<button type="button" class="btn btn_select select_wid7">
+													등록리스트
+												<span class="sp">목록 열기</span></button>
+					<ul class="select_option">
+						<li class="option_item"><a href="#" onclick="change_options('pagetype','existing')" class="option_link">등록리스트</a></li>
+						<li class="option_item"><a href="#" onclick="change_options('pagetype','deleted')" class="option_link">삭제리스트</a></li>
+					</ul> 
+            </div>
+            <div class="select select_ml1">
+			<button type="button" class="btn btn_select select_wid7" id="querytype">
+                                            영역명
+                                        <span class="sp">목록 열기</span></button>
+                <ul class="select_option">
+                    <li class="option_item"><a href="#" onclick="change_type('querytype','name')" class="option_link">영역명</a></li>
+                    <li class="option_item"><a href="#" onclick="change_type('querytype','size')" class="option_link">영역 사이즈</a></li>
+				</ul>   
+            </div>
+	    <div class="select select_ml1">
+			<span class="inp_txt inp_txt_wid16">
+        	<input type="search" title="검색어" name="keyword" id="keyword" class="keyword inp_serch" value="">
+			<span class="ico-serch" name="search" onclick="validate();"></span></span>            
+			
+	    </div>
+	</div>
+    </div>
+</div>
+
+<div class="tbl_scroll_wrap tbl_scroll_wrap_mt3">
+    <form action="/zone/delete" name="delete_form" method="post">
+    	<input type="hidden" name="_token" value="Gs4sDBFfL6vSO8sgYjvv71bVhNNrxmWCjoPmBx9y">
+    	<table class="tbl_board">
+	        <caption>영역 관리</caption>
+	        				<colgroup>
+					<col width="75px">
+					<col width="75px">
+					<col width="*">
+					<col width="*">
+					<col width="220px">
+					<col width="220px">
+					<col width="150px">
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="col">
+						<span id="allcheck" class="checkbox " onclick="check_all(this);">
+						<span class="ico ico_check"><input type="checkbox" name="delete_all" id="chk_sel"></span></span>
+						</th>
+						<th scope="col">NO</th>
+						<th scope="col"><div id="zonename" onclick="sortToggle(this)" class="sortable all">영역명</div></th>
+						<th scope="col"><div id="description" onclick="sortToggle(this)" class="sortable all">영역 URL</div></th>
+						<th scope="col"><div id="width" onclick="sortToggle(this)" class="sortable all">영역 사이즈</div></th>
+						<th scope="col"><div id="updated" onclick="sortToggle(this)" class="sortable down">업데이트 일시</div></th>
+						<input type="hidden" name="sortval" value="">
+						<th scope="col">태그발급</th>
+					</tr>
+				</thead>
+	            <tbody>
+		            		                <tr>
+		                    <td>
+								<!--input id="checkBox" type="checkbox" name="delete_list[]" value="808" onclick="check(this);"-->
+								<span class="checkbox" onclick="check(this);"><span class="ico ico_check"><input id="checkBox808" type="checkbox" name="delete_list[]" value="808"></span></span>
+							</td>
+		                    <td>757</td>
+		                    <td class="td_left">
+					    <a href="detail?agencyid=1&amp;affiliateid=4&amp;zoneid=808">
+							<span class="tooltip_pop" id="808">test 749</span>
+							<div class="tooltip 808"><span>test 749</span></div>
+							</a></td>
+														<td class="td_center">
+								-
+														</td>
+		                    <td>170*60</td>
+		                    <td>2020-01-20 11:45:46</td>
+							<td>
+								<a href="invocation?zoneid=808"><button type="button" class="btn_nol"><img src="/img/icn_download.png"></button></a>
+							</td>
+		                </tr>
+		            		                <tr>
+		                    <td>
+								<!--input id="checkBox" type="checkbox" name="delete_list[]" value="807" onclick="check(this);"-->
+								<span class="checkbox" onclick="check(this);"><span class="ico ico_check"><input id="checkBox807" type="checkbox" name="delete_list[]" value="807"></span></span>
+							</td>
+		                    <td>756</td>
+		                    <td class="td_left">
+					    <a href="detail?agencyid=1&amp;affiliateid=4&amp;zoneid=807">
+							<span class="tooltip_pop" id="807">test 748</span>
+							<div class="tooltip 807"><span>test 748</span></div>
+							</a></td>
+														<td class="td_center">
+								-
+														</td>
+		                    <td>170*60</td>
+		                    <td>2020-01-20 11:45:06</td>
+							<td>
+								<a href="invocation?zoneid=807"><button type="button" class="btn_nol"><img src="/img/icn_download.png"></button></a>
+							</td>
+		                </tr>
+		            		                <tr>
+		                    <td>
+								<!--input id="checkBox" type="checkbox" name="delete_list[]" value="806" onclick="check(this);"-->
+								<span class="checkbox" onclick="check(this);"><span class="ico ico_check"><input id="checkBox806" type="checkbox" name="delete_list[]" value="806"></span></span>
+							</td>
+		                    <td>755</td>
+		                    <td class="td_left">
+					    <a href="detail?agencyid=1&amp;affiliateid=4&amp;zoneid=806">
+							<span class="tooltip_pop" id="806">test 747</span>
+							<div class="tooltip 806"><span>test 747</span></div>
+							</a></td>
+														<td class="td_center">
+								-
+														</td>
+		                    <td>170*60</td>
+		                    <td>2020-01-20 11:45:05</td>
+							<td>
+								<a href="invocation?zoneid=806"><button type="button" class="btn_nol"><img src="/img/icn_download.png"></button></a>
+							</td>
+		                </tr>
+		            		                <tr>
+		                    <td>
+								<!--input id="checkBox" type="checkbox" name="delete_list[]" value="805" onclick="check(this);"-->
+								<span class="checkbox" onclick="check(this);"><span class="ico ico_check"><input id="checkBox805" type="checkbox" name="delete_list[]" value="805"></span></span>
+							</td>
+		                    <td>754</td>
+		                    <td class="td_left">
+					    <a href="detail?agencyid=1&amp;affiliateid=4&amp;zoneid=805">
+							<span class="tooltip_pop" id="805">test 746</span>
+							<div class="tooltip 805"><span>test 746</span></div>
+							</a></td>
+														<td class="td_center">
+								-
+														</td>
+		                    <td>170*60</td>
+		                    <td>2020-01-20 11:45:04</td>
+							<td>
+								<a href="invocation?zoneid=805"><button type="button" class="btn_nol"><img src="/img/icn_download.png"></button></a>
+							</td>
+		                </tr>
+		            		                <tr>
+		                    <td>
+								<!--input id="checkBox" type="checkbox" name="delete_list[]" value="804" onclick="check(this);"-->
+								<span class="checkbox" onclick="check(this);"><span class="ico ico_check"><input id="checkBox804" type="checkbox" name="delete_list[]" value="804"></span></span>
+							</td>
+		                    <td>753</td>
+		                    <td class="td_left">
+					    <a href="detail?agencyid=1&amp;affiliateid=4&amp;zoneid=804">
+							<span class="tooltip_pop" id="804">test 745</span>
+							<div class="tooltip 804"><span>test 745</span></div>
+							</a></td>
+														<td class="td_center">
+								-
+														</td>
+		                    <td>170*60</td>
+		                    <td>2020-01-20 11:45:03</td>
+							<td>
+								<a href="invocation?zoneid=804"><button type="button" class="btn_nol"><img src="/img/icn_download.png"></button></a>
+							</td>
+		                </tr>
+		            		                <tr>
+		                    <td>
+								<!--input id="checkBox" type="checkbox" name="delete_list[]" value="803" onclick="check(this);"-->
+								<span class="checkbox" onclick="check(this);"><span class="ico ico_check"><input id="checkBox803" type="checkbox" name="delete_list[]" value="803"></span></span>
+							</td>
+		                    <td>752</td>
+		                    <td class="td_left">
+					    <a href="detail?agencyid=1&amp;affiliateid=4&amp;zoneid=803">
+							<span class="tooltip_pop" id="803">test 744</span>
+							<div class="tooltip 803"><span>test 744</span></div>
+							</a></td>
+														<td class="td_center">
+								-
+														</td>
+		                    <td>170*60</td>
+		                    <td>2020-01-20 11:45:02</td>
+							<td>
+								<a href="invocation?zoneid=803"><button type="button" class="btn_nol"><img src="/img/icn_download.png"></button></a>
+							</td>
+		                </tr>
+		            		                <tr>
+		                    <td>
+								<!--input id="checkBox" type="checkbox" name="delete_list[]" value="802" onclick="check(this);"-->
+								<span class="checkbox" onclick="check(this);"><span class="ico ico_check"><input id="checkBox802" type="checkbox" name="delete_list[]" value="802"></span></span>
+							</td>
+		                    <td>751</td>
+		                    <td class="td_left">
+					    <a href="detail?agencyid=1&amp;affiliateid=4&amp;zoneid=802">
+							<span class="tooltip_pop" id="802">test 743</span>
+							<div class="tooltip 802"><span>test 743</span></div>
+							</a></td>
+														<td class="td_center">
+								-
+														</td>
+		                    <td>170*60</td>
+		                    <td>2020-01-20 11:45:01</td>
+							<td>
+								<a href="invocation?zoneid=802"><button type="button" class="btn_nol"><img src="/img/icn_download.png"></button></a>
+							</td>
+		                </tr>
+		            		                <tr>
+		                    <td>
+								<!--input id="checkBox" type="checkbox" name="delete_list[]" value="801" onclick="check(this);"-->
+								<span class="checkbox" onclick="check(this);"><span class="ico ico_check"><input id="checkBox801" type="checkbox" name="delete_list[]" value="801"></span></span>
+							</td>
+		                    <td>750</td>
+		                    <td class="td_left">
+					    <a href="detail?agencyid=1&amp;affiliateid=4&amp;zoneid=801">
+							<span class="tooltip_pop" id="801">test 742</span>
+							<div class="tooltip 801"><span>test 742</span></div>
+							</a></td>
+														<td class="td_center">
+								-
+														</td>
+		                    <td>170*60</td>
+		                    <td>2020-01-20 11:45:00</td>
+							<td>
+								<a href="invocation?zoneid=801"><button type="button" class="btn_nol"><img src="/img/icn_download.png"></button></a>
+							</td>
+		                </tr>
+		            		                <tr>
+		                    <td>
+								<!--input id="checkBox" type="checkbox" name="delete_list[]" value="800" onclick="check(this);"-->
+								<span class="checkbox" onclick="check(this);"><span class="ico ico_check"><input id="checkBox800" type="checkbox" name="delete_list[]" value="800"></span></span>
+							</td>
+		                    <td>749</td>
+		                    <td class="td_left">
+					    <a href="detail?agencyid=1&amp;affiliateid=4&amp;zoneid=800">
+							<span class="tooltip_pop" id="800">test 741</span>
+							<div class="tooltip 800"><span>test 741</span></div>
+							</a></td>
+														<td class="td_center">
+								-
+														</td>
+		                    <td>170*60</td>
+		                    <td>2020-01-20 11:44:59</td>
+							<td>
+								<a href="invocation?zoneid=800"><button type="button" class="btn_nol"><img src="/img/icn_download.png"></button></a>
+							</td>
+		                </tr>
+		            		                <tr>
+		                    <td>
+								<!--input id="checkBox" type="checkbox" name="delete_list[]" value="799" onclick="check(this);"-->
+								<span class="checkbox" onclick="check(this);"><span class="ico ico_check"><input id="checkBox799" type="checkbox" name="delete_list[]" value="799"></span></span>
+							</td>
+		                    <td>748</td>
+		                    <td class="td_left">
+					    <a href="detail?agencyid=1&amp;affiliateid=4&amp;zoneid=799">
+							<span class="tooltip_pop" id="799">test 740</span>
+							<div class="tooltip 799"><span>test 740</span></div>
+							</a></td>
+														<td class="td_center">
+								-
+														</td>
+		                    <td>170*60</td>
+		                    <td>2020-01-20 11:44:58</td>
+							<td>
+								<a href="invocation?zoneid=799"><button type="button" class="btn_nol"><img src="/img/icn_download.png"></button></a>
+							</td>
+		                </tr>
+		            		            	            </tbody>
+                	</table>
+    </form>
+</div>
+
+<div class="land">
+    <div class="tbl_t_area h0">
+		<div class="btn_area ab fl">
+								<a href="invocation?affiliateid=4"><button type="button" class="btn btn_point_inline btn_wid7"><em class="ico">전체 태그 다운로드</em></button></a>
+					        </div>
+        <div class="view_opt f_right">
+			<div class="f_right">
+				<div class="select">
+					<button type="button" class="btn btn_select1 select_wid5 ">
+												10건씩 보기
+												<span class="sp">목록 열기</span></button>
+					<ul class="select_option_bottom">
+						<li class="option_item"><a href="#" onclick="change_options('offset','10')" class="option_link">10건씩 보기</a></li>
+						<li class="option_item"><a href="#" onclick="change_options('offset','20')" class="option_link">20건씩 보기</a></li>
+						<li class="option_item"><a href="#" onclick="change_options('offset','50')" class="option_link">50건씩 보기</a></li>
+						<li class="option_item"><a href="#" onclick="change_options('offset','100')" class="option_link">100건씩 보기</a></li>
+					</ul>            
+				</div>
+        </div>
+    </div>
+</div>
+
+<div class="paging">
+	<span class="paging_inner">
+	<a class="page page_first" href="http://alpha-rcm.dighty.com/zone/list?pagetype=existing&amp;offset=10&amp;agencyid=1&amp;affiliateid=4&amp;querytype=name&amp;page=1"><span class="blind">처음페이지</span></a>
+                    <a class="page page_prev" href=""><span class="blind">이전페이지</span></a>
+        
+        
+                    
+            
+            
+                                                                        <strong class="page">1<span class="blind">현재페이지</span></strong>
+                                                                                <a class="page" href="http://alpha-rcm.dighty.com/zone/list?pagetype=existing&amp;offset=10&amp;agencyid=1&amp;affiliateid=4&amp;querytype=name&amp;page=2">2</a>
+                                                                                <a class="page" href="http://alpha-rcm.dighty.com/zone/list?pagetype=existing&amp;offset=10&amp;agencyid=1&amp;affiliateid=4&amp;querytype=name&amp;page=3">3</a>
+                                                                                <a class="page" href="http://alpha-rcm.dighty.com/zone/list?pagetype=existing&amp;offset=10&amp;agencyid=1&amp;affiliateid=4&amp;querytype=name&amp;page=4">4</a>
+                                                                                <a class="page" href="http://alpha-rcm.dighty.com/zone/list?pagetype=existing&amp;offset=10&amp;agencyid=1&amp;affiliateid=4&amp;querytype=name&amp;page=5">5</a>
+                                                                                <a class="page" href="http://alpha-rcm.dighty.com/zone/list?pagetype=existing&amp;offset=10&amp;agencyid=1&amp;affiliateid=4&amp;querytype=name&amp;page=6">6</a>
+                                                                                <a class="page" href="http://alpha-rcm.dighty.com/zone/list?pagetype=existing&amp;offset=10&amp;agencyid=1&amp;affiliateid=4&amp;querytype=name&amp;page=7">7</a>
+                                                                                <a class="page" href="http://alpha-rcm.dighty.com/zone/list?pagetype=existing&amp;offset=10&amp;agencyid=1&amp;affiliateid=4&amp;querytype=name&amp;page=8">8</a>
+                                                                    
+                            <a class="page">...</a>
+            
+            
+                                
+            
+            
+                                                                        <a class="page" href="http://alpha-rcm.dighty.com/zone/list?pagetype=existing&amp;offset=10&amp;agencyid=1&amp;affiliateid=4&amp;querytype=name&amp;page=75">75</a>
+                                                                                <a class="page" href="http://alpha-rcm.dighty.com/zone/list?pagetype=existing&amp;offset=10&amp;agencyid=1&amp;affiliateid=4&amp;querytype=name&amp;page=76">76</a>
+                                                        
+        
+                    <a class="page page_next" href="http://alpha-rcm.dighty.com/zone/list?pagetype=existing&amp;offset=10&amp;agencyid=1&amp;affiliateid=4&amp;querytype=name&amp;page=2"><span class="blind">다음페이지</span></a>
+        	<a class="page page_last" href="http://alpha-rcm.dighty.com/zone/list?pagetype=existing&amp;offset=10&amp;agencyid=1&amp;affiliateid=4&amp;querytype=name&amp;page=76"><span class="blind">마지막페이지</span></a>
+
+    </span>
+</div>
+
+
+<script type="text/javascript">
+function change_type(a,b){
+	$('[name="'+a+'"]').val(b);
+	$('.btn_select').parent().removeClass('is_opened');
+	if(b=='size'){
+		$('#querytype').html('영역 사이즈 <span class="sp">목록 열기</span>');	
+	}else{
+		$('#querytype').html('영역명 <span class="sp">목록 열기</span>');
+	}
+}
+
+function check_site() {
+    if($('[name="affiliateid"]').val() == null || $('[name="affiliateid"]').val() == 0) {
+        show_alert('alert', ar_322);
+        return false;
+    } else {
+        insert();
+    }
+}
+
+function validate() {
+	if($('[name="querytype"]').val() == 'size' && $('[name="keyword"]').val() == '' ){
+		show_alert('error', ar_318);
+        return false;
+	}
+    if($('[name="querytype"]').val() == 'size' && $('[name="keyword"]').val() != '' ) {
+        regexp = /[\\*]/;
+        if(!regexp.test($('[name="keyword"]').val())) {
+            show_alert('error', ar_317);
+            return false;
+        }
+        var res = $('[name="keyword"]').val().split("*");
+        if(res[0] == '' || res[1] == '') {
+            show_alert('error', ar_318);
+            return false;
+        }
+        regexp = /^[0-9]+$/;
+        if(!regexp.test(res[0]) || !regexp.test(res[1])) {
+            show_alert('error', ar_319);
+            return false;
+        }
+    }
+
+    change_params();
+}
+
+$('[name="keyword"]').keyup(function(event) {
+    if (event.keyCode === 13) {
+        $('[name="search"]').click();
+    }
+});
+</script>
+		</div>
+		</div></section>
+		</main>
+		<!-- //content -->
+	
+	<div class="modal fade" id="customModal" tabindex="-1" aria-labelledby="customModalLabel" aria-hidden="true" data-keyboard="false">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <!--
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel"></h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" style="font-size:18px;">&times;</span></button>
+      </div>
+      -->
+
+      <div class="modal-body">
+      </div>
+
+
+      <div class="modal-footer">
+      </div>
+
+
+    </div>
+  </div>
+</div>
+	<!-- //container -->
+
+	<!-- [D] FOOTER -->
+        <footer class="dighty_footer">
+            <div class="copy_link">© NHN ACE Corp. All rights reserved. </div>
+            <ul class="coustom_lst">
+                <li class="coustom_item">고객지원센터 <span class="color-point">1544-5420</span></li>
+            </ul>
+        </footer>
+        <!-- //[D] FOOTER -->
+	</div>
+</div>
+
+<script>
+$(function() {
+    // am cm 선택 박스 기능
+    $(".dighty_brand").mouseover(function() {
+        $("#brand_layer").css("display", "block");
+    }).mouseout(function() {
+        $("#brand_layer").css("display", "none");
+    });
+    $("#brand_layer").mouseover(function() {
+        $("#brand_layer").css("display", "block");
+    }).mouseout(function() {
+        $("#brand_layer").css("display", "none");
+    });
+});
+
+// 크롬 이외 브라우저 배너 노출
+var userAgent = window.navigator.userAgent;
+var isChrome = userAgent.indexOf('Chrome');
+var isChromeMobile = userAgent.indexOf('CriOS');
+var isSamsungBrowser = userAgent.indexOf('SamsungBrowser');
+var isWindows = userAgent.indexOf('Windows NT');
+var isEdge = userAgent.indexOf('Edge');
+var isIE = userAgent.indexOf('Trident');
+var isWhale = userAgent.indexOf('Whale');
+
+if( (isChrome < 0 && isChromeMobile < 0) || ( isEdge > -1 ) || ( isWhale > -1 ) ) {
+    $('.main_top_wrap').css('display', 'block');
+    $('.dighty_header').css('top','36px');
+    $('.dighty_nav').css('top','116px');
+    $('.content_wrap').css('top','36px');
+}
+function closeWrap() {
+    $('.main_top_wrap').remove();
+    $('.dighty_header').css('top','0');
+    $('.dighty_nav').css('top','81px');
+    $('.content_wrap').css('top','0');
+}
+</script>
+
+
+
+
+<div class="alertify-notifier ajs-top ajs-center"></div></body></html>

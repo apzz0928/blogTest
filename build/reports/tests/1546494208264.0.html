@@ -1,0 +1,1345 @@
+<html lang="ko"><head>
+<title>에이스카운터 플러스 - 웹/앱 로그분석 플랫폼</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+<meta name="keywords" content="로그분석, 웹로그분석, 웹로그, 접속통계, 웹 로그분석, 웹 로그 분석, 방문자 분석, 사이트 분석, 카운터, 웹사이트 분석, 홈페이지 분석, counter, 광고 분석, CRM, VRM">
+<meta name="description" content="NHN ACE 운영, 방문자 통계, 앱분석 등 애널리틱스 리포트 제공">
+<meta property="og:type" content="website">
+<meta property="og:title" content="에이스카운터 플러스">
+<meta property="og:description" content="NHN ACE 운영, 방문자 통계, 앱분석 등 애널리틱스 리포트 제공">
+<meta property="og:image" content="[https://new.acecounter.com/assets/img/logo_header.png](https://new.acecounter.com/assets/img/logo_header.png)">
+<meta property="og:url" content="[https://new.acecounter.com](https://new.acecounter.com)">
+<meta name="author" content="ACE Counter+">
+<meta name="naver-site-verification" content="cbee7b491a7b4619234997a8b95e5294f13401dd"><!--modal popup css-->
+<link rel="stylesheet" type="text/css" href="/plugins/magnific/magnific-popup.css">
+
+<!--fontawsome-->
+<link rel="stylesheet" type="text/css" href="/assets/css/fontawesome/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--Material icons-->
+<link rel="stylesheet" type="text/css" href="/assets/css/material-icons/material-icons.css">
+<!--daterangepicker css-->
+<link rel="stylesheet" type="text/css" href="/plugins/daterange/daterangepicker.css">
+
+<!--basic css-->
+<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/responsive.css">
+	<!--form css-->
+<link rel="stylesheet" type="text/css" href="/assets/css/ace-forms.css">
+
+<!--basic css-->
+<link rel="stylesheet" type="text/css" href="/plugins/tagmanager/tagmanager.css">
+
+<!-- bootstrap table -->
+<link rel="stylesheet" type="text/css" href="/assets/bootstrap-table/src/bootstrap-table.css">
+
+<!-- jQuery -->
+<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script src="https://mrss.aceclick.co.kr/aceclick.js?rt=1546494202741"></script><script src="https://cr.acecounter.com/Web/AceCounter_AW.js?gc=AH1A41895171963&amp;py=1&amp;gd=gtp4&amp;gp=8080&amp;up=NaPm_Ncisy&amp;rd=1546494202741"></script><script src="https://atm.acecounter.com/ac.js?tid=100418AX-10-A&amp;hsn=new-admin.acecounter.com&amp;hrf=in&amp;dvp=0&amp;tgp=Login&amp;tn1=&amp;tn2=&amp;tn3=&amp;tw1=&amp;tw2=&amp;tw3=&amp;tw4=&amp;tw5=&amp;tw6=&amp;tw7=&amp;rnd=1546494202740&amp;py=0"></script><script src="/assets/js/jquery-1.11.1.min.js"></script>
+<script src="/assets/js/jquery_ui/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/front/js/jquery.validate.min.js"></script>
+
+<script src="/assets/js/ace.validate2.js"></script>
+
+<!-- bootstrap table -->
+<script src="/assets/bootstrap-table/src/bootstrap-table.js"></script>
+<script src="/assets/bootstrap-table/src/extensions/export/bootstrap-table-export.js"></script>
+<script src="/assets/bootstrap-table/src/extensions/export/FileSaver.min.js"></script>
+<script src="/assets/bootstrap-table/src/extensions/export/tableExport.min.js"></script>
+<script src="/assets/bootstrap-table/src/locale/bootstrap-table-ko-KR.js"></script>
+<script src="/assets/bootstrap-table/src/extensions/mobile/bootstrap-table-mobile.js"></script>
+
+<!-- modal popup js -->
+<script src="/plugins/magnific/jquery.magnific-popup.js"></script>
+
+<link rel="shortcut icon" href="/assets/img/favicon.ico">
+
+<!-- report down to pdf -->
+<script src="/assets/js/downtopdf/jspdf.min.js"></script>
+<script src="/assets/js/downtopdf/html2canvas.js"></script>
+<script src="/assets/js/downtopdf/addhtml.js"></script>
+
+<!-- feedback layer -->
+<link type="text/css" rel="stylesheet" href="/assets/css/feedback_style.css">
+<script src="/assets/js/feedback.js"></script>
+
+<style>
+	.label-br-danger { padding: 4px 8px;line-height: 1.5;font-size: 11px !important; }
+</style>
+<style type="text/css">.tooltip-inner.flexable {max-width: 100%;}</style><link type="text/css" rel="stylesheet" href="/assets/css/feedback_style.css"><style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style></head>
+<body class="ace-elements-page sb-l-o sb-r-c onload-check modal-open" style="min-height: 1017px; padding-right: 17px;">
+<div id="main">
+<!-- Start: Header -->
+<header class="navbar navbar-fixed-top">
+    <div class="navbar-branding hidden-xs hidden-sm">
+        <a class="navbar-brand" href="/">
+            <img src="/assets/img/logo/acecounter_bi_w.png" alt="acecounter">
+        </a>
+        <span id="toggle_sidemenu">
+          <span class="hidden-xs hidden-sm hidden-md hidden-lg">
+              <img src="/assets/img/sidebar_toggle.png" alt="" width="30px">
+          </span>
+          <span class="fa fa-bars hidden-xs hidden-sm hidden-md hidden-lg"></span>
+        </span>
+        <!--logo-small-->
+        <a class="navbar-brand-s" href="/" tabindex="-1">
+            <img src="/assets/img/logo/acecounter_bi_w_s.png" alt="acecounter" width="45px">
+        </a>
+    </div>
+
+    <!-- Mobile Home LOGO -->
+    <a class="mlogo mobile-version" href="#">
+        <img src="/assets/img/logo/acecounter_bi_w.png" alt="acecounter" width="135px">
+    </a>
+    <!-- End -->
+
+    <div class="navbar-middle">
+        <span id="toggle_sidemenu_l">
+          <span class="fa fa-bars"></span>
+        </span>
+    </div>
+
+    <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown" id="menu-top-services">
+            <a class="dropdown-toggle pc-version" data-toggle="dropdown" href="#" title="사이트선택" style=" margin-right:0; margin-left:auto;text-align:right">
+                <span class="label label-rounded-wide label-br-afe mr5">App Free</span><span class="ace-svc-name text-dark">apzz181130144518.com</span><span class="caret text-dark"></span>
+            </a>
+            <a class="dropdown-toggle mobile-version" data-toggle="dropdown" href="#" title="사이트선택">
+                <span class="fa fa-list-ul"></span>
+            </a>
+            <ul class="dropdown-menu list-group dropdown-persist nano nano-primary affix ie_scroll has-scrollbar" role="menu">
+                <!-- 레이어화살표표시 -->
+                <div id="menu-top-service-items" class="nano-content nano-content1" style="max-height: 713px; padding: 0px; margin-right: -17px;" tabindex="0"></div>
+                <div class="top_set_box">
+                	 <li class="list-group-item inner" style="padding: 5px 0 0 15px;">
+                        <a id="serviceListTopSettingA" href="/menu/sortingServices" data-toggle="tooltip" data-boundary="window" data-placement="top" data-html="true" title="" data-original-title="2개 이상의 서비스를 이용중일 경우 설정 가능합니다."><span class="material-icons mr5" style="font-size: 20px;"></span> <span class="txt">서비스 리스트 설정</span></a></li>
+                        </div>
+            <div class="nano-pane" style="display: none;"><div class="nano-slider" style="height: 20px; transform: translate(0px, 0px);"></div></div></ul>
+        </li>
+        <li class="hidden-xs hidden-sm">
+                <a href="/help/stats" title="본문도움말" target="_blank">
+                    <span class="material-icons" aria-hidden="true"></span>
+                </a>
+            </li>
+            <li class="dropdown hidden-xs hidden-sm">
+                <a class="dropdown-toggle fs22" data-toggle="dropdown" href="#" title="서비스관리">
+                    <span class="material-icons" aria-hidden="true"></span>
+                </a>
+                <ul class="dropdown-menu list-group dropdown-persist w130" role="menu">
+                    <li class="list-group-item">
+                        <a href="/common/frontIndex">서비스관리 메인</a>
+                    </li>
+                    <li class="list-group-item">
+                            <a href="/manage/script/scriptList">분석 스크립트</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="/manage/serviceInfo/addService">서비스 추가</a>
+                        </li>
+                    <li class="list-group-item">
+                        <a href="/manage/serviceInfo/editService">서비스 정보 수정</a>
+                    </li>
+                    <li class="list-group-item">
+                            <a href="/manage/serviceInfo/submanager">부관리자</a>
+                        </li>
+                    </ul>
+            </li>
+        <li class="dropdown hidden-xs hidden-sm">
+            <a class="dropdown-toggle fs22" href="#" data-toggle="dropdown" title="알림">
+                <span class="fa fa-user-o" aria-hidden="true"></span>
+                <span class="badge badge-hero badge-info">14</span>
+                </a>
+            <ul class="dropdown-menu list-group member dropdown-persist w150" role="menu">
+                <li class="list-group-item">
+                    <a href="/manage/my_member_modify">내정보</a>
+                </li>
+                <li class="list-group-item">
+                        <a href="/manage/charge/additionalCharge">추가요금
+                            </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="/manage/news/myAllimList">개인알림<span class="badge badge-hero-1 badge-default">10</span>
+                            </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="/manage/news/myNoticeList">서비스 공지<span class="badge badge-hero-1 badge-default">4</span>
+                            </a>
+                    </li>
+                <li class="dropdown-footer">
+                        <a class="btn-logout"><span class="fa fa-power-off mr5"></span>로그아웃</a>
+                    </li>
+                </ul>
+        </li>
+        <li class="dropdown mobile-version">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" title="사용자">
+                <span class="fa fa-user-o" aria-hidden="true"></span>
+            </a>
+            <ul class="dropdown-menu list-group member dropdown-persist w250" role="menu">
+                <li class="dropdown-header">
+                    <div class="clearfix">
+                        <div class="pull-left ml10">
+                            <a href="/manage/userInfoPwdCheck" class="btn btn-default btn-sm">
+                                <span class="fa fa-user mr10"></span>내정보</a>
+                        </div>
+                        <div class="pull-right mr10">
+                            <a class="btn btn-default btn-sm btn-logout">
+                                <span class="fa fa-sign-out mr10"></span>로그아웃</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <a href="/setting/appmarketing/">
+                        <span class="fa fa-sliders"></span>통계설정</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="/common/frontIndex">
+                        <span class="fa fa-users"></span>서비스관리 메인</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="/manage/script/scriptList">
+                        <span class="fa fa-keyboard-o"></span>분석 스크립트</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="/manage/serviceInfo/addService">
+                        <span class="fa fa-plus-square"></span>서비스 추가</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="/manage/serviceInfo/editService">
+                        <span class="fa fa-pencil-square-o"></span>서비스 정보 수정</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#" data-toggle="tooltip" data-placement="bottom" data-original-title="준비중입니다.">
+                        <span class="fa fa-user-plus"></span>부관리자
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="dropdown hidden-xs hidden-sm">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" title="언어선택">
+                <span class="material-icons" aria-hidden="true"></span>
+            </a>
+            <ul class="dropdown-menu pv5 animated animated-short flipInX" style="width:180px;" role="menu">
+                <li>
+                    <a href="?locale=ko">
+                        <div class="btn-group">
+                            <i class="fa fa-check text-primary-lights"></i>
+                            <span class="flag flag-kr mr10"></span>
+                        </div>
+                        KOREA</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <div class="btn-group" role="group">
+                            <i style="width:12px;height:13px;display:inline-block;"></i>
+                            <span class="flag flag-en mr10"></span>
+                        </div>
+                        (준비중)ENGLISH</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <div class="btn-group">
+                            <i style="width:12px;height:13px;display:inline-block;"></i>
+                            <span class="flag flag-jp mr10"></span>
+                        </div>
+                        (준비중)JAPAN</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <div class="btn-group">
+                            <i style="width:12px;height:13px;display:inline-block;"></i>
+                            <span class="flag flag-cn mr10"></span>
+                        </div>
+                        (준비중)CHINA</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <form name="popForm">
+        <input id="lang" name="lang" value="" type="hidden">
+    </form>
+</header>
+<!-- End: Header -->
+
+<!-- feedback layer -->
+<div class="wrap-embed-contact-form" style="z-index:10000">
+        <form class="embed-contact-form">
+            <div class="form-heading"><img src="/assets/img/feedback_title.png"></div>
+            <hr>
+            <div class="form-content">
+                <div class="form-sub-heading">서비스를 평가해주세요.</div>
+                <p class="star_rating">
+                    <a href="javascript:void(0);">★</a>
+                    <a href="javascript:void(0);">★</a>
+                    <a href="javascript:void(0);">★</a>
+                    <a href="javascript:void(0);">★</a>
+                    <a href="javascript:void(0);">★</a>
+                </p>
+                <label id="feed_validate_fail" style="z-index:10001; position:absolute; top:155px; padding:0; color:#f00; display:none;">서비스를 평가해주세요.</label>
+                <div class="group">
+                    <label id="validate_fail"></label>
+                    <div>
+                        <select id="feed_type" name="feed_type" class="form-control" style="display: none;">
+                            <option value="10">질문</option>
+                            <option value="20">기술적문제 / 오류</option>
+                            <option value="30">칭찬하기</option>
+                            <option value="40">불만 / 제안하기</option>
+                        </select><div class="ul-dropdown-wrap" style="position: relative; outline: currentcolor none medium;" tabindex="0"><ul class="ul-select" style="position: absolute; left: 0px; width: 100%; z-index: 10002; display: none; max-height: 190px; overflow-y: auto; top: 100%;"><li class="" style="display: block;">질문</li><li style="display: block;">기술적문제 / 오류</li><li style="display: block;">칭찬하기</li><li style="display: block;">불만 / 제안하기</li></ul><div class="_tag tag">유형을 선택하세요.</div></div>
+                    </div>
+                </div>
+                <div class="group">
+                    <label for="feed_message" class="empty"></label>
+                    <div><textarea id="feed_message" name="feed_message" placeholder="의견을 남겨주세요." class="form-control" rows="5" style="resize:none"></textarea></div>
+                </div>
+                <div class="group">
+                    <label for="feed_email" class="empty"></label>
+                    <input name="sessionScope_mail" value="apzz0928@nate.com" style="display:none;" type="text">
+                    <div><input id="feed_email" name="feed_email" placeholder="이메일 주소를 입력하세요." class="form-control" onkeydown="if(event.keyCode == 13){return false;}" value="apzz0928@nate.com" type="email"></div>
+                </div>
+                <div class="group">
+                    <label class="empty"></label>
+                    <div>
+                        <button class="btn-submit" type="submit" onclick="javascript:void(0)">보내기</button>
+                    </div>
+                </div>
+            </div>
+            <a class="btn-show-contact" href="javascript:void(0);"><img src="/assets/img/btn_feedback.png"></a>
+        </form>
+    </div>
+<!-- Start: Sidebar Left -->
+    <aside id="sidebar_left" class="nano nano-primary affix pt110 has-scrollbar">
+
+      <!-- Start: Sidebar Left Content -->
+      <div class="sidebar-left-content nano-content" tabindex="0" style="margin-right: -17px;">
+
+        <!-- Start: Sidebar Left Menu -->
+        <ul class="nav sidebar-menu">
+
+  <!--      <li class="top">
+            <a href="/stats/statsLiveDashboard" title="통계바로가기">
+              <span class="fa fa-signal"></span>
+              <span class="sidebar-title">
+              통계바로가기
+               <span class="miniarrow"></span>
+              </span>
+              <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </a>
+          </li>  -->
+          <li style="padding-top:10px">
+<a href="/common/frontIndex" title="서비스관리">
+<!-- <span class="fa fa-sliders"></span> -->
+              <span class="material-icons"></span>
+              <span class="sidebar-title">
+              서비스관리
+              <!-- <span class="miniarrow"></span> -->
+              </span>
+              <!-- <span class="currentarrow"></span>
+              <i class="fa fa-angle-right" aria-hidden="true"></i> -->
+            </a>
+          </li>
+<li>
+            <a class="menu-service" id="script" title="분석스크립트">
+              <!-- <span class="fa fa-clone"></span> -->
+              <span class="material-icons"></span>
+              <span class="sidebar-title">
+           	   분석스크립트
+              <span class="miniarrow"></span>
+              </span>
+              <span class="currentarrow"></span>
+            </a>
+            <ul class="nav sub-nav">
+              <li id="scriptList">
+                <a href="/manage/script/scriptList" title="분석스크립트">
+                    분석스크립트
+                </a>
+              </li> 
+              <li id="installApply"> 
+                <a href="/manage/script/installApply" title="분석스크립트 설치신청" sub-url="/manage/script/installApply/complete">
+                    분석스크립트 설치신청
+                </a>
+              </li>  
+
+            </ul>
+          </li>
+<li>
+            <a class="menu-service" id="my_info" title="내정보">
+              <!-- <span class="fa fa-user"></span> -->
+              <span class="material-icons"></span>
+              <span class="sidebar-title">
+              내정보
+              <span class="miniarrow"></span>
+              </span>
+              <span class="currentarrow"></span>
+            </a>
+            <ul class="nav sub-nav">
+              <li id="member_info">
+<a href="/manage/my_member_modify" title="회원정보">
+                    회원정보
+                </a>
+</li>
+<li id="myCoupon"> 
+                <a href="/manage/myCoupon" title="쿠폰관리">
+                    쿠폰관리
+                </a>
+              </li> 
+</ul>
+          </li>
+<li>
+            <a class="menu-service" id="service_add" title="서비스 추가">
+              <!-- <span class="fa fa-key"></span> -->
+              <span class="material-icons"></span>
+              <span class="sidebar-title">
+              서비스 추가
+              <span class="miniarrow"></span>
+              </span>
+              <span class="currentarrow"></span>
+            </a>
+            <ul class="nav sub-nav">
+<li id="addService">
+                <a href="/manage/serviceInfo/addService" title="서비스 추가">
+                    서비스추가
+                </a>
+              </li>
+<li id="addView">
+                <a href="/manage/serviceInfo/addView" title=" 뷰필터 추가">
+                    뷰필터 추가
+                </a>
+              </li>
+<li id="addIntegralReport">                  
+				<a href="/manage/serviceInfo/addIntegralReport" title="통합리포트 생성">
+                    통합리포트 생성
+                </a>
+              </li>
+</ul>
+          </li>   
+          <li>
+            <a class="menu-service menu-open" id="service_info" title="서비스 정보">
+              <!-- <span class="fa fa-key"></span> -->
+              <span class="material-icons"></span>
+              <span class="sidebar-title">
+              서비스 정보
+              <span class="miniarrow"></span>
+              </span>
+              <span class="currentarrow"></span>
+            </a>
+            <ul class="nav sub-nav">
+              <li id="editService">
+                <a href="/manage/serviceInfo/editService" title="정보수정" sub-url="/manage/serviceInfo/commerceApply, /manage/serviceInfo/changeService, /manage/serviceInfo/completeChangeSvc">
+                    정보수정
+                </a>
+              </li>
+              <li id="summaryReport">                  
+				<a href="/manage/mailing/summaryReport" title="발송메일 설정" sub-url="/manage/mailing/notifyReport">
+                    발송메일 설정
+                </a>
+              </li>
+<li id="submanager">
+              	<a href="/manage/serviceInfo/submanager" title="부관리자">
+                    부관리자
+                </a>
+              </li>
+<li id="leaveService" class="active"> 
+              	<a href="/manage/serviceInfo/leaveService" title="서비스 해지">
+                    서비스 해지
+                </a>
+              </li>              
+            </ul>
+          </li>
+ <li>
+            <a class="menu-service" title="요금" id="charge">
+              <span class="material-icons"></span>
+              <span class="sidebar-title">
+              요금
+              <span class="miniarrow"></span>
+              </span>
+              <span class="currentarrow"></span>
+            </a>
+            <ul class="nav sub-nav">
+              <li id="extendCharge">
+                <a href="/manage/charge/extendCharge" title="연장요금">
+                    연장요금
+                </a>
+              </li> 
+              <li id="additionalCharge"> 
+                <a href="/manage/charge/additionalCharge" title="추가요금">
+                   추가요금
+                </a>
+              </li> 
+              <li id="paymentHistory"> 
+                <a href="/manage/charge/paymentHistory" title="결제내역조회">
+                    결제내역조회
+                </a>
+              </li>
+              <li id="paymentBill"> 
+                <a href="/manage/charge/paymentBill" title="계산서">
+                    계산서
+                </a>
+              </li>
+            </ul>
+          </li>
+<li>
+            <a class="menu-service" id="notice" title="소식">
+              <!-- <span class="fa fa-paper-plane"></span> -->
+              <span class="material-icons"></span>
+              <span class="sidebar-title">
+              소식
+              <span class="miniarrow"></span>
+              </span>
+              <span class="currentarrow"></span>
+            </a>
+            <ul class="nav sub-nav">
+                <li id="myNoticeList">
+                    <a href="/manage/news/myNoticeList" title="서비스 공지사항" sub-url="/manage/news/myImproveList, /manage/news/detailView">서비스 공지사항</a>
+                </li>
+                <li id="myAllimList">
+                    <a href="/manage/news/myAllimList" title="서비스 알림내역" sub-url="/manage/news/myMonitoringList">서비스 알림내역</a>
+                </li>
+            </ul>
+            
+          </li>
+</ul>
+        <!-- End: Sidebar Menu -->
+        <!-- Start: Sidebar Collapse Button -->
+        <div class="sidebar-toggle-mini">
+          <a href="#">
+              <span class="fa fa-sign-out"></span>
+          </a>
+        </div>
+        <!-- End: Sidebar Collapse Button -->
+        <!-- Start: Sidebar Util -->
+        <div class="side-bar-util navbar-fixed-bottom brt-grey" role="navigation">
+    <div class="sidebar-inquire" style="display: none;">
+        <img src="/assets/img/sidebar_inquire.jpg" alt="">
+        <h5 class="text-dark ib">고객지원센터</h5>
+        <h3 class="text-info ib">1544-5420</h3>
+    </div>
+    <ul class="nav nav-justified sub-nav">
+        <li><a class="btn-default theme m-1" href="#" id="redirectStatsBtn" data-toggle="tooltip" data-placement="top" data-original-title="통계보기"><div class="lt_m"><span class="material-icons"></span><p class="txt">통계보기</p></div></a></li>
+        <li><a class="btn-default theme m-1" href="#" id="redirectConfBtn" data-toggle="tooltip" data-placement="top" data-original-title="통계설정"><div class="lt_m"><span class="material-icons"></span><p class="txt">통계설정</p></div></a></li>
+        <li><a class="btn-default theme m-1" href="#" id="redirectMyMenuBtn" data-toggle="tooltip" data-placement="top" data-original-title="나의 메뉴"><div class="lt_m"><span class="material-icons"></span><p class="txt">나의메뉴</p></div></a></li>
+        	</ul>
+</div>
+
+<script>
+  (function($) {
+    var path = $(location).attr('pathname').split('/')[1];
+
+    switch (path) {
+      case 'stats':
+        $('#redirectStatsBtn').addClass('active');
+        break
+      case 'setting':
+        $('#redirectConfBtn').addClass('active');
+        break;
+      case 'myMenu':
+        $('#redirectMyMenuBtn').addClass('active');
+        break;
+      default:
+        $('a.theme', $('div.side-bar-util')).removeClass('active');
+    }
+  })(jQuery);
+</script><!-- End: Sidebar Util -->
+      </div>
+      <!-- End: Sidebar Left Content -->  
+    
+
+    <div class="nano-pane" style="display: none;"><div class="nano-slider" style="height: 937px; transform: translate(0px, 0px);"></div></div></aside>
+    <!-- End: Sidebar Left --><section id="content_wrapper">         
+	<header id="topbar" class="ace-forms">
+		<div class="col-xs-12 col-sm-12 col-md-6"><h3 class="notokr-bold">서비스 해지</h3></div>
+	</header>
+	<section id="content">
+		<!-- step one start -->
+		<div id="leaveStepOne">
+			<div class="list-title">
+				<div class="pull-left full ph5"><h3 class="notokr-bold">서비스선택</h3></div>
+			</div>
+			<div class="table-responsive mb30">
+				<table class="table table-service">
+				<colgroup>
+					<col width="70px">
+					<col width="auto">
+					<col width="100px">
+					<col width="100px">
+					<col width="100px">
+					<col width="150px">
+				</colgroup>
+				<thead>
+					<tr>
+						<th><input id="checkAll" aria-label="..." style="" type="checkbox"></th>
+						<th>서비스명</th>
+						<th>종료일</th>
+						<th>잔여일</th>
+						<th>미납요금</th>
+						<th>비고</th>
+					</tr>
+				</thead>
+				<tbody>
+				<tr>
+						<td class="text-center">
+							<input name="ckBoxSvc143905" class="ckBoxCancelSvc" value="ckBox143905:460" aria-label="..." disabled="" type="checkbox"></td>
+						<td class="text-left">
+							<span class="label label-rounded-wide label-br-afe mr5">App Free</span><span class="ace-svc-name text-dark">apzz181130144518.com</span></td>
+						<td>
+							-</td>
+						<td>
+							-</td>
+						<td>0 원</td>
+						<td>
+							<a href="javascript:applyCancel('143905','460','');" class="btn br-dark btn-xs ml10">취소</a></td>
+					</tr>
+					<!-- filter view start -->
+					</tbody>
+				</table>
+			</div>
+			<div class="text-box mtn mb20">
+				<h4><span class="fa fa-info-circle mr10"></span>서비스 해지 안내</h4>
+				<ul>
+					<li>1. 미납요금이 있는 서비스의 경우 해지신청은 가능하며, 미납요금을 완납하신 후 해지처리가 가능합니다. </li>
+					<li>2. 서비스 <strong>계약기간 중도에 해지하실 경우 이용요금에 적용된 할인율 및 위약금(총 이용료의 10%)을 공제한 금액을 환불</strong>합니다.<a class="text-underline" href="/common/front/terms">[서비스이용약관]</a> </li>
+					<li>3. 해지신청을 완료하시면 <strong>해당 서비스의 통계리포트 확인이 제한</strong>됩니다. </li>
+					<li>4. 서비스 해지신청 후 최종승인이 완료되면, 에이스카운터에 저장된 서비스의 분석통계 데이터가 삭제됩니다. </li>
+					<li>5. <strong>서비스 해지 완료 후 홈페이지에 삽입하셨던 분석스크립트를 모두 삭제</strong>해 주시기 바랍니다.</li>
+					<li>6. 등록된 모든 서비스에 대해 해지신청을 진행하시면 에이스카운터의 회원자격을 상실하게 됩니다.</li>
+					<li>7. 특별한 사유가 없는 한 재가입은 유효합니다. </li>
+				</ul>
+			</div>
+			<div class="text-center"><button class="btn btn-info btn-lg w200" id="btnIng" style="">계속진행</button></div>
+		</div>
+		
+		<!-- step two start -->
+		<div id="leaveStepTwo" style="display: none;">
+			<div class="list-title">
+				<div class="pull-left full ph5"><h3 class="notokr-bold">서비스 확인</h3></div>
+				<div class="pull-right"><button type="button" id="btnBackToStepOne" class="btn br-dark btn-sm notokr-medium" style="">이전단계로 이동</button></div>
+			</div>
+			<div class="table-responsive">
+				<table class="table table-service">
+				<colgroup>
+					<col width="70px">
+					<col width="auto">
+					<col width="100px">
+					<col width="100px">
+					<col width="100px">
+				</colgroup>
+				<thead>
+					<tr>
+						<th>선택</th>
+						<th>서비스명</th>
+						<th>종료일</th>
+						<th>잔여일</th>
+						<th>미납요금</th>
+					</tr>
+				</thead>
+				<tbody id="ckedSvcRow"></tbody>
+				</table>
+			</div>
+			<!-- 해지신청 정보 시작 -->
+			<form class="form-horizontal" role="form" name="leaveForm" id="leaveForm" method="post">
+				<input name="tArr" type="hidden">
+				<input name="reasonArr" type="hidden">
+			<div class="panel panel-service">
+				<div class="panel-heading">
+					<div class="pull-left pull"><h3 class="notokr-bold">신청자 정보</h3></div>
+					<div class="pull-right"><p><span class="text-danger">*</span> 표시는 필수 입력</p></div>
+				</div>
+				<div class="panel-body">
+					<div class="form-group">
+						<h4 class="col-xs-12 col-sm-2 col-md-2 control-label"><span class="text-danger essential">*</span> 신청인 이름</h4>
+						<div class="col-xs-12 col-sm-10 col-md-10">
+							<input name="sName" class="gui-input input-sm" placeholder="" type="text">
+							<div class="checkbox-custom fill checkbox-service checkbox-inline">
+								<input id="userInfoChecked" type="checkbox"><label for="userInfoChecked">회원정보와 동일</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<h4 class="col-xs-12 col-sm-2 col-md-2 control-label">연락처</h4>
+						<div class=" col-xs-12 col-sm-10 col-md-10">
+							<label class="field select" style="width:70px;">
+								<select class="input-sm" name="sTel1">
+									<option value="02">02</option>
+									<option value="031">031</option>
+									<option value="032">032</option>
+									<option value="033">033</option>
+									<option value="041">041</option>
+									<option value="042">042</option>
+									<option value="043">043</option>
+									<option value="044">044</option>
+									<option value="051">051</option>
+									<option value="052">052</option>
+									<option value="053">053</option>
+									<option value="054">054</option>
+									<option value="055">055</option>
+									<option value="061">061</option>
+									<option value="062">062</option>
+									<option value="063">063</option>
+									<option value="064">064</option>
+									<option value="070">070</option>
+									<option value="080">080</option>
+									</select>
+								<i class="arrow"></i>
+							</label>
+							<input name="sTel2" class="gui-input input-sm" style="width:90px;" placeholder="" onkeydown="inputNumber();" type="text">
+							<input name="sTel3" class="gui-input input-sm" style="width:90px;" placeholder="" onkeydown="inputNumber();" type="text">
+							<label class="text-muted">연락처와 휴대전화 번호 중 하나는 꼭 입력해 주세요.</label>
+	  					</div>
+					</div>
+					<div class="form-group">
+						<h4 class="col-xs-12 col-sm-2 col-md-2 control-label">휴대전화번호</h4>
+						<div class=" col-xs-12 col-sm-10 col-md-10">
+							<label class="field select" style="width:70px;">
+								<select class="input-sm" name="sMobile1">
+									<option value="010">010</option>
+									<option value="011">011</option>
+									<option value="016">016</option>
+									<option value="017">017</option>
+									<option value="018">018</option>
+									<option value="019">019</option>
+									</select>
+							<i class="arrow"></i>
+							</label>
+							<input name="sMobile2" class="gui-input input-sm" style="width:90px;" placeholder="" onkeydown="inputNumber();" type="text">
+							<input name="sMobile3" class="gui-input input-sm" style="width:90px;" placeholder="" onkeydown="inputNumber();" type="text">
+						</div>
+					</div>
+					<div class="form-group">
+						<h4 class="col-xs-12 col-sm-2 col-md-2 control-label"><span class="text-danger essential">*</span> 이메일</h4>
+						<div class="col-xs-12 col-sm-10 col-md-10">
+							<div class="bs-component">
+								<input name="sEmail" class="gui-input input-sm" placeholder="" type="text">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 해지사유 -->
+			<div class="panel panel-service">
+				<div class="panel-heading">
+					<div class="pull-left pull"><h3 class="notokr-bold">해지사유</h3></div>
+				</div>
+	            <div class="panel-body">
+					<div class="form-group">
+						<h4 class="col-xs-12 col-sm-2 col-md-2 control-label">해지사유 선택<br>(복수선택 가능)</h4>
+						<div class="col-xs-12 col-sm-10 col-md-10">
+							<div class="checkbox-custom fill checkbox-service mb5">
+								<input id="check1" name="reason" value="1" type="checkbox">
+								<label for="check1">분석스크립트 설치가 어려워서</label>
+							</div>
+							<div class="checkbox-custom fill checkbox-service mb5">
+								<input id="check2" name="reason" value="2" type="checkbox">
+								<label for="check2">다른 아이디로 신규가입을 하기 위해</label>
+							</div>
+							<div class="checkbox-custom fill checkbox-service mb5">
+								<input id="check3" name="reason" value="3" type="checkbox">
+								<label for="check3">서비스 이용이 어렵고, 불편해서 </label>
+							</div>
+							<div class="checkbox-custom fill checkbox-service mb5">
+								<input id="check4" name="reason" value="4" type="checkbox">
+								<label for="check4">원하던 데이터가 제공되지 않아서</label>
+							</div>
+							<div class="checkbox-custom fill checkbox-service mb5">
+								<input id="check5" name="reason" value="5" type="checkbox">
+								<label for="check5">유료로 로그분석 서비스 이용 계획이 없어서 </label>
+							</div>
+							<div class="checkbox-custom fill checkbox-service mb5">
+								<input id="check6" name="reason" value="6" type="checkbox">
+								<label for="check6">가격(서비스 요금)이 부담되어서 </label>
+							</div>
+							<div class="checkbox-custom fill checkbox-service mb5">
+								<input id="check7" name="reason" value="7" type="checkbox">
+								<label for="check7">타사 로그분석 서비스를 이용하기 위해서 </label>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<h4 class="col-xs-12 col-sm-2 col-md-2 control-label">기타 해지사유<br>(선택사항)</h4>
+						<div class="col-lg-8">
+	                    	<p>다른 해지사유가 있으신가요?<br>서비스 이용 중 불편사항이나, 어려우셨던 부분 또는 개선의견을 남겨주세요.</p>
+							<textarea name="etcReason" class="form-control" rows="3"></textarea>
+						</div>
+					</div>
+				</div>
+			</div>
+			</form>
+			<div class="text-box mtn mb20">
+				<h4><span class="fa fa-info-circle mr10"></span>해지신청 안내</h4>
+				<ul>
+					<li>1. 해지신청 전에 <strong>분석통계에 대한 리포트를 다운로드</strong> 하시기 바랍니다. 해지된 서비스는 목록에서 삭제됩니다.</li>
+					<li>2. 신청 후 <strong>해지처리가 완료되기 전까지 해지신청을 취소</strong>하실 수 있습니다. (해지신청 페이지의 목록에서 취소 버튼 클릭)</li>
+					<li>3. 등록된 모든 사이트에 대한 해지신청을 진행하시면 에이스카운터 회원탈퇴로 처리됩니다.</li>
+					<li>4. 서비스 <strong>계약기간 중도에 해지하실 경우 이용요금에 적용된 할인율 및 위약금(총 이용료의 10%)을 공제한 금액을 환불</strong>합니다.<a class="text-underline" href="/common/front/terms">[서비스이용약관]</a></li>
+					</ul>
+			</div>
+			<div class="text-center mt15">
+				<p>에이스카운터를 다시 찾아주실 때 만족하실 수 있는 서비스를 제공할 수 있도록 노력하겠습니다.</p>
+			</div>
+			<div class="text-center mt15">
+				<button id="btnApply" class="btn btn-info btn-lg w200">해지신청</button>
+			</div>
+		</div>          
+		<!-- Modal -->
+		<div class="modal modal-center fade" id="applyModal" role="dialog">
+			<div class="modal-dialog modal-center">   
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header bg-dark">
+						<button type="button" class="close" data-dismiss="modal">×</button>
+						<h4 class="modal-title">ACE Counter</h4>
+					</div>
+					<div class="modal-body text-center">
+						<div id="modalText1"></div>
+						<p class="mt20" id="modalText2">
+					</p></div>
+					<div class="modal-footer text-center">
+						<button type="button" class="btn btn-primary" data-dismiss="modal" id="btnOk">확인</button>
+					</div>
+				</div>
+				<!-- Modal content end -->      
+			</div>
+		</div>
+		<!-- Modal  end-->
+	</section>
+	<!-- /#content -->
+	<!-- 한줄도움말/FAQ -->
+	<div class="faq-tabs" style="position:relative;">
+	<ul class="nav nav-tabs">
+		<li class="active"><a data-toggle="tab" href="#help">한줄도움말</a></li>
+	</ul>
+	<div class="tab-content">
+		<div id="help" class="tab-pane fade in active">
+			<div style="all:initial;font-size:13px;letter-spacing:-1px;color:#2a2a2a;">에이스카운터에 등록된 서비스를 선택하신 후 서비스 해지를 신청하실 수 있습니다.</div>
+		</div>
+		<div id="faq" class="tab-pane fade">
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	
+	var pathname = window.location.pathname;
+	var splitedUrl = pathname.split('/');
+	var menu = '';
+	
+	// path에 넘버링이 포함된 경우 넘버링 제외
+	if(!isNaN(parseInt(splitedUrl[splitedUrl.length-1]))) {
+		splitedUrl.splice(-1);
+		pathname = splitedUrl.join('/');
+	}
+	
+	if(window.location.pathname.indexOf('stats') > 0) {
+		menu = 'stats';
+	} else if(window.location.pathname.indexOf('setting') > 0 || window.location.pathname.indexOf('appmarketing') > 0) {
+		menu = 'setting';
+	} else {
+		menu = 'manage';
+	}
+	
+	$.ajax({
+		type:'get',
+		data: {
+			'url' : pathname
+		},
+		url:'/common/getLowerEndHelp',
+		success:function(data){
+			var faq = data.faq;
+			
+			if(typeof data.help[0] !== 'undefined') {
+				$('#help div')[0].innerHTML = data.help[0].content;
+				
+				if(menu !== 'manage') {
+					var link = '<div style="margin-top:30px"><a href="/help/' + menu + '?menuNo=' + data.help[0].menu_no + '" target="_blank" class="btn btn-dark">전체 도움말 보기</a></div>';
+					
+					$(link).appendTo('#help');
+				}
+			} else {
+				$('#help div')[0].innerHTML = '등록된 한줄도움말이 없습니다.';
+			}
+			
+			if(faq.length > 0) {
+				var faq_tab = '<li><a data-toggle="tab" href="#faq">FAQ</a></li>';
+				var faq_link = '';
+				
+				$(faq_tab).appendTo($('a[href=#help]').parents('ul.nav.nav-tabs'));
+				
+				for(var i = 0; i < faq.length; i++) {
+					faq_link = faq_link + '<a href="/help/svcCenter/viewFaq?idx=' + faq[i].post_no + '" target="_blank" style="text-decoration:underline">Q. ' + faq[i].title + '</a><br>';
+				}
+				
+				$('#faq')[0].innerHTML = faq_link;
+				
+				var link = '<div style="margin-top:30px"><a href="/help/svcCenter/faqList" target="_blank" class="btn btn-dark">전체 FAQ 보기</a></div>';
+				
+				$(link).appendTo('#faq');
+			}
+		}
+	});
+});
+</script><script src="/assets/js/common.js"></script>
+
+<!-- d3 chart -->
+<script src="/assets/js/d3.js"></script>
+<script src="/assets/js/d3.layout.cloud.js"></script>
+<script src="/assets/js/medley.js"></script>
+
+<!-- compare Bar -->
+ <!-- <script src="/assets/js/sumSearch.js"></script>  -->
+
+<!-- Time/Date Plugin Dependencies -->
+<script src="/plugins/globalize/globalize.min.js"></script>
+<script src="/plugins/moment/moment.min.js"></script>
+<script src="/plugins/moment/locale/kr.js"></script>
+      
+<!-- DateRange Plugin -->
+<script src="/plugins/daterange/daterangepicker.js?v=20171120"></script>
+
+<!-- Tag -->
+<script src="/plugins/tagmanager/tagmanager.js"></script>
+
+<!-- highchart -->
+<script src="/plugins/highchart/highcharts.js"></script>	
+<script src="/plugins/highchart/annotations.js"></script>	
+<script src="/plugins/highchart/modules/exporting.js"></script>	
+<script src="/plugins/highchart/modules/data.js"></script>
+<script src="/plugins/highchart/modules/heatmap.js"></script>
+<script src="/plugins/highchart/modules/treemap.js"></script>
+<script src="/plugins/highchart/modules/no-data-to-display.js"></script>
+<!-- <script src="/plugins/highchart/modules/custom/map.js"></script> -->
+<!-- <script src="https://code.highcharts.com/maps/highmaps.js"></script> -->
+<!-- <script src="/plugins/highchart/modules/custom/world.js"></script> -->
+<!--  <script src="/assets/js/charts/ace-charts.js"></script>  -->
+
+<!-- Sparkline -->
+<script src="/plugins/sparkline/jquery.sparkline.min.js"></script>	
+
+<!-- Theme Javascript -->
+<script src="/assets/js/utility/utility.js"></script>
+<script src="/assets/js/powerlistmenu.js"></script>
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/slider.js"></script>
+
+<!-- Begin: Page Footer -->
+	  <div id="return-to-top">
+		  <a href="javascript:;" class="btn btn-light btn-sm top-btn">Top</a>
+	  </div>
+      <footer id="content-footer" style="position: relative;">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-6">
+            <div class="sidebar-inquire">
+                <h5 class="text-dark ib">고객지원센터</h5>
+                <h3 class="text-danger ib">1544-5420</h3>
+            </div> 
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 footer-copyright">
+            <span class="footer-meta">Copyright by NHN ACE Corp. All right reserved</span>
+          </div>
+        </div>
+      </footer>
+      <!-- End: Page Footer -->
+
+<!-- Acecounter 공통 모듈 -->
+<script src="/assets/js/ace.js"></script>
+<!-- 메뉴펼침 -->
+<script src="/assets/js/menuSlide.js"></script>
+<!-- 좌측 메뉴 버튼 이벤트 :: 추후 메뉴 작업시 이동될 예정 -->
+<script type="text/javascript">
+  $(function() {
+    var path = location.pathname;
+    var subAuthCd = '';
+
+    if (subAuthCd !== ''
+        && ((path.indexOf('/manage/') !== -1 && path !== '/manage/my_member_modify') // 서비스 관리 메뉴는 회원정보 제외하곤 접근 제한
+        || (path.indexOf('/stats/') !== -1 && subAuthCd === '-') // 통계보기 권한이 없으면 접근 제한
+        || (path.indexOf('/setting/') !== -1 && subAuthCd !== '20'))) { // 통계설정 권한이 없으면 접근 제한
+      ace.alert('부관리자는 사용권한이 없습니다.<br>권한을 부여한 관리자에게 문의해 주세요.');
+    }
+  });
+
+//통계보기 이동
+  $("#redirectStatsBtn").on("click", function() {
+    if(Number('3') > 0) {
+      svcExceededPopup(143905, '3', '00004', 10);
+      return false;
+    }
+
+    if ( '10' == '30' ) {
+      location.href = "/stats/integrated/cross_overlap";
+    } else {
+      location.href = "/stats/statsLiveDashboard";
+    }
+  });
+
+// 통계설정 이동
+  $("#redirectConfBtn").on("click", function() {
+    if(Number('3') > 0) {
+      svcExceededPopup(143905, '3', '00004', 10);
+      return false;
+    }
+
+    if( '10' == '30' ) {
+      location.href = "/setting/integral/list";
+    } else {
+      location.href = "/setting/appmarketing/";
+    }
+  });
+
+// 나의 메뉴 이동
+  $('#redirectMyMenuBtn').on("click", function(){
+    if(Number('3') > 0) {
+      svcExceededPopup(143905, '3', '00004', 10);
+      return false;
+    }
+
+    location.href = "/myMenu";
+  });
+</script>
+
+<!-- 분석스크립트 -->
+<script>
+    /** AceCounter Plus Login variable START */
+    var _AceTM=(_AceTM||{});
+    _AceTM.Login={
+        uID: 'ap1130144533', 	// 로그인사용자 고유값
+        uAge:0,   	// 로그인사용자 나이
+        uGender:'', // 로그인사용자 성별(man | woman)
+        uGroup1:'',	// 사용자 정의변수 1 ( 1 ~ 10 정수값)
+        uGroup2:'',	// 사용자 정의변수 2 ( 1 ~ 10 정수값)
+        uGroup3:''	// 사용자 정의변수 3 ( 1 ~ 10 정수값)
+    }
+    /** AceCounter Plus Login variable End */
+
+    /** This script is for AceCounter START */
+    var _ag   = 0 ;         // 로그인사용자 나이
+    var _id   = 'ap1130144533';    		// 로그인사용자 아이디
+    var _mr   = '';        	// 로그인사용자 결혼여부 ('single' , 'married' )
+    var _gd   = '';         // 로그인사용자 성별 ('man' , 'woman')
+    var _skey = '' ;        // 내부검색어
+
+    var _ud1 = '' ;			// 사용자 정의변수 1 ( 1 ~ 10 정수값)
+    var _ud2 = '' ;			// 사용자 정의변수 2 ( 1 ~ 10 정수값)
+    var _ud3 = '' ;			// 사용자 정의변수 3 ( 1 ~ 10 정수값)
+    /** AceCounter END */
+
+    /** AceClick varialbe START */
+    var mr_id = 'ap1130144533';	// 로그인 회원판단( 'member' 고정값)
+    var mr_ag = 0 ; 		// 로그인사용자 나이 (회원의 연령대 분석)
+    var mr_gd = ''; 		// 로그인사용자 성별 ('man' , 'woman')
+    var mr_buy = 0;		// 총구매금액 (신규구매,재구매 분석)
+    /** AceClick varialbe END */
+</script>
+<script src="/assets/js/ace.analysis.script.js"></script>
+<noscript><img src='http://gtp4.acecounter.com:8080/?uid=AH1A41895171963&je=n&' border='0' width='0' height='0' alt=''></noscript>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-118672700-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-118672700-1');
+</script></section>
+<!-- /#content_wrapper -->
+<script type="text/javascript">
+$(document).ready(function() {
+	$("input:checkbox").prop("checked", false);
+	$("#leaveStepTwo").hide();
+	
+	$("#btnIng").on("click", function(){
+		nextStep();		
+	});
+	
+	$("#btnBackToStepOne").on("click", function(){
+		backToStepOne();
+	});
+
+	$("#checkAll").on("click", function(){
+		ckBoxSvcAll(this);
+	});
+
+	$(".ckBoxSvc").on("click", function(){
+		ckBoxSvcChecked(this);	
+	});
+	
+	$("#btnApply").on("click", function(){
+		applyPro();
+	});
+	
+	$("#btnOk").on("click", function(){
+		location.href = "/manage/serviceInfo/getCheckModifyToken?flag=leave";
+	});
+	
+	$("#userInfoChecked").on("click", function(){
+		sameInfo(this);
+	});
+	
+	$('#inputBox').keypress(function (event) {
+	    if (event.which && (event.which <= 47 || event.which >= 58) && event.which != 8) {
+	      event.preventDefault();
+	    }
+	  });
+});
+
+var msg = {
+	noChecked 		: "해지하실 서비스를 선택하여 주세요.",
+	cancelFail		: "취소되지 않았습니다. 다시 시도해주세요.",
+	cancelSuccess 	: "해지 신청이 취소되었습니다.",
+	cancelAllQtext  : "뷰 해지 신청을 취소하실 경우<br>연관된 서비스의 해지신청이 자동으로 취소됩니다.",
+	cancelQtext 	: "해지 신청을 취소하시겠습니까?",
+	cancelviewQtext : "서비스를 해지하실 경우<br>서비스에 포함된 뷰도 해지 처리됩니다.<br><br>해지 신청하시겠습니까?",
+	applyQtext 		: "해지 신청 하시겠습니까?",
+	applySuccess 	: "해지 신청이 완료되었습니다.",	
+	applyFail		: "신청되지 않았습니다. 다시 시도해주세요.",
+	applyAllQtext	: "모든 서비스를 선택하여 해지 신청 시<br>회원탈퇴로 처리됩니다.<br>신청하시겠습니까?",
+	sameFail		: "회원정보를 가져올 수 없습니다.<br>다시도해주세요.",
+	serverFail		: "서버로 부터 응답 데이터 실패가 발생되었습니다.<br>다시 시도해주세요.",
+	nameBlankText	: "이름을 입력해주세요.",
+	telBlankText	: "연락처와 휴대전화번호 중<br/>하나는 반드시 입력해 주세요",
+	emailBlankText	: "이메일을 입력해주세요.",
+	emailCkText		: "이메일 주소가 올바르지 않습니다.",
+	reasonBlankText : "해지사유를 선택해주세요."
+}
+
+var ckBoxSvcAll = function(e){
+	if( $(e).is(":checked") ){
+		$(".ckBoxSvc").prop("checked", true);
+	}else{
+		$(".ckBoxSvc").prop("checked", false);
+		$("#checkAll").prop("checked", false);
+	}
+}
+
+// 사이트 선택 시, 하단 필터(뷰) 자동 선택
+var ckBoxSvcChecked = function(e){	
+	var idx = $(e).attr("name").split("ckBoxSvc_");
+	
+	if( $("input[name='ckBoxSubSvc_"+ idx[1] +"']").length > 0 && $("input[name='ckBoxSvc_"+ idx[1] +"']").prop("checked") ){		
+		ace.confirm(msg.cancelviewQtext, function(result){	
+			if(result === true){
+				$("input[name='ckBoxSubSvc_"+ idx[1] +"']").prop("checked", true);
+			}else{
+				$(e).prop("checked", false);
+			}		
+		});
+	}else{
+		$("input[name='ckBoxSubSvc_"+ idx[1] +"']").prop("checked", false);
+	}
+}
+
+var nextStep = function(){
+	if(!isCheckedEmpty()){
+		if( $(".ckBoxSvc").length == $("input[class='ckBoxSvc']:checked").length ){
+			ace.confirm(msg.applyAllQtext, function(result) {
+				if(result === true){
+					display();
+				}else{
+					ckBoxSvcAll();
+				}
+			});
+		}else{
+			display();
+		}	
+		
+		// checked html
+		ckBoxSvcMake();
+	}
+}
+
+var display = function(){
+	$("#leaveStepOne").hide();
+	$("#leaveStepTwo").show();
+	document.getElementById("topbar").scrollIntoView(true);
+}
+
+var backToStepOne = function(){
+	$("#leaveStepOne").show();
+	$("#leaveStepTwo").hide();
+	$("#ckedSvcRow").html('');
+	document.getElementById("topbar").scrollIntoView(true);
+}
+
+var isCheckedEmpty = function(){
+	if( $("input[class='ckBoxSvc']:checked").length <= 0 ){
+		ace.alert(msg.noChecked);
+		return true;
+	}else{
+		return false;
+	}
+}
+
+var ckBoxSvcMake = function(){
+	var tArr = [];
+	$("input[class='ckBoxSvc']:checked").each(function(idx){
+		tArr.push($(this).val());
+		$("input[name='tArr']").val(tArr);
+
+		var rowHtml = $(this).parent().parent().clone();	
+		rowHtml.children("td:last").remove();
+		rowHtml.children("td:first").html(idx+1);	// 선택 '번호' 추가
+		if( $("input[name*='ckBoxSvc']").is(":checked") === false ){
+			rowHtml.children().children("img").remove();
+		}
+		
+		$("#ckedSvcRow").append(rowHtml);
+	});
+}
+
+var applyPro = function(){
+	if( validate() == true ){
+		if( $(".ckBoxSvc").length == $("input[class='ckBoxSvc']:checked").length ){
+			var allCked = "ok";
+		}
+		
+		var reasonArr = [];
+		$("input[name='reason']:checked").each(function(idx){
+			reasonArr.push($(this).val());
+		});
+		$("input[name='reasonArr']").val(reasonArr);
+		
+		var params = $("#leaveForm").serialize();	
+		ace.confirm(msg.applyQtext, function(result) {
+			if(result === true){
+				$.ajax({
+					type : 'post',
+					url : "/manage/serviceInfo/leaveAjax",
+					data : params,
+					contentType : 'application/x-www-form-urlencoded; charset=utf-8',
+					success : function(data) {
+						if( data == "success" ){
+							var setText = "<h1 class='text-danger mn'>서비스 해지 신청이 완료 되었습니다.</h1>";
+							var setText1 = "<span class='text-danger'>"+ $("input[name='sEmail']").val() +"</span>";
+							var setText2 = "<b>서비스 해지가 완료된 후 "+ setText1 +" 로 안내메일이 발송됩니다.</b><br>(서비스 해지는 영업일 기준 1~3일 내로 처리됩니다.)<br>";
+							
+							if(allCked == "ok"){	// 모든 서비스 선택 경우
+								setText = "<h2 class='text-danger mn'>선택하신 서비스를 해지하시면<br>회원탈퇴가 함께 진행됩니다.</h2>";
+								setText2 = "<b>회원 탈퇴 처리가 완료된 후 "+ setText1 +" 로 안내 메일이 발송됩니다.</b><br>(회원탈퇴는 영업일 기준 1~3일 내로 처리됩니다.)<br><br>";
+							}
+							
+							$("#applyModal").modal();
+							$("#modalText1").html(setText);
+							$("#modalText2").html(setText2);
+							
+						}else{
+							ace.alert(msg.applyFail);
+							location.reload();
+						}
+					},
+					error : function() {
+						ace.alert(msg.serverFail);
+					} 
+				});
+			}
+		});	
+	}
+}
+
+var validate = function(){
+	var regMailExp = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+	
+	if( !$("input[name='sName']").val() ){		
+		ace.alert(msg.nameBlankText, function(){ $("input[name='sName']").focus(); });
+		return false;
+	}
+	if( (!$("input[name='sTel2']").val() || !$("input[name='sTel3']").val()) && (!$("input[name='sMobile2']").val() || !$("input[name='sMobile3']").val()) ){		
+		ace.alert(msg.telBlankText);
+		return false;
+	}
+	if( !$("input[name='sEmail']").val() ){
+		ace.alert(msg.emailBlankText, function(){ $("input[name='sEmail']").focus(); });
+		return false;
+	}
+	if( !regMailExp.test($("input[name='sEmail']").val())) {
+		ace.alert(msg.emailCkText, function(){ $("input[name='sEmail']").focus(); });
+		return false;
+	}
+	if( !$("input[name='reason']").is(":checked") ){
+		ace.alert(msg.reasonBlankText);
+		return false;
+	}
+	
+	return true;
+}
+
+var inputNumber = function(){
+	var code = window.event.keyCode;
+	
+	if( (code > 34 && code < 41) || (code > 47 && code < 58)
+		|| (code > 95 && code <106) || code ==8 || code == 9 || code ==13 || code == 46 ){
+		window.event.returnValue = true;
+		return;
+	}
+	window.event.returnValue = false;
+}
+
+var applyCancel = function(a,b,c){
+	var cancelText = msg.cancelQtext;
+	var cArr = [];
+	if(c !== '' && $("input[name='ckBoxSvc"+ c +"']").is(':disabled') === true){
+		cancelText = msg.cancelAllQtext;
+		$("input[class='ckBoxCancelSvc']:disabled").each(function(idx){
+			cArr.push($(this).val());
+		});		
+	}else{
+		cArr.push("ckBox"+a+":"+b);
+	}
+
+	ace.confirm(cancelText, function(result) {
+		if(result === true){
+			$.ajax({
+				type : 'post',
+				url : "/manage/serviceInfo/cancelAjax",
+				data: JSON.stringify(cArr),
+				contentType: "application/json",
+				success : function(data) {
+					if( data == "success" ){
+						ace.alert(msg.cancelSuccess, function(){
+							location.href = "/manage/serviceInfo/getCheckModifyToken?flag=leave";
+						});
+					}else{
+						ace.alert(msg.cancelFail);
+					}
+				},
+				error : function() {
+					ace.alert(msg.serverFail);
+				}
+			});
+		}
+	});
+}
+
+var sameInfo = function(e){
+	if( $(e).is(":checked") ){
+		$.ajax({
+			type : 'post',
+			url : "/manage/serviceInfo/sameInfoAjax",
+			contentType : 'application/x-www-form-urlencoded; charset=utf-8',
+			success : function(data) {
+				if( data != null ){
+					$("input[name='sName']").val(data.sName);
+					if( data.sTel1==null || data.sTel1=="" ) $("select[name='sTel1']").val("02");
+					else $("select[name='sTel1']").val(data.sTel1);
+					$("input[name='sTel2']").val(data.sTel2);
+					$("input[name='sTel3']").val(data.sTel3);
+					if( data.sMobile1==null || data.sMobile1=="" ) $("select[name='sMobile1']").val("010");
+					else $("select[name='sMobile1']").val(data.sMobile1);
+					$("input[name='sMobile2']").val(data.sMobile2);
+					$("input[name='sMobile3']").val(data.sMobile3);
+					$("input[name='sEmail']").val(data.sEmail);
+				}else{
+					ace.alert(msg.sameFail);
+				}
+			},
+			error : function() {
+				ace.alert(msg.serverFail);
+			} 
+		});
+	}else{
+		// 초기화
+		$("input[name^='s']").val(null);
+		$("select[name='sTel1']").val("02");
+		$("select[name='sMobile1']").val("010");		
+	}
+}
+</script>
+
+</div>0<div class="modal modal-center fade in" tabindex="-1" role="dialog" style="display: block; padding-right: 17px;" aria-hidden="false"><div class="modal-backdrop fade in" style="height: 919px;"></div><div class="modal-dialog modal-center modal-sm" role="document"><div class="modal-content br6"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button><h4 class="modal-title">알림</h4></div><div class="modal-body text-center"><p>해지하실 서비스를 선택하여 주세요.</p></div><div class="modal-footer"><button type="button" class="btn btn-default btn-sm" data-dismiss="modal">닫기</button></div></div></div></div></body></html>

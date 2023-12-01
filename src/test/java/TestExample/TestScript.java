@@ -1,24 +1,19 @@
 package TestExample; //프로젝트QA할때 간편한 테스트를 자동화하기위해 사용하는 파일
 
 import java.io.IOException;
-import java.lang.reflect.Array;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.Arrays;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Iterator;
-import java.util.List;
-import java.util.Random;
 import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.ie.InternetExplorerOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
@@ -26,7 +21,6 @@ import org.testng.annotations.Test;
 
 import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.WebDriverRunner;
-import com.codeborne.selenide.impl.WebElementsCollection;
 
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.WebDriverRunner.*;
@@ -35,8 +29,6 @@ import static com.codeborne.selenide.Condition.*;
 import com.codeborne.selenide.testng.ScreenShooter;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxOptions;
 
 public class TestScript {
@@ -49,6 +41,10 @@ public class TestScript {
 	@SuppressWarnings("unused")
 	private int invalidLinksCount;
 
+	Date number_date = new Date();
+	SimpleDateFormat number_format = new SimpleDateFormat("yyyyMMddHHmmss");
+	String date = number_format.format(number_date);
+	
 	@Parameters("browser")
 	@BeforeClass
 	public void beforeTest(String browser) throws MalformedURLException {
@@ -737,7 +733,6 @@ public class TestScript {
 	//@Test(priority = 0)
 	public void 비밀번호_안쓰는거삭제() {
 		open("http://10.77.129.52:8083/admin/login");
-		int numCk = 0;
 		int numCk1 = 6; //페이징 넘버링체크
 		$("#username").setValue("apzz0928");
 		$("#password").setValue("qordlf!@34");
@@ -790,7 +785,7 @@ public class TestScript {
 			js("ace.alert($('.text-dark').length)");
 			sleep(1000);
 			String numberCheck = $(".modal-body").text();
-			if(numberCheck.equals(19)) {
+			if(numberCheck.equals("19")) {
 				sleep(500);
 				$(".btn-sm", 1).click();
 				++numCk1;
@@ -899,6 +894,211 @@ public class TestScript {
 		}
   	}
 	
+	//@Test(priority = 0)
+	public void testAccount_terminationApply() {
+		open("https://new-admin.acecounter.com/admin/login");
+		sleep(1500);
+		$("#username").setValue("apzz0928");
+		$("#password").setValue("qordlf!@34");
+		$(".btn-primary").click();
+		sleep(1500);
+		open("https://new-admin.acecounter.com/admin/regCustomer/userList");
+		sleep(1000);
+	    $("#__BVID__4_").click(); //상태 : 트라이얼(정상) 선택
+	    sleep(500);
+	    $(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='정보변경'])[1]/following::option[33]")).click();
+	    sleep(500);
+	    $(".input-sm", 5).setValue("apz");		
+		$(".btn-dark").click();
+		sleep(3000);
+		for(int i=0, x=99;i<=3;i++) {
+			$("a", x).click();
+			sleep(1000);
+			switchTo().window(1);
+			open("https://new-admin.acecounter.com/manage/serviceInfo/leaveService");
+			sleep(1000);
+			$("#pwd").setValue("qordlf!@34!@34");
+			$("#btn-ok").click();
+			$("#btnIng").waitUntil(visible, 10000);
+			sleep(800);
+			$("#checkAll").click();
+			$("#btnIng").click();
+			sleep(1000);
+			$("#btn-modal-alert-yes").click();
+			sleep(500);
+			$("label", 5).click();
+			$("label", 9).click();
+			$(".form-control", 3).setValue(date + " 테스트계정 삭제");
+			$("#btnApply").scrollIntoView(false);
+			$("#btnApply").click();
+			sleep(1000);
+			$(".btn-info", 3).click();
+			sleep(800);
+			$(".btn-primary").click();
+			switchTo().window(0);
+			x = x+10;
+		}
+  	}
+  	//@Test(priority = 1)
+	public void testAccount_termination() {
+		open("https://new-admin.acecounter.com/admin/login");
+		sleep(1500);
+		$("#username").setValue("apzz0928");
+		$("#password").setValue("qordlf!@34");
+		$(".btn-primary").click();
+		sleep(1500);
+		open("https://new-admin.acecounter.com/admin/comApply/termination");
+		$(By.id("__BVID__2_")).click();
+	    $(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='정보변경'])[1]/following::option[19]")).click();
+	    sleep(1500);
+	    $(".input-sm", 4).setValue("apz");
+		$(".btn-dark").click();
+		sleep(3000);
+		String[] terminationNumber = {"", "", "", ""};
+		for(int i=0, x=0;i<=3;i++) {
+			terminationNumber[i] = $("td", x).text();
+			x = x+17;
+		}
+		for(int i=0;i<=terminationNumber.length-1;i++) {
+			System.out.println(terminationNumber[i]);
+		}
+		js("window.open('');");
+		sleep(1000);
+		switchTo().window(1);
+		open("https://new-admin.acecounter.com/admin/comApply/termination/form/" + terminationNumber[0]);
+		for(int i=1;i<=4;i++) {
+			sleep(500);
+		    $("#__BVID__2_").click();
+		    $(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='담당자'])[1]/following::option[47]")).click();
+		    sleep(500);
+		    $("#__BVID__3_").click();
+		    $(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='처리상태'])[1]/following::option[3]")).click();
+		    sleep(500);
+		    $(".btn-primary").click();
+		    sleep(500);
+		    $("#btn-modal-alert-yes").click();
+		    sleep(1000);
+		    if(i < 4) {
+				open("https://new-admin.acecounter.com/admin/comApply/termination/form/" + terminationNumber[i]);
+			    sleep(1000);	
+		    }
+		}
+  	}
+	//@Test(priority = 0)
+	public void testtest() {
+		open("https://new-admin.acecounter.com/admin/login");
+		sleep(1500);
+		$("#username").setValue("apzz0928");
+		$("#password").setValue("qordlf!@34");
+		$(".btn-primary").click();
+		sleep(1500);
+		open("https://new-admin.acecounter.com/admin/comApply/termination");
+		$(By.id("__BVID__2_")).click();
+	    $(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='정보변경'])[1]/following::option[19]")).click();
+	    sleep(1500);
+	    $(".input-sm", 4).setValue("apz");
+		$(".btn-dark").click();
+		sleep(3000);
+		String[] terminationNumber = {"", "", "", ""};
+		for(int i=0, x=0;i<=3;i++) {
+			terminationNumber[i] = $("td", x).text();
+			x = x+17;
+		}
+		for(int i=0;i<=terminationNumber.length-1;i++) {
+			System.out.println(terminationNumber[i]);
+		}
+		js("window.open('');");
+		sleep(1000);
+		switchTo().window(1);
+		open("https://new-admin.acecounter.com/admin/comApply/termination/form/" + terminationNumber[0]);
+		for(int i=1;i<=4;i++) {
+			sleep(500);
+		    $("#__BVID__2_").click();
+		    $(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='담당자'])[1]/following::option[47]")).click();
+		    sleep(500);
+		    $("#__BVID__3_").click();
+		    $(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='처리상태'])[1]/following::option[3]")).click();
+		    sleep(500);
+		    $(".btn-primary").click();
+		    sleep(500);
+		    $("#btn-modal-alert-yes").click();
+		    sleep(1000);
+		    if(i < 4) {
+				open("https://new-admin.acecounter.com/admin/comApply/termination/form/" + terminationNumber[i]);
+			    sleep(1000);	
+		    }
+		}
+  	}
+	//@Test(priority = 0)
+	public void testtest1() {
+		for(int i=0;i<=50;i++) {
+			open("https://new.acecounter.com/common/front");
+			sleep(1500);
+			open("http://apzz0928.egloos.com/");
+			sleep(1500);
+			open("http://www.acecounter.com/www2/main.amz");
+			sleep(1500);
+			open("http://apzz0928.egloos.com/");
+			sleep(1500);
+			System.out.println(i + " 바퀴째 도는중");
+		}
+
+	}
+	//@Test(priority = 0)
+	public void audienceManager() {
+		open("http://10.160.231.210:8087/login");
+		$("#username").setValue("aceadmin");
+		$("#password").setValue("ace!@#123");
+		$(".btn_login_block").click();
+		sleep(1500);
+		for(int i=0;i<=300;i++) {
+			open("http://10.160.231.210:8087/use");
+			/*$(".l_green", 0).click();
+			sleep(1000);
+			Date number_date = new Date();
+			SimpleDateFormat number_format = new SimpleDateFormat("yyyyMMddHHmmss");
+			String date = number_format.format(number_date);
+			$(".form-control").setValue(date);
+			$(".bg_gray", 2).click();
+			sleep(1500);
+			$(".bg_gray", 3).click();*/
+			$(".bg_green", 1).click();
+			$(".bg_gray", 1).waitUntil(visible, 10000);
+			$(".bg_gray", 1).click();
+			$(".bg_gray", 3).waitUntil(visible, 10000);
+			$(".bg_gray", 3).click();			
+			System.out.println(i + " 바퀴째 도는중");
+		}
+	}
+	//@Test(priority = 0)
+	public void mailform() {
+		open("https://www.google.com/search?ei=fQ7VXPC-J6akmAWJqJZw&q=http%3A%2F%2Fapzz0928.egloos.com&oq=http%3A%2F%2Fapzz0928.egloos.com&gs_l=psy-ab.3..33i160.370669.372044..372356...0.0..0.113.942.7j3......0....1..gws-wiz.ZO7VS8VNDeM");
+		sleep(1500);
+		for(int i=0;i<=300;i++) {
+			if(i%2 == 0) {
+				$("h3", 0).click();
+				sleep(1000);
+			} else {
+				$("h3", 1).click();
+				sleep(1000);
+			}
+			open("https://www.google.com/search?ei=fQ7VXPC-J6akmAWJqJZw&q=http%3A%2F%2Fapzz0928.egloos.com&oq=http%3A%2F%2Fapzz0928.egloos.com&gs_l=psy-ab.3..33i160.370669.372044..372356...0.0..0.113.942.7j3......0....1..gws-wiz.ZO7VS8VNDeM");
+			sleep(1500);
+			System.out.println("방문수 : " +  (i+1));			
+		}
+	}
+	@Test(priority = 0)
+	public void CDP가맹점정보페이지넘기기() {
+		open("http://10.160.231.210:8086/");
+		$(".inp", 0).setValue("user4");
+		$(".inp", 1).setValue("password");
+		$(".btn_point").click();
+		$(".target__value_wrap", 0).click();
+		$("span", 7).waitUntil(visible, 10000);
+		for(int i=0;i<=60000;i++) {
+			$("span", 7).click();
+		}
+	}
 	@AfterClass
 	public void afterTest() {
 		closeWebDriver();

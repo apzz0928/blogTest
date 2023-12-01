@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
   <test name="Test(failed)">
     <parameter name="browser" value="firefox"/>
     <classes>
@@ -8,7 +8,8 @@
         <methods>
           <include name="beforeTest"/>
           <include name="afterTest"/>
-          <include name="도메인변경인덱스정보업데이트"/>
+          <include name="다이티카페24회원가입"/>
+          <include name="카페24구매"/>
         </methods>
       </class> <!-- TestExample.BlogTest -->
     </classes>

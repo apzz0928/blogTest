@@ -1,0 +1,734 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+	<title>에이스카운터</title>
+	<meta name="description" content="NHN ACE 운영, 마케팅 효과 분석, 방문자 통계 등 애널리틱스 리포트 제공">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="에이스카운터">
+	<meta property="og:description" content="NHN ACE 운영, 마케팅 효과 분석, 방문자 통계 등 애널리틱스 리포트 제공">
+	<meta property="og:url" content="http://www.acecounter.com">
+	
+	<meta name="naver-site-verification" content="cbee7b491a7b4619234997a8b95e5294f13401dd">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Expires" content="0">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="P3P" href="/w3c/p3p.xml" content="CP=&quot;IDC DSP COR CURa ADMa OUR IND PHY ONL COM STA&quot;">	
+	<meta name="keywords" content="로그분석, 웹로그분석, 웹로그, 접속통계, 웹 로그분석, 웹 로그 분석, 무료 로그분석, 방문자 분석, 사이트 분석, 카운터, 웹사이트 분석, 홈페이지 분석, counter, 광고 분석, CRM, VRM">
+	<meta name="naver-site-verification" content="5e8dbee8b9f5dcf249a4e3c8d60aae4ab7d9fa45">
+	<link rel="stylesheet" type="text/css" href="/www2/css/style.css">
+	<link rel="shortcut icon" href="/www2/images/ico/w_icon1.ico">
+	<script async="" src="//www.google-analytics.com/analytics.js"></script><script src="https://atm.acecounter.com/ac.js?tid=100027CR-30-A&amp;hsn=www.acecounter.com&amp;hrf=in&amp;dvp=0&amp;tgp=Login&amp;tn1=&amp;tn2=&amp;tn3=&amp;tw1=&amp;tw2=&amp;tw3=&amp;tw4=&amp;tw5=&amp;tw6=&amp;tw7=&amp;rnd=1588135380075&amp;py=0"></script><script language="JavaScript" type="text/javascript" src="/www2/js/jquery-1.8.3.min.js"></script>
+	<script language="JavaScript" type="text/javascript" src="/www2/js/jquery.easing.1.3.min.js"></script>
+	<script language="JavaScript" type="text/javascript" src="/www2/js/jquery.customSelect.min.js"></script>
+	<script language="JavaScript" type="text/javascript" src="/www2/js/common.js"></script>
+	<script language="JavaScript" type="text/javascript" src="/www2/js/js_www.amz"></script>
+<style>
+.sel_family{position:absolute;top:55px;right:-50px;width:170px;height:30px;border:1px solid #ddd;z-index:10}
+.btn_family,.lst_family li a{position:relative;display:block;height:100%;padding-left:12px;font-size:14px;line-height:30px;color:#aaa;background:#fff;cursor:pointer}
+.btn_family{font-family:'Arial',sans-serif; font-size:13px}
+.btn_family:hover{text-decoration:none}
+.btn_family .ico{position:absolute;top:25%;left:57%;width:14px;height:14px;margin:-7px 0 0 -7px;}
+.sel_family .lst_family li a:hover{text-decoration:none;color:#00abd6}
+.sel_family.on{z-index:50;}
+.sel_family.on .btn_family{color:#666;}
+.sel_family.on .btn_family .ico{background-position:-44px 0}
+.lst_family{display:none;overflow-x:hidden;overflow:auto;position:absolute;bottom:30px;left:-1px;width:100%;max-height:420px;background:#fff;border:1px solid #ddd;}
+.lst_family li{overflow:hidden;width:100%;height:15px;margin-top:15px;}
+.lst_family li:first-child{margin-top:0}
+.lst_family .family_row{margin-top:25px}
+.lst_family li a{font-family:'Arial',sans-serif;font-size:12px;line-height:15px;white-space:nowrap;color:#999;background:#fff}
+.lst_family:hover,.lst_family:focus,.lst_family:active{color:#00abd6} 
+.lst_family_inner{margin:15px 0}
+.sel_family.on .lst_family{display:block}
+.sel_family.on .btn_family{background-position:0 -86px}
+.sel_family .sel_btn{position:absolute;top:0;right:0;width:34px;height:30px;border-left:1px solid #ddd}	
+</style>
+</head>
+<body>
+
+	<div id="wrap">
+	<span id="top"></span>
+		<div id="header">
+			<div class="header_inner">
+				<h1 class="main_logo"><a href="http://www.acecounter.com/www2/main.amz"><img src="/www2/images/common/logo.png" alt="AceCounter"></a></h1>
+				<div class="gnb_area">
+					<h2 class="hide">메인메뉴</h2>
+					<ul class="gnb">
+						<li class="m1"><!-- toggle : class : on -->
+							<a class="dep1" href="http://www.acecounter.com/www2/product/productInfo.amz">제품소개<span class="focus"></span></a>
+							<h3><span>Product</span>제품소개</h3>
+							<ul class="dep2">
+								<li>
+									<dl>
+										<dt><a>온라인서비스</a></dt>
+										<dd>
+											<a href="http://www.acecounter.com/www2/product/siteAnalytics.amz">사이트분석</a>
+											<a href="http://www.acecounter.com/www2/product/mobileAnalytics.amz">모바일 앱분석</a>
+											<a href="http://www.acecounter.com/www2/product/sCost.amz">서비스 요금안내</a>
+											<a href="http://www.acecounter.com/www2/product/sPreview.amz">서비스 미리보기</a>
+											<a href="http://www.acecounter.com/www2/product/freeJoin.amz">무료체험</a>
+										</dd>
+									</dl>
+								</li>
+								<!--li>
+									<dl>
+										<dt><a>솔루션서비스</a></dt>
+										<dd>
+											<a href="http://www.acecounter.com/www2/product/solutionInfo.amz">솔루션 안내</a>
+											<a href="http://www.acecounter.com/www2/product/sSiteAnalytics.amz">사이트분석</a>
+											<a href="http://www.acecounter.com/www2/product/sMobileAnalytics.amz">모바일 앱분석</a>
+											<a href="http://www.acecounter.com/www2/product/sDemo.amz">문의 및 데모요청</a>
+										</dd>
+									</dl>
+								</li-->
+								<li>
+									<dl>
+										<dt><a>고객사</a></dt>
+										<dd>
+											<a href="http://www.acecounter.com/www2/product/clientList.amz">주요 고객사</a>
+											<a href="http://www.acecounter.com/www2/product/clientConstruction.amz">대표 구축사례</a>
+										</dd>
+									</dl>
+								</li>
+							</ul>
+						</li>
+						<li class="m2">
+							<a class="dep1" href="http://www.acecounter.com/www2/education/eCenter.amz">교육센터<span class="focus"></span></a>
+							<h3><span>Education</span>교육센터</h3>
+							<ul class="dep2">
+								<li>
+									<dl>
+										<dt><a>온라인교육</a></dt>
+										<dd>
+											<a href="http://www.acecounter.com/www2/education/aceKnowledge.amz">웹분석지식</a>
+											<a href="http://www.acecounter.com/www2/education/aceReal.amz">웹분석실전활용</a>
+											<a href="http://www.acecounter.com/www2/education/trendReportList.amz">인터넷트렌드보고서</a>
+											<a href="http://www.acecounter.com/www2/education/videoEducation.amz">온라인동영상교육</a>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt><a>오프라인교육</a></dt>
+										<dd>
+											<a href="http://www.acecounter.com/www2/education/eSchedule.amz">교육일정</a>
+											<a href="http://www.acecounter.com/www2/education/eFAQList.amz">교육FAQ</a>
+											<a href="http://www.acecounter.com/www2/education/eInquiry.amz">교육문의접수</a>
+											<a href="http://www.acecounter.com/www2/education/eApplyStatus.amz">교육신청현황</a>
+											<a href="http://www.acecounter.com/www2/education/eMap.amz">찾아오시는길</a>
+										</dd>
+									</dl>
+								</li>
+							</ul>
+						</li>
+						<li class="m3">
+							<a class="dep1" href="http://www.acecounter.com/www2/customer/customerInfo.amz">고객센터<span class="focus"></span></a>
+							<h3><span>Customer</span>고객센터</h3>
+							<ul class="dep2">
+								<li>
+									<dl>
+										<dt><a>고객지원안내</a></dt>
+										<dd>
+											<a href="http://www.acecounter.com/www2/customer/faqList.amz">자주 찾는 질문</a>
+											<a href="http://www.acecounter.com/www2/customer/inquiry.amz">온라인 문의하기</a>
+											<a href="http://www.acecounter.com/www2/customer/downloadCenter.amz">다운로드센터</a>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt><a>소식</a></dt>
+										<dd>
+											<a href="http://www.acecounter.com/www2/customer/noticeList.amz">공지사항</a>
+											<a href="http://www.acecounter.com/www2/customer/serviceList.amz">서비스 개선안내</a>
+											<!-- ACE-8966 뉴스레터 메뉴숨김처리. 추후 재표기예정 - by 백승하 -->
+											<!--a href="http://www.acecounter.com/www2/customer/newsLetter.amz">뉴스레터</a-->
+											<a href="http://www.acecounter.com/www2/customer/event_list.amz">이벤트</a>
+										</dd>
+									</dl>
+								</li>
+							</ul>
+						</li>
+						<li class="m4 last">
+							<a class="dep1" href="http://www.acecounter.com/www2/acecounter/acecounter.amz">회사소개<span class="focus"></span></a>
+							<h3><span>Company</span>회사소개</h3>
+							<ul class="dep2">
+								<li>
+									<dl>
+										<dt><a>회사소개</a></dt>
+										<dd>
+											<a href="http://www.acecounter.com/www2/acecounter/acecounter.amz">엔에이치엔에이스</a>
+											<a href="http://www.acecounter.com/www2/acecounter/history.amz">회사연혁</a>
+											<a href="http://www.acecounter.com/www2/acecounter/recruit.amz">인재채용</a>
+											<a href="http://www.acecounter.com/www2/acecounter/contact.amz">오시는길</a>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt><a>제휴안내</a></dt>
+										<dd>
+											<a href="http://www.acecounter.com/www2/acecounter/partnerProposal.amz">제휴문의</a>
+											<a href="http://www.acecounter.com/www2/acecounter/partner.amz">공식제휴사</a>
+											<a href="http://www.acecounter.com/partner.html" target="_blank">제휴사로그인</a>
+										</dd>
+									</dl>
+								</li>
+							</ul>
+						</li>
+					</ul><!-- end : class : gnb -->
+				</div><!-- end : class : gnb_area -->
+			</div><!-- end : class : header_inner -->
+			<div class="gnb_bg"></div><!-- toggle : class : on -->
+		</div><!-- end : header : id -->
+
+		<!-- 공통 팝업 레이터 -->
+		<div id="popup_wrap_common" class="popup_wrap type3"></div>		
+		<div class="lnb_wrap">
+			<div class="page_title">
+				<h2>온라인교육</h2>
+				<div class="btn_area">
+					<a class="btn_prev_page" href="/www2/product/clientList.amz">고객사</a>						
+					<a class="btn_next_page" href="/www2/education/eSchedule.amz">오프라인교육</a>
+				</div>
+			</div>
+			<div class="lnb_area">
+				<a class="btn_home " href="/www2/main.amz"><img src="/www2/images/common/btn_home.gif" alt="홈으로"></a>
+				<a class="lnb_btn " href="/www2/education/eCenter.amz">교육센터</a>
+<ul class="lnb"><li class="last"><a href="#" style="color: #00a8ff">인터넷트렌드보고서</a></li><li><a href="/www2/education/aceKnowledge.amz">웹분석지식</a></li><li><a href="/www2/education/aceReal.amz">웹분석실전활용</a></li><li><a href="/www2/education/trendReportList.amz">인터넷트렌드보고서</a></li><li><a href="/www2/education/videoEducation.amz">온라인동영상교육</a></li></ul><ul class="lnb"><li class="last"><a href="#">오프라인교육</a></li><li><a href="/www2/education/eSchedule.amz">교육일정</a></li><li><a href="/www2/education/eFAQList.amz">교육FAQ</a></li><li><a href="/www2/education/eInquiry.amz">교육문의접수</a></li><li><a href="/www2/education/eApplyStatus.amz">교육신청현황</a></li><li><a href="/www2/education/eMap.amz">찾아오시는 길</a></li></ul>				<ul class="util_menu">
+					<li><a href="http://www.acecounter.com//stat/view/statview1_6.amz">통계보기</a></li>
+					<li><a href="https://www.acecounter.com/logout.amz">로그아웃</a></li>
+				</ul>
+			</div><!-- end : class : lnb_area -->
+		</div><!-- end : class : lnb_wrap -->
+		
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#selectGroup").css("display:none");
+});
+</script>
+		<div id="container">
+			<div class="contents">
+				<div class="contents_top">
+					<h3 class="sub_title">인터넷 트렌드 보고서</h3>
+					<p class="sub_info">
+						인터넷환경 및 방문성향에 대한<br>
+						다양한 트렌드 보고서를 확인하실 수 있습니다.
+					</p>
+					<img class="img_sub_top" src="../images/contents/edu_ico_sub_top5.png" alt="">
+					
+				</div><!-- end : class : contents_top -->
+                <div class="con_edu_wrap">
+				<div class="edu_section_last">
+						<div class="con_edu_inner">
+							<!--select style='width:103px;' class='select_box edu_select' id='selectGroup'>
+							</select-->
+							<p class="select_box1"></p>
+                            <div class="r_area">
+                                <select style="-webkit-appearance: menulist-button; width: 105px; position: absolute; opacity: 0; height: 32px; font-size: 14px;" class="select_box edu_select1 hasCustomSelect" id="selectSearch">
+                          
+                                    <option value="st">제목</option>
+                                    <option value="cm">내용</option>
+
+                                </select><span class="customSelect select_box edu_select1" style="width: 103px; display: inline-block;"><span class="customSelectInner" style="width: 46px; display: inline-block;">제목</span></span>
+							</div>
+                            <div class="input_style1">
+                                <input class="in" name="goSearch" value=""><a href="javascript:void(0);"><img src="../images/ico/btn_find01.gif" id="imgSearch"></a>
+							</div>
+                            
+						</div>
+						<input type="hidden" name="purl" value="/www2/education/trendReportList.amz">
+                        <table cellpadding="0" cellspacing="0" class="table_style2">
+                            <colgroup>
+                                <col width="8%"><col width=""><col width="10%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>번호</th>
+                                    <th>제목</th>
+									<th>작성일자</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+						 <tr>	
+										<td>166</td>
+										<td class="l"><a href="/www2/education/trendReportDetail.amz?rno=194&amp;cpage=1&amp;f_serach1=&amp;i_serach=">[트렌드 리포트] 2020년 1분기 모바일 트래픽 분석 &nbsp;<img src="https://www.acecounter.com/www2/images/contents/bg_new.png" class="l_img"></a></td>
+										<td>2020-04-28</td>
+									 </tr>
+								 <tr>	
+										<td>165</td>
+										<td class="l"><a href="/www2/education/trendReportDetail.amz?rno=193&amp;cpage=1&amp;f_serach1=&amp;i_serach=">[트렌드 리포트] 2020년 1분기 검색엔진 평균 유입률 &nbsp;<img src="https://www.acecounter.com/www2/images/contents/bg_new.png" class="l_img"></a></td>
+										<td>2020-04-28</td>
+									 </tr>
+								 <tr>	
+										<td>164</td>
+										<td class="l"><a href="/www2/education/trendReportDetail.amz?rno=192&amp;cpage=1&amp;f_serach1=&amp;i_serach=">[트렌드 리포트] 2020년 1분기 검색광고 상품별 유입률  &nbsp;<img src="https://www.acecounter.com/www2/images/contents/bg_new.png" class="l_img"></a></td>
+										<td>2020-04-28</td>
+									 </tr>
+								 <tr>	
+										<td>163</td>
+										<td class="l"><a href="/www2/education/trendReportDetail.amz?rno=191&amp;cpage=1&amp;f_serach1=&amp;i_serach=">[인사이트리포트] 가정의달 LOVE FAMILY &nbsp;<img src="https://www.acecounter.com/www2/images/contents/bg_new.png" class="l_img"></a></td>
+										<td>2020-04-27</td>
+									 </tr>
+								 <tr>	
+										<td>162</td>
+										<td class="l"><a href="/www2/education/trendReportDetail.amz?rno=190&amp;cpage=1&amp;f_serach1=&amp;i_serach=">[인사이트리포트] FLEX &nbsp;<img src="https://www.acecounter.com/www2/images/contents/bg_new.png" class="l_img"></a></td>
+										<td>2020-04-22</td>
+									 </tr>
+								 <tr>	
+										<td>161</td>
+										<td class="l"><a href="/www2/education/trendReportDetail.amz?rno=187&amp;cpage=1&amp;f_serach1=&amp;i_serach=">2020년 상반기 앱 트렌드 리포트 &nbsp;<img src="https://www.acecounter.com/www2/images/contents/bg_new.png" class="l_img"></a></td>
+										<td>2020-04-22</td>
+									 </tr>
+								 <tr>	
+										<td>160</td>
+										<td class="l"><a href="/www2/education/trendReportDetail.amz?rno=186&amp;cpage=1&amp;f_serach1=&amp;i_serach=">저관여&amp;고관여 제품의 구매여정 비교 </a></td>
+										<td>2020-04-14</td>
+									 </tr>
+								 <tr>	
+										<td>159</td>
+										<td class="l"><a href="/www2/education/trendReportDetail.amz?rno=185&amp;cpage=1&amp;f_serach1=&amp;i_serach=">[인사이트 리포트] 데이터 미스터트롯 </a></td>
+										<td>2020-04-14</td>
+									 </tr>
+								 <tr>	
+										<td>158</td>
+										<td class="l"><a href="/www2/education/trendReportDetail.amz?rno=182&amp;cpage=1&amp;f_serach1=&amp;i_serach=">[인사이트 리포트] 나만 없어, 댕댕이와 떼껄룩 </a></td>
+										<td>2020-04-01</td>
+									 </tr>
+								 <tr>	
+										<td>157</td>
+										<td class="l"><a href="/www2/education/trendReportDetail.amz?rno=181&amp;cpage=1&amp;f_serach1=&amp;i_serach=">데이터로 살펴보는 봄 패션 쇼핑 트렌드 </a></td>
+										<td>2020-04-01</td>
+									 </tr>
+								
+							</tbody>
+                        </table>
+				<div class="pagination mt35">				<a class="btn_first" href="javascript:void(0);"></a>
+						<a class="btn_prev" href="javascript:void(0);"></a>				<a class="page_num on" href="/www2/education/trendReportList.amz?cpage=1&amp;f_serach1=&amp;i_serach=">1</a>				<a class="page_num " href="/www2/education/trendReportList.amz?cpage=2&amp;f_serach1=&amp;i_serach=">2</a>				<a class="page_num " href="/www2/education/trendReportList.amz?cpage=3&amp;f_serach1=&amp;i_serach=">3</a>				<a class="page_num " href="/www2/education/trendReportList.amz?cpage=4&amp;f_serach1=&amp;i_serach=">4</a>				<a class="page_num " href="/www2/education/trendReportList.amz?cpage=5&amp;f_serach1=&amp;i_serach=">5</a>			<a class="btn_next" href="/www2/education/trendReportList.amz?cpage=2&amp;f_serach1=&amp;i_serach="></a>
+						<a class="btn_last" href="/www2/education/trendReportList.amz?cpage=17&amp;f_serach1=&amp;i_serach="></a>			</div>                
+					</div><!-- end : class : pro_section -->
+                </div><!-- end : class : con_pro_wrap -->
+			</div><!-- end : class : contents -->
+<!-- This script is for AceCounter START -->
+<script language="javascript">
+var _skey = '' ;   
+</script>
+<!-- AceCounter END -->
+			<div class="quick_bar">
+				<div class="quick_inner">
+					<h3 class="quick_title">
+						<span class="english">AceCounter</span>
+						서비스 바로가기
+					</h3>
+					<ul class="quick_menu">
+						<li class="m1"><a href="https://www.acecounter.com/www2/login/member_join.amz">회원가입(무료체험)</a></li>
+						<li class="m2"><a href="http://www.acecounter.com/www2/product/sPreview.amz">서비스 미리보기</a></li>
+						<li class="m3"><a href="http://www.acecounter.com/www2/product/sCost.amz">서비스요금안내</a></li>
+						<li class="m4"><a href="http://www.acecounter.com/www2/customer/inquiry.amz">온라인 문의하기</a></li>
+						<li class="m5"><a href="http://www.acecounter.com/www2/customer/downloadCenter.amz">다운로드</a></li>
+					</ul>
+				</div><!-- end : class : quick_inner -->
+			</div><!-- end : class : quick_bar -->
+			<!--a href="#top" class="btn_top"><img src="/www2/images/common/btn_top.gif" alt="top" /></a-->
+		</div><!-- end : id : container -->
+		<div id="footer">
+			<div class="footer_inner">
+				<img class="ft_logo" src="/www2/images/common/ft_logo_new.gif" alt="">
+				<ul class="ft_list">
+					<li><a href="http://www.acecounter.com/www2/acecounter/acecounter.amz">회사소개</a></li>
+					<li><a href="http://www.acecounter.com/www2/acecounter/partnerProposal.amz">제휴문의</a></li>
+					<li><a href="http://www.acecounter.com/www2/login/terms.amz">서비스 이용약관</a></li>
+					<li><a href="http://www.acecounter.com/www2/login/privacy.amz" style="color:#3c97f1;">개인정보처리방침</a></li>
+					<li><a href="http://www.acecounter.com/www2/acecounter/contact.amz">오시는길</a></li>
+					<li><a href="http://www.acecounter.com/www2/login/sitemap.amz">사이트맵</a></li>
+				</ul>
+				<div class="sel_sns">
+					<a href="https://www.facebook.com/nhnace" target="_blank" class="btn_sns" style="margin-right: 3px;"><img src="/www2/images/common/0_fb_icon.png" alt="페이스북"></a>
+					<a href="http://blog.nhnace.co.kr" target="_blank" class="btn_sns"><img src="/www2/images/common/1_blog_icon.png" alt="네이버 블로그"></a>
+				</div>
+				<address>
+					(주)엔에이치엔에이스 <span style="padding-right:15px;"></span>대표이사 : 정연훈, 이진수 <span style="padding-right:15px;"></span>개인정보보호책임자 : 김유미 
+					<br>주소 : 경기도 성남시 분당구 대왕판교로 645번길 16 플레이뮤지엄 NHN ACE 
+					<br>대표전화 : 1544-5420 <span style="padding-right:15px;"></span>팩스 : 031-8038-3000 <span style="padding-right:15px;"></span> 사업자등록번호 : 220-86-90089 <span style="padding-right:10px;"></span> <a href="http://www.ftc.go.kr/bizCommPop.do?wrkr_no=2208690089&amp;apv_perm_no=" onclick="window.open('http://www.ftc.go.kr/bizCommPop.do?wrkr_no=2208690089&amp;apv_perm_no=','pagename','resizable,height=783,width=602'); return false;" target="_blank" style="color:#868686;text-decoration:underline;">사업자 정보확인</a>
+					<br>통신판매업신고번호 : 2018-성남분당-0226 <span style="padding-right:15px;"></span> 호스팅서비스 사업자 : (주)엔에이치엔에이스				</address>
+				<br>
+				<p class="copyright">
+					Copyright by NHN ACE Corp. All right reserved.				</p>
+
+				<div class="sel_family">
+					<a href="#" class="btn_family"><span class="txt_family">Family site</span><span class="sel_btn"><span class="sp ico">+</span></span></a>
+					<div class="lst_family">
+						<ul class="lst_family_inner">
+							<!--li class="first"><a href="https://new.acecounter.com/common/front" target="_blank" >ACE Counter+</a></li-->
+							<li class="first"><a href="http://www.nhnace.co.kr/" target="_blank">NHN ACE</a></li>
+							<li><a href="http://acetrader.co.kr/" target="_blank">ACE Trader</a></li>
+							<li><a href="http://adlibr.com/" target="_blank">ADLIB</a></li>
+							<li><a href="https://www.dighty.com/" target="_blank">Dighty</a></li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</div><!-- end : footer : id -->
+	</div><!-- end : wrap : id -->
+
+<!-- s-뉴스레터 플로팅 아이콘 배너 -->
+<!-- 1.플로팅 해상도 1800이하일때 -->
+<div id="float-icon" style="display: block;">
+    <ul>
+        <li><a href="https://www.acecounter.com/www2/customer/inquiry.amz" class="tip">
+                <img src="/www2/images/bottom/img_chat.png">
+                <span>온라인 문의하기</span>
+            </a></li>
+        <li><a href="#top" onclick="javascript:void(0)" onmousedown="_PL('http://www.acecounter.com/www2/main.amz?type=click&amp;name=quick_newsletter')" class="tip news_layer">
+                <img src="/www2/images/bottom/img_mail.png">
+                <span>뉴스레터 구독 신청</span>
+            </a></li>
+    </ul>
+</div>
+<!-- 2.플로팅 해상도 1800이상일때-->
+<div id="float-alram" style="display: none;">
+    <div class="alram_item">
+        <span class="logo_area">
+            <img src="/www2/images/bottom/img_logo.png" alt="">
+        </span>        
+		<div class="alram_area left">
+            <a href="https://www.acecounter.com/www2/customer/inquiry.amz">
+			<div class="text_bx">
+                <p class="txt">
+                    반갑습니다.<br>
+                    에이스카운터입니다.<br>
+                    문의사항이 있으시면<br>
+                    <span style="font-weight:600">온라인 문의하기</span>를 남겨주세요.
+                </p>
+            </div>
+			</a>
+        </div>
+    </div>
+    <div class="alram_btn_area" style="">
+        <a href="#top" onclick="javascript:void(0)" onmousedown="_PL('http://www.acecounter.com/www2/main.amz?type=click&amp;name=quick_newsletter')" class="alram_btn_img news_layer"><img src="/www2/images/bottom/img_newsletter.png"></a>
+    </div>
+    <a href="javascript:void(0)" class="clse btn_widget_close"><img src="/www2/images/bottom/img_widget_close.png" alt="닫기"></a>
+</div>
+<div id="top">
+    <a href="#" class="float"><span> TOP</span> </a>
+</div>
+<!-- e-뉴스레터 플로팅 아이콘 배너 -->
+
+<!-- s-뉴스레터 신청 모달 레이어 -->
+<div id="layer1" class="popup_wrap type3" style="top:100px;">
+    <div class="layer_bg"></div>
+    <form method="post" name="InquiryForm" id="SubscribeForm">
+        <div class="popup_area" style="width:545px">
+            <div class="popup_header">
+                <h1 class="popup_title">뉴스레터 구독 신청</h1>
+                <a class="btn_esc" href="#self" onclick="$('#layer1').hide();return false"></a>
+            </div><!-- end : class : popup_header -->
+
+            <div class="popup_container">
+                <div class="popup_section" id="" style="padding-bottom:0px">
+                   <p class="title_txt">업종 트렌드 리포트, 데이터 활용 TIP 등 다양한 마케팅 뉴스를 만나보세요!</p>
+                    <table class="table_style8" cellpadding="0" cellspacing="0">
+                        <colgroup>
+                            <col width="25%">
+                            <col width="">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th><span class="text_blue2">*</span> 이름</th>
+                                <td><input class="input_st1" type="text" name="target_name" maxlength="50" onkeypress="disableKeys(event);"></td>
+                            </tr>
+                            <tr>
+                                <th><span class="text_blue2">*</span> 이메일 주소</th>
+                                <td><input class="input_st1" type="text" name="email_addr" maxlength="50" onkeypress="disableSpace(event);"></td>
+                            </tr>
+                            <tr class="line">
+                                <th class="pb20"><span class="text_blue2 ">*</span> 소속 선택</th>
+                                <td class="pb20">
+                                    <select style="-webkit-appearance: menulist-button; width: 352px; position: absolute; opacity: 0; height: 42px; font-size: 15px;" name="target_div" class="select_box hasCustomSelect">
+									<option value=" ">선택하세요</option>
+									<option value="일반기업">일반기업</option>
+									<option value="개인사업자">개인사업자</option>
+									<option value="대행사/에이전시">대행사/에이전시</option>
+									<option value="관공서/기관">관공서/기관</option>
+									<option value="기타">기타</option>
+                                    </select><span class="customSelect select_box" style="display: inline-block;"><span class="customSelectInner" style="width: 328px; display: inline-block;">선택하세요</span></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th colspan="2" class="pb0" style="padding-top:20px"><span class="text_blue2">*</span> 개인정보 수집 및 이용에 대한 안내</th>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="pt0">
+                                    <div class="text-area">
+                                        · 수집 목적 : 뉴스레터 구독 신청에 따른 본인확인 및 구독 해지에 대한 처리 <br>
+                                        · 수집 항목 : [필수] 이름, 이메일 주소, 소속<br>
+                                        · 보유 기간 : 뉴스레터 해지 신청 시 관련 법령에 따라 3년간 보관<br><br>
+                                        <p>
+                                            동의를 거부하실 수 있으나, 선택하신 서비스를 제공받기 위해서는 동의가 필요합니다.</p>
+                                    </div>
+
+                                    <div class="chkbox_area" style="margin-top:8px">
+                                        <input type="checkbox" name="agree1" id="c1" class="in_check">
+                                        <label for="c1" class="chk_text">개인정보 수집 및 이용에 대해 동의합니다.</label>
+                                    </div>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="btn_center_area mt20">
+                        <a href="javascript:void(0);"><img id="btn_subscribe" src="/www2/images/bottom/img_popup_subscribe.png" alt="구독신청하기"></a>
+                        <p class="mt15"><a href="javascript:void(0)" class="cancel" style="text-decoration: underline">해지 신청하기</a></p>
+                    </div>
+                </div>
+            </div><!-- end : class : popup_container -->
+        </div><!-- end : class : popup_area -->
+    </form>
+
+</div>
+<!-- e 뉴스레터 신청 레이어 -->
+
+<!-- s-뉴스레터 해지신청  레이어 -->
+<div id="layer2" class="popup_wrap type3">
+    <div class="layer_bg"></div>
+    <form method="post" name="CancelForm" id="CancelForm">
+        <div class="popup_area" style="width:545px">
+            <div class="popup_header">
+                <h1 class="popup_title">뉴스레터 구독 해지 신청</h1>
+                <a class="btn_esc" href="#self" onclick="$('#layer2').hide();return false"></a>
+            </div><!-- end : class : popup_header -->
+
+            <div class="popup_container">
+                <div class="popup_section" id="" style="padding-bottom:10px">
+                    <table class="table_style8" cellpadding="0" cellspacing="0">
+                        <colgroup>
+                            <col width="25%">
+                            <col width="">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th><span class="text_blue2">*</span> 이름</th>
+                                <td><input class="input_st1" type="text" name="cancel_target_name" maxlength="50" onkeypress="disableKeys(event);"></td>
+                            </tr>
+                            <tr>
+                                <th><span class="text_blue2">*</span> 이메일 주소</th>
+                                <td><input class="input_st1" type="text" name="cancel_email_addr" maxlength="50" onkeypress="disableSpace(event);"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="btn_center_area mt20">
+                        <a href="javascript:void(0);"><img id="btn_cancel" src="/www2/images/bottom/img_popup_cancel.png" alt="해지신청하기"></a>
+                    </div>
+                </div>
+            </div><!-- end : class : popup_container -->
+        </div><!-- end : class : popup_area -->
+    </form>
+
+</div>
+<!-- e 뉴스레터 해지신청 레이어 -->
+<script>
+    $(".btn_widget_close").click(function(){
+        $("#float-alram" ).hide();
+        $("#float-icon").show();
+    });
+    $(".news_layer").click(function(){
+        $("#layer1" ).show();
+    });
+    $(".cancel").click(function(){
+        $("#layer1" ).hide();
+        $("#layer2" ).show();
+    });
+
+    $(window).resize(function(){
+        var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+       // console.log(width);
+        if ( width > 1800 )
+        {
+            $("#float-alram" ).show();
+            $("#float-icon").hide();
+        } else {
+            $("#float-alram" ).hide();
+            $("#float-icon").show();
+        }
+    }).trigger("resize");
+
+	// 구독신청
+	$("#btn_subscribe").click(function() {
+		if ( $("input[name='target_name']").val().trim() == "" ) {
+			alert("이름을 입력해 주세요.");
+		} else if ( $("input[name='email_addr']").val() == "" || !emailCheck($("input[name='email_addr']").val()) ) {
+			alert("올바른 이메일 주소를 입력해 주세요.");
+		} else if ( $("select[name='target_div']").val() == " " ) {
+			alert("소속을 선택해 주세요.");
+		} else if ( $("input[name='agree1']").attr('checked') != "checked" ) {
+			alert("개인정보 수집 및 이용에 동의해 주세요.");
+		} else {
+
+			$.ajax({
+				url : "/www2/newsletter_register.amz?btn=ok",
+				type: "POST",
+				data : $("#SubscribeForm").serialize(),
+				success: function(result) {
+					alert(result);
+					_PL('https://www.acecounter.com/www2/newsletter_register.amz?btn=ok');
+					if ( result.indexOf('완료') > -1 ) {
+						$("#layer1").hide();
+						location.href="/www2/main.amz";
+					}
+				}
+			});	
+		}
+	});
+
+	// 해지 신청
+	$("#btn_cancel").click(function() {
+		if ( $("input[name='cancel_target_name']").val().trim() == "" ) {
+			alert("이름을 입력해 주세요.");
+		} else if ( $("input[name='cancel_email_addr']").val() == "" || !emailCheck($("input[name='cancel_email_addr']").val()) ) {
+			alert("올바른 이메일 주소를 입력해 주세요.");
+		} else {
+			if ( confirm("뉴스레터 구독을 해지하시겠습니까?") ) { 
+				$.ajax({
+					url : "/www2/newsletter_register.amz?btn=delete",
+					type: "POST",
+					data : $("#CancelForm").serialize(),
+					success: function(result) {
+						_PL('https://www.acecounter.com/www2/newsletter_register.amz?btn=delete');
+						alert(result);
+						if ( result.indexOf('해지') > -1 ) {
+							$("#layer2").hide();
+							location.href="/www2/main.amz";
+						}
+					}
+				});	
+			}
+		}
+	});
+</script>
+
+<script type="text/javascript">
+$(function(){
+	$('.btn_family').on('click',function(e){
+		e.preventDefault();
+		$(this).parent().toggleClass('on');
+	});
+
+    $('.sel_family').on('mouseover',function(){
+        $('.sel_family').addClass('on');
+    });
+
+    $('.sel_family').on('mouseout',function(e) {
+        if (!$.contains($('.sel_family')[0], e.relatedTarget)) {
+            $('.sel_family').removeClass('on');
+        };
+    });
+});
+</script>
+
+<script language="javascript" type="text/javascript">
+var _ag = 78 ; var _gd = 'woman'; var mr_buy = '135000'; var mr_id='member';
+
+if(typeof(AMRS_GC)=='undefined'){
+ var AMRS_O=[];var AMRS_CK = new Image();var AMRS_GC='AMR100';var AMRS_GD='mrsg.aceclick.co.kr';var AMRS_GP='8080';var AMRS_TI=(new Date()).getTime();
+ var AMRS_PR = location.protocol=='https:'?'https://'+AMRS_GD+':843':'http://'+AMRS_GD+':'+AMRS_GP; AMRS_CK.src = AMRS_PR+'/?cookie';
+ if(typeof(Array.prototype.push)!='undefined'){ AMRS_O.push(AMRS_CK);}
+ document.writeln("<scr"+"ipt type='text/Javascript' src='"+location.protocol+"//mrss.aceclick.co.kr/aceclick.js?rt="+AMRS_TI+"'></scr"+"ipt>");
+}
+</script><script type="text/Javascript" src="https://mrss.aceclick.co.kr/aceclick.js?rt=1588135379998"></script>
+
+	
+<!-- This script is for AceCounter START -->
+<script language="javascript">
+var _ag   = 0 ;         // 로그인사용자 나이
+var _id   = 'apzz09288';    		// 로그인사용자 아이디
+var m_id   = 'apzz09288';    		// 로그인사용자 아이디
+var _mr   = '';        	// 로그인사용자 결혼여부 ('single' , 'married' )
+var _gd   = '';         // 로그인사용자 성별 ('man' , 'woman')
+var _jid = '' ;			// 가입시입력한 ID
+var m_jid = '' ;			// 가입시입력한 ID
+var _ud1 = '' ;			// 사용자 정의변수 1 ( 1 ~ 7 정수값)
+var _ud2 = '' ;			// 사용자 정의변수 2 ( 1 ~ 7 정수값)
+var _ud3 = '' ;			// 사용자 정의변수 3 ( 1 ~ 7 정수값)
+
+window._AceTM=(window._AceTM||{});
+_AceTM.Login={
+			uID:'apzz09288',		//로그인사용자 고유값
+			uAge:'',			//로그인사용자 나이
+			uGender:''	//로그인사용자 성별(man | woman)
+}
+
+
+</script>
+
+<!-- Toast Tag Manager -->
+<script type="text/javascript" src="//static.tagmanager.toast.com/tag/view/510"></script><iframe src="about:blank" style="display:none" id="ne_tag_proc_frame" name="ne_tag_proc_frame"></iframe>
+<script type="text/javascript">
+window.ne_tgm_q = window.ne_tgm_q || [];
+window.ne_tgm_q.push(
+{
+    tagType: 'custom2',
+    device:'web'/*web, mobile, tablet*/,
+    pageEncoding:'utf-8'
+});
+</script><script>window.ne_tgm_q.callStart('toast_exchange', 'all');</script><script>var ne_adv_id="1771368949";</script><script>window.ne_tgm_q.callComplete('toast_exchange', 'all');</script><script>window.ne_tgm_q.callStart('ne_dmp', 'common_tail');</script><script>var ne_dmp_cnt=ne_dmp_cnt|| 0;var ne_dmp_func = function() {      var ne_dmp_form_name = "ne_dmp_form_" + ne_dmp_cnt;      var ne_dmp_form = document.createElement("form");      ne_dmp_form.name = ne_dmp_form_name;      ne_dmp_form.method = "POST";      ne_dmp_form.action = "//adlc-exchange.toast.com/log";      ne_dmp_form.target = "ne_tag_proc_frame" + ne_dmp_cnt;      var ne_dmp_form_u = document.createElement("input");      ne_dmp_form_u.setAttribute("value", encodeURIComponent("https://www.acecounter.com/www2/education/trendReportList.amz"));      ne_dmp_form_u.setAttribute("type", "hidden");      ne_dmp_form_u.setAttribute("name", "u");      var ne_adv_id= window.ne_adv_id|| "";      var ne_dmp_form_advid = document.createElement("input");      ne_dmp_form_advid.setAttribute("value", ne_adv_id);      ne_dmp_form_advid.setAttribute("type", "hidden");      ne_dmp_form_advid.setAttribute("name", "advid");      var ne_dmp_form_r = document.createElement("input");      ne_dmp_form_r.setAttribute("value", encodeURIComponent("https://www.acecounter.com/stat/my/my_notice.amz"));      ne_dmp_form_r.setAttribute("type", "hidden");      ne_dmp_form_r.setAttribute("name", "r");      var ne_dmp_form_code = document.createElement("input");      ne_dmp_form_code.setAttribute("value", "utf-8");      ne_dmp_form_code.setAttribute("type", "hidden");      ne_dmp_form_code.setAttribute("name", "code");      var ne_dmp_form_items = document.createElement("input");      ne_dmp_form_items.setAttribute("value", encodeURIComponent('{"oid":"","items":[]}'));      ne_dmp_form_items.setAttribute("type", "hidden");      ne_dmp_form_items.setAttribute("name", "target");      var ne_dmp_form_action = document.createElement("input");      ne_dmp_form_action.setAttribute("value", encodeURIComponent("custom2"));      ne_dmp_form_action.setAttribute("type", "hidden");      ne_dmp_form_action.setAttribute("name", "action");      ne_dmp_form.appendChild(ne_dmp_form_u);      ne_dmp_form.appendChild(ne_dmp_form_advid);      ne_dmp_form.appendChild(ne_dmp_form_r);      ne_dmp_form.appendChild(ne_dmp_form_code);      ne_dmp_form.appendChild(ne_dmp_form_items);      ne_dmp_form.appendChild(ne_dmp_form_action);            document.body.appendChild(ne_dmp_form);      ne_dmp_form.submit();      ne_dmp_executed = true;      ne_dmp_cnt++;      return true;};    var ne_dmp_target_frame;    try {      ne_dmp_target_frame= document.createElement('<iframe name="ne_tag_proc_frame' + ne_dmp_cnt + '">');    } catch (ex) {      ne_dmp_target_frame= document.createElement('iframe');    }    ne_dmp_target_frame.setAttribute("id", "ne_tag_proc_frame"+ne_dmp_cnt);    ne_dmp_target_frame.setAttribute("name", "ne_tag_proc_frame"+ne_dmp_cnt);    ne_dmp_target_frame.setAttribute("width", "0");    ne_dmp_target_frame.setAttribute("height", "0");    ne_dmp_target_frame.setAttribute("style", "position:absolute;width:0px;height:0px;");    ne_dmp_target_frame.setAttribute("scrolling", "no");    ne_dmp_target_frame.setAttribute("frameborder", "0");    document.body.appendChild(ne_dmp_target_frame);    ne_dmp_func();</script><iframe id="ne_tag_proc_frame0" name="ne_tag_proc_frame0" width="0" height="0" style="position:absolute;width:0px;height:0px;" scrolling="no" frameborder="0"></iframe><form name="ne_dmp_form_0" method="POST" action="//adlc-exchange.toast.com/log" target="ne_tag_proc_frame0"><input value="https%3A%2F%2Fwww.acecounter.com%2Fwww2%2Feducation%2FtrendReportList.amz" type="hidden" name="u"><input value="1771368949" type="hidden" name="advid"><input value="https%3A%2F%2Fwww.acecounter.com%2Fstat%2Fmy%2Fmy_notice.amz" type="hidden" name="r"><input value="utf-8" type="hidden" name="code"><input value="%7B%22oid%22%3A%22%22%2C%22items%22%3A%5B%5D%7D" type="hidden" name="target"><input value="custom2" type="hidden" name="action"></form><script>window.ne_tgm_q.callComplete('ne_dmp', 'common_tail');</script>
+
+<!-- Toast Tag Manager -->
+
+<!-- AceCounter Log Gathering Script V.7.5.2013010701 -->
+<script language="javascript">
+	var _AceGID=(function(){var Inf=['gtb1.acecounter.com','8080','YM1A288380100','TW','1','NaPm,Ncisy','ALL','0']; var _CI=(!_AceGID)?[]:_AceGID.val;var _N=0;var _T=new Image(0,0);if(_CI.join('.').indexOf(Inf[3])<0){ _T.src =( location.protocol=="https:"?"https://"+Inf[0]:"http://"+Inf[0]+":"+Inf[1]) +'/?cookie'; _CI.push(Inf);  _N=_CI.length; } return {o: _N,val:_CI}; })();
+	var _AceCounter=(function(){var G=_AceGID;if(G.o!=0){var _A=G.val[G.o-1];var _G=( _A[0]).substr(0,_A[0].indexOf('.'));var _C=(_A[7]!='0')?(_A[2]):_A[3];	var _U=( _A[5]).replace(/\,/g,'_');var _S=((['<scr','ipt','type="text/javascr','ipt"></scr','ipt>']).join('')).replace('tt','t src="'+location.protocol+ '//cr.acecounter.com/Web/AceCounter_'+_C+'.js?gc='+_A[2]+'&py='+_A[4]+'&gd='+_G+'&gp='+_A[1]+'&up='+_U+'&rd='+(new Date().getTime())+'" t');document.writeln(_S); return _S;} })();
+</script><script src="https://cr.acecounter.com/Web/AceCounter_TW.js?gc=YM1A288380100&amp;py=1&amp;gd=gtb1&amp;gp=8080&amp;up=NaPm_Ncisy&amp;rd=1588135380044" type="text/javascript"></script>
+
+<noscript><img src='http://gtb1.acecounter.com:8080/?uid=YM1A288380100&je=n&' border=0 width=0 height=0></noscript>
+<!-- AceCounter Log Gathering Script End -->
+
+<!-- NA 스크립트 -->
+<script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+<script type="text/javascript">
+if (!wcs_add) var wcs_add={};
+wcs_add["wa"] = "s_2480e902d274";
+if (!_nasa) var _nasa={};
+wcs.inflow("acecounter.com");
+wcs_do(_nasa);
+</script>
+
+
+<!--AceCounter-II Log Gathering for AceTag Manager V.9.2.20170103-->
+<script type="text/javascript">
+var _AceTM = (function (_j, _s, _b, _o, _y) {
+	var _uf='undefined',_pmt='',_lt=location;var _ap = String(typeof(_y.appid) != _uf ? _y.appid():(isNaN(window.name))?0:window.name);var _ai=(_ap.length!=6)?(_j!=0?_j:0):_ap;if(typeof(_y.em)==_uf&&_ai!=0){var _sc=document.createElement('script');var _sm=document.getElementsByTagName('script')[0];
+	var _cn={tid:_ai+_s,hsn:_lt.hostname,hrf:(document.referrer.split('/')[2]),dvp:(typeof(window.orientation)!=_uf?(_ap!=0?2:1):0),tgp:'',tn1:_y.uWorth,tn2:0,tn3:0,tw1:'',tw2:'',tw3:'',tw4:'',tw5:'',tw6:'',tw7:_y.pSearch};_cn.hrf=(_cn.hsn!=_cn.hrf)?_cn.hrf:'in';for(var _aix in _y){var _ns=(_y[_aix])||{};
+	if(typeof(_ns)!='function'){_cn.tgp=String(_aix).length>=3?_aix:'';_cn.tn2=_ns.pPrice;_cn.tn3=_ns.bTotalPrice;_cn.tw1=_ns.bOrderNo;_cn.tw2=_ns.pCode;_cn.tw3=_ns.pName;_cn.tw4=_ns.pImageURl;_cn.tw5=_ns.pCategory;_cn.tw6=_ns.pLink;break;};};_cn.rnd=(new Date().getTime());for(var _alx in _cn){	var _ct=String(_cn[_alx]).substring(0,128);_pmt+=(_alx+"="+encodeURIComponent((_ct!=_uf)?_ct:'')+"&");};_y.acid=_ai;_y.atid=_cn.tid;_y.em=_cn.rnd;_sc.src=((_lt.protocol.indexOf('http')==0?_lt.protocol:'http:')+'//'+_b+'/'+_o)+'?'+_pmt+'py=0';_sm.parentNode.insertBefore(_sc,_sm);};return _y;
+})(100027,'CR-30-A', 'atm.acecounter.com','ac.js',window._AceTM||{});
+</script>
+<!--AceCounter-II Log Gathering for AceTag Manager End -->
+
+
+<!-- 2014-01-29 Google Analytics 스크립트 ACE-7688 -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47572734-1', 'acecounter.com');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+</script>
+
+
+<span itemscope="" itemtype="http://schema.org/Organization">
+<link itemprop="url" href="http://www.acecounter.com">
+<a itemprop="sameAs" href="https://www.facebook.com/nhnace"></a>
+<a itemprop="sameAs" href="http://blog.naver.com/amazingsoft"></a>
+</span>
+
+
+
+
+
+</body></html>

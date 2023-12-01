@@ -1,4 +1,25 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 350.47 s - in TestSuite
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 15,276.876 s <<< FAILURE! - in TestSuite
+다이티카페24회원가입(TestExample.BlogTest)  Time elapsed: 22.65 s  <<< FAILURE!
+org.openqa.selenium.UnhandledAlertException: 
+Dismissed user prompt dialog: test492는 이미 사용중인 아이디입니다.
+: 
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'AD01548562', ip: '10.77.129.79', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212-1-ojdkbuild'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+selenide.url: https://dighty.cafe24.com/exec/front/Member/logout
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 97.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220202182137, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 34968, moz:profile: C:\Users\NHN\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 2dbb9fe7-4bea-494c-a446-040...}
+selenide.baseUrl: http://localhost:8080
+Session ID: 2dbb9fe7-4bea-494c-a446-040aeb30e334
+	at TestExample.BlogTest.다이티카페24회원가입(BlogTest.java:895)
+
+카페24구매(TestExample.BlogTest)  Time elapsed: 14,564.938 s  <<< FAILURE!
+com.codeborne.selenide.ex.ElementNotFound: 
+Element not found {.theme2[1]}
+Expected: visible
+	at TestExample.BlogTest.카페24구매(BlogTest.java:737)
+Caused by: java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at TestExample.BlogTest.카페24구매(BlogTest.java:737)
+

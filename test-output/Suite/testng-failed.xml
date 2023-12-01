@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test">
-    <classes>
-      <class name="TestExample.TestExample"/>
-    </classes>
-  </test> <!-- Test -->
   <test name="Test(failed)">
+    <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="TestExample.TestExample">
+      <class name="TestExample.TestScript">
         <methods>
-          <include name="marketing"/>
+          <include name="afterTest"/>
+          <include name="testAccount_termination"/>
+          <include name="beforeTest"/>
         </methods>
-      </class> <!-- TestExample.TestExample -->
+      </class> <!-- TestExample.TestScript -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

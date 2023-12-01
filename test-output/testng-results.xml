@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="0" failed="0" skipped="3">
+<testng-results skipped="3" failed="0" ignored="0" total="3" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-11-16T02:12:02Z" name="Default suite" finished-at="2018-11-16T02:12:02Z" duration-ms="39">
+  <suite name="Default suite" duration-ms="46" started-at="2020-04-29T05:35:35Z" finished-at="2020-04-29T05:35:35Z">
     <groups>
     </groups>
-    <test started-at="2018-11-16T02:12:02Z" name="Default test" finished-at="2018-11-16T02:12:02Z" duration-ms="39">
-      <class name="TestExample.BlogTest">
-        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:TestExample.BlogTest@11c9af63]" started-at="2018-11-16T11:12:02Z" name="beforeTest" finished-at="2018-11-16T11:12:02Z" duration-ms="0" status="FAIL">
+    <test name="Default test" duration-ms="46" started-at="2020-04-29T05:35:35Z" finished-at="2020-04-29T05:35:35Z">
+      <class name="TestExample.DightyAdmin">
+        <test-method status="FAIL" signature="beforeTest(java.lang.String)[pri:0, instance:TestExample.DightyAdmin@5c3bd550]" name="beforeTest" is-config="true" duration-ms="0" started-at="2020-04-29T14:35:35Z" finished-at="2020-04-29T14:35:35Z">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
 Parameter 'browser' is required by BeforeClass on method beforeTest but has not been marked @Optional or defined
-in C:\Users\최영권\AppData\Local\Temp\testng-eclipse-980018540\testng-customsuite.xml]]>
+in C:\Users\NHN\AppData\Local\Temp\testng-eclipse-691335471\testng-customsuite.xml]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestNGException: 
 Parameter 'browser' is required by BeforeClass on method beforeTest but has not been marked @Optional or defined
-in C:\Users\최영권\AppData\Local\Temp\testng-eclipse-980018540\testng-customsuite.xml
+in C:\Users\NHN\AppData\Local\Temp\testng-eclipse-691335471\testng-customsuite.xml
 	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
 	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
 	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:118)
@@ -37,7 +37,7 @@ in C:\Users\최영권\AppData\Local\Temp\testng-eclipse-980018540\testng-customs
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
 	at org.testng.TestNG.runSuites(TestNG.java:1133)
 	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
@@ -46,17 +46,17 @@ in C:\Users\최영권\AppData\Local\Temp\testng-eclipse-980018540\testng-customs
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="blogspot_전환_URL설정()[pri:0, instance:TestExample.BlogTest@11c9af63]" started-at="2018-11-16T11:12:02Z" name="blogspot_전환_URL설정" finished-at="2018-11-16T11:12:02Z" duration-ms="1" status="SKIP">
+        <test-method status="SKIP" signature="DightyAdmin공지사항등록()[pri:0, instance:TestExample.DightyAdmin@5c3bd550]" name="DightyAdmin공지사항등록" duration-ms="4" started-at="2020-04-29T14:35:35Z" finished-at="2020-04-29T14:35:35Z">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
 Parameter 'browser' is required by BeforeClass on method beforeTest but has not been marked @Optional or defined
-in C:\Users\최영권\AppData\Local\Temp\testng-eclipse-980018540\testng-customsuite.xml]]>
+in C:\Users\NHN\AppData\Local\Temp\testng-eclipse-691335471\testng-customsuite.xml]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestNGException: 
 Parameter 'browser' is required by BeforeClass on method beforeTest but has not been marked @Optional or defined
-in C:\Users\최영권\AppData\Local\Temp\testng-eclipse-980018540\testng-customsuite.xml
+in C:\Users\NHN\AppData\Local\Temp\testng-eclipse-691335471\testng-customsuite.xml
 	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
 	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
 	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:118)
@@ -76,7 +76,7 @@ in C:\Users\최영권\AppData\Local\Temp\testng-eclipse-980018540\testng-customs
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
 	at org.testng.TestNG.runSuites(TestNG.java:1133)
 	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
@@ -84,63 +84,24 @@ in C:\Users\최영권\AppData\Local\Temp\testng-eclipse-980018540\testng-customs
           </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- blogspot_전환_URL설정 -->
-        <test-method signature="egloos_전환_URL설정()[pri:1, instance:TestExample.BlogTest@11c9af63]" started-at="2018-11-16T11:12:02Z" name="egloos_전환_URL설정" finished-at="2018-11-16T11:12:02Z" duration-ms="1" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeClass on method beforeTest but has not been marked @Optional or defined
-in C:\Users\최영권\AppData\Local\Temp\testng-eclipse-980018540\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeClass on method beforeTest but has not been marked @Optional or defined
-in C:\Users\최영권\AppData\Local\Temp\testng-eclipse-980018540\testng-customsuite.xml
-	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:118)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:203)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:144)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:169)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- egloos_전환_URL설정 -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:TestExample.BlogTest@11c9af63]" started-at="2018-11-16T11:12:02Z" name="afterTest" finished-at="2018-11-16T11:12:02Z" duration-ms="0" status="SKIP">
+        </test-method> <!-- DightyAdmin공지사항등록 -->
+        <test-method status="SKIP" signature="afterTest()[pri:0, instance:TestExample.DightyAdmin@5c3bd550]" name="afterTest" is-config="true" duration-ms="0" started-at="2020-04-29T14:35:35Z" finished-at="2020-04-29T14:35:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- TestExample.BlogTest -->
+      </class> <!-- TestExample.DightyAdmin -->
       <class name="TestExample.TestScript">
-        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:TestExample.TestScript@45ca843]" started-at="2018-11-16T11:12:02Z" name="beforeTest" finished-at="2018-11-16T11:12:02Z" duration-ms="0" status="FAIL">
+        <test-method status="FAIL" signature="beforeTest(java.lang.String)[pri:0, instance:TestExample.TestScript@91161c7]" name="beforeTest" is-config="true" duration-ms="0" started-at="2020-04-29T14:35:35Z" finished-at="2020-04-29T14:35:35Z">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
 Parameter 'browser' is required by BeforeClass on method beforeTest but has not been marked @Optional or defined
-in C:\Users\최영권\AppData\Local\Temp\testng-eclipse-980018540\testng-customsuite.xml]]>
+in C:\Users\NHN\AppData\Local\Temp\testng-eclipse-691335471\testng-customsuite.xml]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestNGException: 
 Parameter 'browser' is required by BeforeClass on method beforeTest but has not been marked @Optional or defined
-in C:\Users\최영권\AppData\Local\Temp\testng-eclipse-980018540\testng-customsuite.xml
+in C:\Users\NHN\AppData\Local\Temp\testng-eclipse-691335471\testng-customsuite.xml
 	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
 	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
 	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:118)
@@ -160,7 +121,7 @@ in C:\Users\최영권\AppData\Local\Temp\testng-eclipse-980018540\testng-customs
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
 	at org.testng.TestNG.runSuites(TestNG.java:1133)
 	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
@@ -169,17 +130,17 @@ in C:\Users\최영권\AppData\Local\Temp\testng-eclipse-980018540\testng-customs
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="비밀번호정기변경_레이어노출확인()[pri:0, instance:TestExample.TestScript@45ca843]" started-at="2018-11-16T11:12:02Z" name="비밀번호정기변경_레이어노출확인" finished-at="2018-11-16T11:12:02Z" duration-ms="7" status="SKIP">
+        <test-method status="SKIP" signature="CDP가맹점정보페이지넘기기()[pri:0, instance:TestExample.TestScript@91161c7]" name="CDP가맹점정보페이지넘기기" duration-ms="2" started-at="2020-04-29T14:35:35Z" finished-at="2020-04-29T14:35:35Z">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
 Parameter 'browser' is required by BeforeClass on method beforeTest but has not been marked @Optional or defined
-in C:\Users\최영권\AppData\Local\Temp\testng-eclipse-980018540\testng-customsuite.xml]]>
+in C:\Users\NHN\AppData\Local\Temp\testng-eclipse-691335471\testng-customsuite.xml]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestNGException: 
 Parameter 'browser' is required by BeforeClass on method beforeTest but has not been marked @Optional or defined
-in C:\Users\최영권\AppData\Local\Temp\testng-eclipse-980018540\testng-customsuite.xml
+in C:\Users\NHN\AppData\Local\Temp\testng-eclipse-691335471\testng-customsuite.xml
 	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
 	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
 	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:118)
@@ -199,7 +160,7 @@ in C:\Users\최영권\AppData\Local\Temp\testng-eclipse-980018540\testng-customs
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
 	at org.testng.TestNG.runSuites(TestNG.java:1133)
 	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
@@ -207,12 +168,96 @@ in C:\Users\최영권\AppData\Local\Temp\testng-eclipse-980018540\testng-customs
           </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- 비밀번호정기변경_레이어노출확인 -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:TestExample.TestScript@45ca843]" started-at="2018-11-16T11:12:02Z" name="afterTest" finished-at="2018-11-16T11:12:02Z" duration-ms="0" status="SKIP">
+        </test-method> <!-- CDP가맹점정보페이지넘기기 -->
+        <test-method status="SKIP" signature="afterTest()[pri:0, instance:TestExample.TestScript@91161c7]" name="afterTest" is-config="true" duration-ms="0" started-at="2020-04-29T14:35:35Z" finished-at="2020-04-29T14:35:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- TestExample.TestScript -->
+      <class name="TestExample.BlogTest">
+        <test-method status="FAIL" signature="beforeTest(java.lang.String)[pri:0, instance:TestExample.BlogTest@604ed9f0]" name="beforeTest" is-config="true" duration-ms="0" started-at="2020-04-29T14:35:35Z" finished-at="2020-04-29T14:35:35Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeClass on method beforeTest but has not been marked @Optional or defined
+in C:\Users\NHN\AppData\Local\Temp\testng-eclipse-691335471\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeClass on method beforeTest but has not been marked @Optional or defined
+in C:\Users\NHN\AppData\Local\Temp\testng-eclipse-691335471\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:118)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:203)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:144)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:169)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="SKIP" signature="서비스관리트렌드보고서배너속도확인()[pri:0, instance:TestExample.BlogTest@604ed9f0]" name="서비스관리트렌드보고서배너속도확인" duration-ms="1" started-at="2020-04-29T14:35:35Z" finished-at="2020-04-29T14:35:35Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeClass on method beforeTest but has not been marked @Optional or defined
+in C:\Users\NHN\AppData\Local\Temp\testng-eclipse-691335471\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeClass on method beforeTest but has not been marked @Optional or defined
+in C:\Users\NHN\AppData\Local\Temp\testng-eclipse-691335471\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:118)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:203)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:144)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:169)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 서비스관리트렌드보고서배너속도확인 -->
+        <test-method status="SKIP" signature="afterTest()[pri:0, instance:TestExample.BlogTest@604ed9f0]" name="afterTest" is-config="true" duration-ms="0" started-at="2020-04-29T14:35:35Z" finished-at="2020-04-29T14:35:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- TestExample.BlogTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

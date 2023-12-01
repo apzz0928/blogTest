@@ -1,0 +1,167 @@
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>Dighty Self Market</title>
+    <!-- Custom title -->
+    
+    
+
+    <link rel="shortcut icon" type="image/x-icon" href="/static/images/favicon.ico">
+
+    <link rel="stylesheet" href="/webjars/css-reset/2.5.1/reset.min.css">
+    <link rel="stylesheet" href="/webjars/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/webjars/jquery-ui/1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="/webjars/font-awesome/5.5.0/css/all.min.css">
+    <link rel="stylesheet" href="/webjars/animate.css/animate.min.css">
+    <link rel="stylesheet" href="/static/css/common_var-89c6ef4c268563643bbb6a312c1f661c.css">
+    <link rel="stylesheet" href="/static/css/svc/self_market_var-fcda1d31afa7499cf420b783cd3f5b6d.css">
+    <link rel="stylesheet" href="/static/css/common-583cc96649c38a7df5922e36bbb763c6.css">
+    <link rel="stylesheet" href="/static/css/custom-6357c0121487b8685adbdf3dd2cbf369.css">
+    <link rel="stylesheet" href="/static/css/self_components-9dac8451b4235b30d3907a332a55ef28.css">
+    <link rel="stylesheet" href="/static/css/svc/self_market-c66e21c7d62365c5aa12bd13e73afa1a.css">
+
+    <!-- Custom or page css -->
+    
+	
+</head>
+    <body>
+	<div class="wrapper">
+	    <section class="notice">
+	본 사이트는 Chrome 최신 브라우저에 최적화되어 있습니다.
+</section>
+<nav data-page-id="adid" class="navbar navbar-expand-lg navbar-light"><a href="/" class="navbar-brand"><img src="/static/images/svc/logo/Dighty_self_Market.png"></a> <button type="button" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button> <div id="navbarSupportedContent" class="collapse navbar-collapse"><ul class="navbar-nav mr-auto"><li class="nav-item active"><a href="/adid" class="nav-link">ADID 세그먼트<span class="sr-only">(current)</span></a></li> <li class="nav-item"><a href="/history" class="nav-link">세그먼트 사용내역</a></li></ul> <div class="nav navbar-nav navbar-right"><div class="select"><button type="button" class="btn btn_select f_mon">apzz0928@nate.com</button> <span class="arrow">목록 열기</span> <ul class="select_option"><li class="option_item"><a class="option_link">회원 정보 수정</a></li> <li class="option_item"><a class="option_link">비밀번호 변경</a></li> <li class="option_item"><a class="option_link">로그아웃</a></li></ul></div></div></div></nav>
+	
+		<input type="password" id="preventAutoFill" style="display:none;">
+	    
+		<div class="contents">
+			<section id="seg-use">
+				<div class="title_area1">
+					<h2 class="tit">ADID 세그먼트</h2>
+				</div>
+				<grid :columns="columns" :sort-by="sortField" :api-url="apiUrl" :empty-text="emptyText" :filter="filter" sort-desc="">
+					<template #left-tool="">
+						<a href="/edit" class="btn btn-success btn_h44 w150">세그먼트 추가</a>
+					</template>
+				
+					<template #right-tool="">
+						<grid-search type="name" :filters="searchFilters" @search="onSearch"></grid-search>
+					</template>
+					
+					<template slot="modify" slot-scope="data">
+						<button type="button" class="btn_line_sm2" @click="modifySeg(data.row.item.segmentId)">
+							수정
+						</button>
+					</template>
+			
+					<template slot="delete" slot-scope="data">
+						<button type="button" class="btn_line_sm2" @click="deleteSeg(data.row.item.segmentId)">
+							삭제
+						</button>
+					</template>
+				</grid>
+			</section>
+		</div>
+	
+	    <div class="change_layer"><div id="layer" style="position: fixed; z-index: 100; display: none;"><div class="dimmed"></div> <div class="ly_pop_wrap"><div class="ly_pop ly_pop_big"><div class="ly_header"><h2 class="pop_tit">회원 정보 수정</h2> <button class="close-btn g">닫기</button></div> <section><div class="change_form"><div class="info_area"><span class="star">*</span>표시는 필수입력 항목입니다.
+						</div> <table><colgroup><col width="200px"> <col></colgroup> <tbody><tr><th><span class="star">*</span>이메일주소
+									</th> <td>
+										apzz0928@nate.com
+									</td></tr> <tr><th style="line-height: 35px;"><span class="star">*</span>이름
+									</th> <td><div class=""><span class="inp_bx"><span class="inp_txt w450"><input type="text" maxlength="50" class="inp"></span> <p class="success_txt d_error">
+													1~50자의 한글, 영문(대/소문자), 특수문자(공백포함)
+												</p></span></div></td></tr> <tr><th style="line-height: 35px;"><span class="star">*</span>회사명
+									</th> <td><div class=""><span class="inp_bx"><span class="inp_txt w450"><input type="text" maxlength="50" class="inp"></span> <p class="success_txt d_error">
+													1~50자의 한글, 영문(대/소문자), 숫자, 특수문자(공백포함)
+												</p></span></div></td></tr></tbody></table></div></section> <div class="ly_foot"><div class="btn_area"><div id="tooltip_null" data-original-title="" title="" style="display: inline-block;"><button type="button" disabled="disabled" class="btn_inline bg_gray">수정</button></div> <button type="button" class="btn_inline gray_line">취소</button> <div aria-hidden="true" class="d-none" style="display: none;"><div></div></div></div></div></div></div></div></div>
+	    <div class="change_layer"><div id="layer" style="position: fixed; z-index: 100; display: none;"><div class="dimmed"></div> <div class="ly_pop_wrap"><div class="ly_pop ly_pop_big"><div class="ly_header"><h2 class="pop_tit">비밀번호 변경</h2> <button class="close-btn g">닫기</button></div> <section><div class="change_form"><div class="info_area"><span class="star">*</span>표시는 필수입력 항목입니다.
+						</div> <table><colgroup><col width="200px"> <col></colgroup> <tbody><tr><th style="line-height: 35px;"><span class="star">*</span>현재 비밀번호
+									</th> <td><div class="success"><span class="inp_bx"><span class="inp_txt w450"><input type="password" maxlength="14" class="inp"></span></span></div></td></tr> <tr><th style="line-height: 35px;"><span class="star">*</span>새 비밀번호
+									</th> <td><div class=""><span class="inp_bx"><span class="inp_txt w450"><input type="password" maxlength="14" placeholder="4~14자의 영문(대/소문자), 숫자, 특수문자(공백제외) 중 2개 이상 조합" class="inp"></span> <p class="success_txt d_error">
+													4~14자의 영문(대/소문자), 숫자, 특수문자(공백제외)
+												</p> <p class="success_txt d_error">
+													2개 이상 조합
+												</p></span></div></td></tr> <tr><th style="line-height: 35px;"><span class="star">*</span>새 비밀번호 확인
+									</th> <td><div class=""><span class="inp_bx"><span class="inp_txt w450"><input type="password" maxlength="14" placeholder="위와 동일한 비밀번호를 한 번 더 입력해주세요." class="inp"></span> <p class="success_txt d_error">
+													위와 동일한 비밀번호 입력 확인
+												</p></span></div></td></tr></tbody></table></div></section> <div class="ly_foot"><div class="btn_area"><div id="tooltip_null" style="display: inline-block;"><button type="button" disabled="disabled" class="btn_inline bg_gray">변경</button></div> <button type="button" class="btn_inline gray_line">취소</button> <div aria-hidden="true" class="d-none" style="display: none;"><div></div></div></div></div></div></div></div></div>
+	    <footer>
+	<div class="inquiry"><div>문의하기</div> <div id="layer" style="position: fixed; z-index: 100; display: none;"><div class="dimmed"></div> <div class="ly_pop_wrap"><div class="ly_pop ly_pop_big"><div class="ly_header"><h2 class="pop_tit">문의하기</h2> <button class="close-btn g">닫기</button></div> <section><div class="extend_form" style="border: 0px;"><table class="table"><colgroup><col width="120px"> <col></colgroup> <tbody><tr><th>문의 유형</th> <td><div><label for="buttonRadio1" class="tbl_btn1 outline on"><input type="radio" id="buttonRadio1">
+			데이터 / 세그먼트 조건
+		</label><label for="buttonRadio2" class="tbl_btn1 outline"><input type="radio" id="buttonRadio2">
+			서비스 이용 문의
+		</label><label for="buttonRadio3" class="tbl_btn1 outline"><input type="radio" id="buttonRadio3">
+			오디언스 구매
+		</label><label for="buttonRadio4" class="tbl_btn1 outline"><input type="radio" id="buttonRadio4">
+			서비스 요금 문의
+		</label><label for="buttonRadio5" class="tbl_btn1 outline"><input type="radio" id="buttonRadio5">
+			기타
+		</label></div></td></tr> <!----> <tr><th>답변 알림 선택</th> <td><div><span class="radiobox is_checked"><span class="ico ico_radio"><input type="radio" id="radio1"></span> <label for="radio1">
+				이메일 회신
+			</label></span><span class="radiobox"><span class="ico ico_radio"><input type="radio" id="radio2"></span> <label for="radio2">
+				유선 상담 요청
+			</label></span></div> <div><div><label>
+													이름
+												</label> <span class="inp_txt"><input maxlength="50" class="inp"></span> <label>
+													이메일 주소
+													</label> <span class="inp_txt"><input maxlength="30" class="inp"></span></div></div></td></tr></tbody></table> <textarea placeholder="문의내용을 입력하세요." class="form_control"></textarea></div></section> <div class="ly_foot"><div class="btn_area"><div id="tooltip_null" data-original-title="" title="" style="display: inline-block;"><button type="button" class="btn_inline bg_gray">보내기</button></div> <button type="button" class="btn_inline gray_line">취소</button> <div aria-hidden="true" class="d-none" style="display: none;"><div></div></div></div></div></div></div></div></div>
+	<div class="terminated"><div id="layer" style="position: fixed; z-index: 100; display: none;"><div class="dimmed"></div> <div class="ly_pop_wrap"><div class="ly_pop ly_pop_big"><div class="ly_header"><h2 class="pop_tit">서비스 이용 종료 안내</h2> <button class="close-btn g">닫기</button></div> <section><div class="text-center"><h5>서비스 이용 종료 안내</h5> <div class="info_area"><p>고객님께서 이용중이신 서비스가 종료되어 서비스 이용이 제한되었습니다.</p> <p>Self Market 서비스의 지속적인 사용을 원하시면 하단의 서비스 연장 신청을 진행해주세요.</p></div></div> <table class="table b-table"><colgroup><col width="120px"> <col></colgroup> <tbody><tr><th>
+									서비스 버전
+								</th> <td><strong style="margin-left: 10px;">
+										Enterprise
+									</strong></td></tr> <tr><th>종료일</th> <td><span style="margin-left: 10px; color: rgb(229, 0, 0);">
+										2021년 12월 29일
+									</span></td></tr></tbody></table> <div class="extend_form"><h5 class="text-center title">서비스 연장 신청</h5> <div><table class="table" style="table-layout: fixed;"><colgroup><col width="130px"> <col></colgroup> <tbody><tr><th>
+											서비스 버전 선택
+											<i class="tier"><span class="blind">도움말</span></i> <div class="tier" style="display: none;"><table class="table b-table"><colgroup><col> <col width="300px"></colgroup> <thead><tr><th class="text-center">서비스 버전</th> <th class="text-center">사용 가능 티어 정보</th></tr></thead> <tbody><tr><td>Quick Start</td> <td>월 조회 횟수 100회</td></tr> <tr><td>Essential</td> <td>월 조회 횟수 100회 및 1회 다운로드</td></tr> <tr><td>Standard</td> <td>월 조회 횟수 100회 및 5회 다운로드</td></tr> <tr><td>Enterprise</td> <td>최소 6개월 단위 계약에 한하며 별도 비용 문의</td></tr></tbody></table></div></th> <td><div><label for="buttonRadio2" class="tbl_btn1 outline on"><input type="radio" id="buttonRadio2">
+			Quick Start
+		</label><label for="buttonRadio3" class="tbl_btn1 outline"><input type="radio" id="buttonRadio3">
+			Essential
+		</label><label for="buttonRadio4" class="tbl_btn1 outline"><input type="radio" id="buttonRadio4">
+			Standard
+		</label><label for="buttonRadio5" class="tbl_btn1 outline"><input type="radio" id="buttonRadio5">
+			Enterprise
+		</label></div></td></tr> <tr><th>답변 알림 선택</th> <td><div><span class="radiobox is_checked"><span class="ico ico_radio"><input type="radio" id="radio1"></span> <label for="radio1">
+				이메일 회신
+			</label></span><span class="radiobox"><span class="ico ico_radio"><input type="radio" id="radio2"></span> <label for="radio2">
+				유선 상담 요청
+			</label></span></div> <div><div><label>
+														이름
+													</label> <span class="inp_txt"><input maxlength="50" class="inp"></span> <label>
+														이메일 주소
+														</label> <span class="inp_txt"><input maxlength="30" class="inp"></span></div></div></td></tr></tbody></table> <div class="text-center">
+								* 기재하신 연락처 정보로 서비스 연장에 대해 안내드릴 예정입니다.
+							</div> <div class="btn-group"><button class="btn btn-success">
+									신청 접수
+								</button></div></div></div></section> <div class="ly_foot"><!----></div></div></div></div></div>
+    <div class="copyright">© NHN DATA Corp. All rights reserved.</div>
+</footer>
+	</div>
+	
+	<script src="/webjars/jquery/3.3.1/jquery.min.js"></script>
+	<script src="/webjars/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script src="/webjars/vue/2.6.10/dist/vue.min.js"></script>
+	<script src="/webjars/vuex/2.5.0/dist/vuex.min.js"></script>
+	<script src="/webjars/vuex/2.5.0/dist/vuex.esm.js" type="module"></script>
+	<script src="/webjars/jquery-ui/1.12.1/jquery-ui.min.js"></script>
+	<script src="/webjars/bootstrap-notify/3.1.3/bootstrap-notify.min.js"></script>
+	<script src="/webjars/bootstrap-vue/2.0.0-rc.13/dist/bootstrap-vue.min.js"></script>
+	<script src="/webjars/axios/0.18.0/dist/axios.min.js"></script>
+	<script src="/webjars/momentjs/2.24.0/min/moment.min.js"></script>
+	
+	<script src="/static/js/vue/vue_init-806ab052a5a228a0d43e2fb22c9f5a12.js"></script>
+	<script src="/static/js/common-d7feb432e46fc161f06617f9d2e11f96.js"></script>
+	<script src="/static/js/notify-9ec09bfa44288cee8ce012818e9c1015.js"></script>
+	<script src="/static/js/alert-929a06f090355d98127a046c3765756d.js"></script>
+	<script src="/static/js/dighty_alert-b07f4c3f56eee7969f7ba70be9c0177f.js"></script>
+	<script src="/static/js/validate-c4512df0e42ac2f81136ff1caf6a1bbf.js"></script>
+	<script src="/static/js/vue/common/modal/vue_inquiry_modal-a1dc7d0967828c33b85df673dc16f8c8.js" type="module"></script>
+	<script src="/static/js/vue/common/modal/vue_info_change_modal-c357ca35ebc00a41eee45188eabdf1df.js" type="module"></script>
+	<script src="/static/js/vue/common/modal/vue_pw_change_modal-45322aa76621207a3af4b655119cb947.js" type="module"></script>
+	<script src="/static/js/vue/common/vue_nav-d7d545212cd9b0bfd59e03b27e6a2d11.js" type="module"></script>
+	
+	
+		<script src="/static/js/vue/adid/vue_adid_list-0f57fabc2f1e30c73722b000e09bbf0b.js" type="module"></script>
+		<script src="/static/js/vue/adid/modal/vue_terminated_modal-d95a05cd809d940c7be2ce095c10f19d.js" type="module"></script>
+	
+
+</body></html>
