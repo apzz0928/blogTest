@@ -1469,12 +1469,13 @@ public class BlogTest {
 		NAkey[181] = "s_462f5378a22d";
 
 		for(int i=0;i<=181;i++) {
+			//URL 접근 불가 시 예외처리
 			try {
 				open(URL[i]);
 				System.out.print(i + ". " + URL[i]);
 				//URL 형식 체크
 				if(URL[i].substring(0, 4).equals("http")) {
-					//html의 script 태그 wcs_add 여부 체크 (없으면 NA 설치자체가 X)
+					//html의 script 태그 wcs_add 여부 체크
 					ElementsCollection scriptsCheck = Selenide.$$("script");
 					boolean textFound = false;
 			        for (int x = 0; x < scriptsCheck.size(); x++) {
@@ -1483,7 +1484,7 @@ public class BlogTest {
 			                break;
 			            }
 			        }
-			        //html에 wcs_add가 있으면 NAkey가 NA어드민과 동일하게 적용되었는지 체크
+			        //html에 wcs_add가 있으면 NAkey 추출해서 체크
 			        if (textFound) {
 						String HtmlSplit = $("html").innerHtml().trim().replaceAll(" ", "").replaceAll("	", "").replaceAll("\n", "");
 						String[] naKeySplit = HtmlSplit.split("wcs_add\\[\"wa\"\\]\\=\"");
@@ -1491,19 +1492,19 @@ public class BlogTest {
 						if(NAkey[i].equals(naKeycompare[0])) {
 							System.out.println("는" + NAkey[i]);
 						} else {
-							//System.out.println(" 는 NA ACCOUNT ID가 없거나 어드민 내용과 다릅니다. 수동으로 확인해주세요 !!!!!!!");
-							//아예 로그를 출력하지 않으면 어디서 에러가 났는지 찾기 힘듦 우선 다 찍고 엑셀 파일에서 구분기호로 텍스트 나누기 하려고 넣음
+							//로그 미출력시 에러 발생 부분 찾기 힘들어서 모두 출력 후 엑셀에서 구분기호로 텍스트 나누기
 							System.out.println("☆NAkey가 다릅니다.");
 						}
 			        } else {
-			            //System.out.println(" 에 NA 스크립트가 설치되어 있지 않습니다.");
-			        	//아예 로그를 출력하지 않으면 어디서 에러가 났는지 찾기 힘듦 우선 다 찍고 엑셀 파일에서 구분기호로 텍스트 나누기 하려고 넣음
+						//로그 미출력시 에러 발생 부분 찾기 힘들어서 모두 출력 후 엑셀에서 구분기호로 텍스트 나누기
 			        	System.out.println("☆NA 스크립트가 설치되어 있지 않습니다.");
 			        }
 				} else {
+					//로그 미출력시 에러 발생 부분 찾기 힘들어서 모두 출력 후 엑셀에서 구분기호로 텍스트 나누기
 					System.out.println("☆URL 형식이 비정상 입니다.");
 				}
 			} catch (Exception e) {
+				//로그 미출력시 에러 발생 부분 찾기 힘들어서 모두 출력 후 엑셀에서 구분기호로 텍스트 나누기
 				System.out.println("☆URL 접근이 불가합니다.");				
 			}
 

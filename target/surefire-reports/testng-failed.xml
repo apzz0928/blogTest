@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
   <test name="Test(failed)">
     <parameter name="browser" value="firefox"/>
     <classes>
       <class name="TestExample.BlogTest">
         <methods>
+          <include name="NA스크립트설치확인"/>
           <include name="beforeTest"/>
           <include name="afterTest"/>
-          <include name="다이티카페24회원가입"/>
-          <include name="카페24구매"/>
         </methods>
       </class> <!-- TestExample.BlogTest -->
     </classes>
