@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="343.442" tests="2" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="836.4" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="KR"/>
     <property name="sun.boot.library.path" value="D:\OpenJDK\jdk-11.0.2\bin"/>
-    <property name="sun.java.command" value="C:\Users\NHN\AppData\Local\Temp\surefire17130669809997727025\surefirebooter9035634063134424538.jar C:\Users\NHN\AppData\Local\Temp\surefire17130669809997727025 2023-12-01T09-34-47_432-jvmRun1 surefire6412239592317672341tmp surefire_07983376114007806340tmp"/>
+    <property name="sun.java.command" value="C:\Users\NHN\AppData\Local\Temp\surefire146722096612175326\surefirebooter17718818510188128353.jar C:\Users\NHN\AppData\Local\Temp\surefire146722096612175326 2023-12-01T10-05-31_880-jvmRun1 surefire13327196578105140968tmp surefire_015109223734604510566tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="D:\000. Selenium\eclipse\eclipse-workspace\BlogTest\target\test-classes;D:\000. Selenium\eclipse\eclipse-workspace\BlogTest\target\classes;C:\Users\NHN\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\NHN\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\NHN\.m2\repository\org\testng\testng\6.10\testng-6.10.jar;C:\Users\NHN\.m2\repository\com\beust\jcommander\1.48\jcommander-1.48.jar;C:\Users\NHN\.m2\repository\org\seleniumhq\selenium\selenium-java\3.12.0\selenium-java-3.12.0.jar;C:\Users\NHN\.m2\repository\org\seleniumhq\selenium\selenium-api\3.12.0\selenium-api-3.12.0.jar;C:\Users\NHN\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.12.0\selenium-chrome-driver-3.12.0.jar;C:\Users\NHN\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.12.0\selenium-edge-driver-3.12.0.jar;C:\Users\NHN\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.12.0\selenium-firefox-driver-3.12.0.jar;C:\Users\NHN\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.12.0\selenium-ie-driver-3.12.0.jar;C:\Users\NHN\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.12.0\selenium-opera-driver-3.12.0.jar;C:\Users\NHN\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.12.0\selenium-remote-driver-3.12.0.jar;C:\Users\NHN\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.12.0\selenium-safari-driver-3.12.0.jar;C:\Users\NHN\.m2\repository\org\seleniumhq\selenium\selenium-support\3.12.0\selenium-support-3.12.0.jar;C:\Users\NHN\.m2\repository\net\bytebuddy\byte-buddy\1.8.3\byte-buddy-1.8.3.jar;C:\Users\NHN\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\NHN\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\NHN\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\NHN\.m2\repository\com\google\code\gson\gson\2.8.2\gson-2.8.2.jar;C:\Users\NHN\.m2\repository\com\google\guava\guava\23.6-jre\guava-23.6-jre.jar;C:\Users\NHN\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\NHN\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\NHN\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\NHN\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\NHN\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\NHN\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar;C:\Users\NHN\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar;C:\Users\NHN\.m2\repository\com\squareup\okhttp3\okhttp\3.9.1\okhttp-3.9.1.jar;C:\Users\NHN\.m2\repository\com\squareup\okio\okio\1.13.0\okio-1.13.0.jar;C:\Users\NHN\.m2\repository\com\codeborne\selenide\4.11.4\selenide-4.11.4.jar;C:\Users\NHN\.m2\repository\io\github\bonigarcia\webdrivermanager\2.2.1\webdrivermanager-2.2.1.jar;C:\Users\NHN\.m2\repository\commons-io\commons-io\2.5\commons-io-2.5.jar;C:\Users\NHN\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\NHN\.m2\repository\org\rauschig\jarchivelib\0.7.1\jarchivelib-0.7.1.jar;C:\Users\NHN\.m2\repository\org\apache\commons\commons-compress\1.9\commons-compress-1.9.jar;C:\Users\NHN\.m2\repository\org\jsoup\jsoup\1.10.2\jsoup-1.10.2.jar;C:\Users\NHN\.m2\repository\net\lightbody\bmp\browsermob-core\2.1.5\browsermob-core-2.1.5.jar;C:\Users\NHN\.m2\repository\net\lightbody\bmp\littleproxy\1.1.0-beta-bmp-17\littleproxy-1.1.0-beta-bmp-17.jar;C:\Users\NHN\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.8.9\jackson-core-2.8.9.jar;C:\Users\NHN\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.8.9\jackson-databind-2.8.9.jar;C:\Users\NHN\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.8.9\jackson-annotations-2.8.9.jar;C:\Users\NHN\.m2\repository\dnsjava\dnsjava\2.1.8\dnsjava-2.1.8.jar;C:\Users\NHN\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.25\jcl-over-slf4j-1.7.25.jar;C:\Users\NHN\.m2\repository\com\jcraft\jzlib\1.1.3\jzlib-1.1.3.jar;C:\Users\NHN\.m2\repository\io\netty\netty-all\4.0.51.Final\netty-all-4.0.51.Final.jar;C:\Users\NHN\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.58\bcprov-jdk15on-1.58.jar;C:\Users\NHN\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.58\bcpkix-jdk15on-1.58.jar;C:\Users\NHN\.m2\repository\net\lightbody\bmp\mitm\2.1.5\mitm-2.1.5.jar;C:\Users\NHN\.m2\repository\org\apache\logging\log4j\log4j-core\2.11.0\log4j-core-2.11.0.jar;C:\Users\NHN\.m2\repository\org\apache\logging\log4j\log4j-api\2.11.0\log4j-api-2.11.0.jar;C:\Users\NHN\.m2\repository\org\apache\logging\log4j\log4j-slf4j-impl\2.11.0\log4j-slf4j-impl-2.11.0.jar;C:\Users\NHN\.m2\repository\org\slf4j\slf4j-api\1.8.0-alpha2\slf4j-api-1.8.0-alpha2.jar;C:\Users\NHN\.m2\repository\org\apache\maven\surefire\surefire-testng-utils\2.21.0\surefire-testng-utils-2.21.0.jar;C:\Users\NHN\.m2\repository\org\apache\maven\surefire\surefire-grouper\2.21.0\surefire-grouper-2.21.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\NHN\AppData\Local\Temp\surefire17130669809997727025\surefirebooter9035634063134424538.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\NHN\AppData\Local\Temp\surefire146722096612175326\surefirebooter17718818510188128353.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.2+9"/>
@@ -60,40 +60,6 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="NA스크립트설치확인" classname="TestExample.BlogTest" time="333.056">
-    <failure message="Navigation timed out after 300000 ms&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;AD01598487&apos;, ip: &apos;10.77.129.169&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;selenide.url: http://www.jmella.com&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 120.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20231116134553, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 29664, moz:profile: C:\Users\NHN\AppData\Local\..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: daedfb97-7cbb-469f-bef8-722...}&#10;selenide.baseUrl: http://localhost:8080&#10;Session ID: daedfb97-7cbb-469f-bef8-72216ba38059" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
-Navigation timed out after 300000 ms
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'AD01598487', ip: '10.77.129.169', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-selenide.url: http://www.jmella.com
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 120.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20231116134553, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 29664, moz:profile: C:\Users\NHN\AppData\Local\..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: daedfb97-7cbb-469f-bef8-722...}
-selenide.baseUrl: http://localhost:8080
-Session ID: daedfb97-7cbb-469f-bef8-72216ba38059
-	at TestExample.BlogTest.NA스크립트설치확인(BlogTest.java:1472)
-</failure>
-    <system-out><![CDATA[154. https://my-bike.co.kr는s_598e4f9f67e
-155. https://jungyukdamda.co.kr☆NA설치 X
-156. https://m.troistouch.com☆NAkey 다름
-157. http://roenstudio.kr는s_585ff0da4316
-158. http://www.kyclub.co.kr☆NA설치 X
-159. http://sale78.cafe24.com☆NAkey 다름
-160. https://cookingson.co.kr☆NA설치 X
-161. http://pacey.co.kr☆NAkey 다름
-162. https://gleer.co.kr☆NAkey 다름
-163. http://m.basrak.co.kr는s_4b9fc7a6c5fb
-164. https://roenstudio2.cafe24.com/main.html☆NAkey 다름
-165. https://front.maketicket.co.kr/ticket/GD2318673☆NA설치 X
-166. http://hpw0401.cafe24.com☆NA설치 X
-167. http://m.openbucks.shop☆NA설치 X
-]]></system-out>
-    <system-err><![CDATA[12월 01, 2023 9:34:50 오전 org.openqa.selenium.remote.DesiredCapabilities firefox
-INFO: Using `new FirefoxOptions()` is preferred to `DesiredCapabilities.firefox()`
-12월 01, 2023 9:34:53 오전 org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-12월 01, 2023 9:40:27 오전 org.openqa.selenium.remote.ErrorCodes toStatus
-INFO: HTTP Status: '500' -> incorrect JSON status mapping for 'timeout' (408 expected)
-]]></system-err>
-  </testcase>
-  <testcase name="import자삭방지" classname="TestExample.BlogTest" time="1.01"/>
+  <testcase name="NA스크립트설치확인" classname="TestExample.BlogTest" time="825.548"/>
+  <testcase name="import자삭방지" classname="TestExample.BlogTest" time="1.001"/>
 </testsuite>

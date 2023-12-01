@@ -30,14 +30,8 @@ import org.testng.annotations.Test;
 
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.Selenide;
-import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.WebDriverRunner;
 import com.codeborne.selenide.testng.ScreenShooter;
-
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
 
 public class BlogTest {
 	private static WebDriver driver;
@@ -881,7 +875,7 @@ public class BlogTest {
 		}		
 	}
 
-	//@Test(priority = 2)
+	@Test(priority = 2)
 	public void 다이티카페24로그인후구매() {
 		for(int i=0;i<=10000;i++) {
             Random generator = new Random();
@@ -1097,7 +1091,7 @@ public class BlogTest {
 			System.out.println("qwer" + i + " 번 탈퇴 완료");
 		}		
 	}
-	@Test(priority = 0)
+	//@Test(priority = 0)
 	public void NA스크립트설치확인() {
 		//URL과 NAkey 개수에 따라 배열 크기 조절
 		String[] URL = new String[182];
@@ -1505,7 +1499,7 @@ public class BlogTest {
 				}
 			} catch (Exception e) {
 				//로그 미출력시 에러 발생 부분 찾기 힘들어서 모두 출력 후 엑셀에서 구분기호로 텍스트 나누기
-				System.out.println("☆URL 접근이 불가합니다.");				
+				System.out.println(i + ". " + URL[i] + "☆URL 접근이 불가합니다.");				
 			}
 
 		}

@@ -1,16 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 343.442 s <<< FAILURE! - in TestSuite
-NA스크립트설치확인(TestExample.BlogTest)  Time elapsed: 333.056 s  <<< FAILURE!
-org.openqa.selenium.TimeoutException: 
-Navigation timed out after 300000 ms
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'AD01598487', ip: '10.77.129.169', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-selenide.url: http://www.jmella.com
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 120.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20231116134553, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 29664, moz:profile: C:\Users\NHN\AppData\Local\..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: daedfb97-7cbb-469f-bef8-722...}
-selenide.baseUrl: http://localhost:8080
-Session ID: daedfb97-7cbb-469f-bef8-72216ba38059
-	at TestExample.BlogTest.NA스크립트설치확인(BlogTest.java:1472)
-
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 836.4 s - in TestSuite
