@@ -1039,6 +1039,372 @@ public class BlogTest {
 	}
 	
 	//@Test(priority = 0)
+	public void NA스크립트설치확인() {
+		//URL과 NAkey 개수에 따라 배열 크기 조절
+		String[] URL = new String[157];
+		URL[0]="http://solhelmet.co.kr";
+		URL[1]="http://www.talktalkacademy.com";
+		URL[2]="http://ridenroll.co.kr/";
+		URL[3]="https://kids-time.co.kr";
+		URL[4]="https://m.kids-time.co.kr";
+		URL[5]="https://girlskate.kr";
+		URL[6]="http://mtable.kr";
+		URL[7]="http://ashirt.kr";
+		URL[8]="http://www.wanistory.com";
+		URL[9]="http://initials.co.kr";
+		URL[10]="http://www.morgancoffee.co.kr";
+		URL[11]="https://dlclms.daelim.ac.kr";
+		URL[12]="http://yootongnara.com";
+		URL[13]="https://mirrorliang.com";
+		URL[14]="http://www.modeunok11.com";
+		URL[15]="https://illumiel.co.kr";
+		URL[16]="https://ordire.shop";
+		URL[17]="http://anjunsobang.co.kr";
+		URL[18]="https://agreemall.kr";
+		URL[19]="https://polakorea.com";
+		URL[20]="https://ikta.co.kr";
+		URL[21]="http://roserosa.co.kr";
+		URL[22]="http://secondstudio.co.kr";
+		URL[23]="https://우리유weyou.com";
+		URL[24]="http://yootongnara.com";
+		URL[25]="http://www.fiedwear.com";
+		URL[26]="http://updog.kr";
+		URL[27]="https://lalamina.co.kr";
+		URL[28]="https://dong25gam.com";
+		URL[29]="https://camp1st.co.kr";
+		URL[30]="https://www.rightgarden.co.kr";
+		URL[31]="https://rebbly.co.kr";
+		URL[32]="https://m.margarer.com";
+		URL[33]="https://truckfactory.kr";
+		URL[34]="http://www.wishpick.co.kr";
+		URL[35]="http://tellomall.co.kr";
+		URL[36]="http://www.futuredigm.co.kr";
+		URL[37]="https://olg.co.kr";
+		URL[38]="https://contempoffice.com";
+		URL[39]="https://olg.co.kr";
+		URL[40]="http://www.ddak-joa.co.kr";
+		URL[41]="https://seeonein2.cafe24.com";
+		URL[42]="http://l1solution.kr";
+		URL[43]="http://웃음꽃요양원.com";
+		URL[44]="https://www.tblbike.com";
+		URL[45]="https://jubang01024.cafe24.com";
+		URL[46]="http://www.casanine.co.kr";
+		URL[47]="https://www.instagram.com/sun_pole_studio/";
+		URL[48]="http://www.corebody.co.kr";
+		URL[49]="http://www.makemakers.co.kr";
+		URL[50]="http://www.스타간판.kr";
+		URL[51]="https://tenz.kr";
+		URL[52]="https://shopamomento.com";
+		URL[53]="https://bulkcook.co.kr";
+		URL[54]="https://bubbleroom.kr";
+		URL[55]="http://eimokdesign.com";
+		URL[56]="https://lostmanagementcities.com";
+		URL[57]="http://www.bangyudang.com";
+		URL[58]="http://m.slmedi.com";
+		URL[59]="http://www.powerfulx.com";
+		URL[60]="https://m.powerfulx.com";
+		URL[61]="http://seeoneshop.com";
+		URL[62]="https://m.place.naver.com/restaurant/37814220";
+		URL[63]="http://ah.clinic";
+		URL[64]="https://makemakers.co.kr";
+		URL[65]="https://vagokorea.co.kr";
+		URL[66]="https://www.pickpop.co.kr";
+		URL[67]="http://ermen.kr";
+		URL[68]="https://xn--hu5b25jftau9j.com";
+		URL[69]="http://www.groundtree.kr";
+		URL[70]="https://m.place.naver.com/restaurant/11823021";
+		URL[71]="https://tax-back.kr";
+		URL[72]="http://quicksmart.shop";
+		URL[73]="https://www.unitmonster.com";
+		URL[74]="https://dorogift.com";
+		URL[75]="https://evmoab2b.co.kr";
+		URL[76]="https://m.miraldeco.store";
+		URL[77]="https://www.miraldeco.store";
+		URL[78]="http://m.77in.co.kr";
+		URL[79]="http://www.shfastener.co.kr";
+		URL[80]="https://hiddengarden.kr";
+		URL[81]="http://www.pacificrentcar.kr";
+		URL[82]="http://www.mymentor.co.kr";
+		URL[83]="http://invictuskorea.shop";
+		URL[84]="http://www.sin-nong.com";
+		URL[85]="https://doldolparty.com";
+		URL[86]="https://www.intotheblue.kr";
+		URL[87]="http://anyfun.store";
+		URL[88]="http://www.doctorwish.co.kr";
+		URL[89]="https://gamtancoffee.com";
+		URL[90]="https://2square.co.kr";
+		URL[91]="http://godofcoffees.com";
+		URL[92]="http://m.ijungmall.com";
+		URL[93]="https://thesoseol.co.kr";
+		URL[94]="https://www.instagram.com/babyhausgimpo/";
+		URL[95]="https://dorogift.com";
+		URL[96]="http://mayjaymall.com";
+		URL[97]="http://www.beadsmaker.com";
+		URL[98]="http://time-gallery.co.kr";
+		URL[99]="https://healthtec.co.kr";
+		URL[100]="http://www.toyota-rentcar.co.kr";
+		URL[101]="http://yomimonshop.com";
+		URL[102]="https://upliving.co.kr";
+		URL[103]="https://pamseshop.co.kr";
+		URL[104]="http://huereefestival.com";
+		URL[105]="https://www.organicchicken.shop";
+		URL[106]="http://hedon.co.kr/";
+		URL[107]="https://aminosunmall.kr";
+		URL[108]="http://bodyreform.co.kr";
+		URL[109]="https://shoppung.co.kr";
+		URL[110]="http://lalamina.co.kr";
+		URL[111]="https://slonous.co.kr";
+		URL[112]="http://www.lavaudieu.co.kr";
+		URL[113]="http://www.chitsolnara.co.kr";
+		URL[114]="https://www.yh105.kr";
+		URL[115]="http://www.coverok.com";
+		URL[116]="http://www.bellhelmets.co.kr";
+		URL[117]="https://hashbeauty.co.kr";
+		URL[118]="https://m.hiddengarden.kr";
+		URL[119]="https://yummilab.co.kr";
+		URL[120]="https://www.manggle.co.kr";
+		URL[121]="https://aminosunmall.kr";
+		URL[122]="https://healtamin.co.kr";
+		URL[123]="https://cba.imweb.me";
+		URL[124]="https://glamr.kr";
+		URL[125]="https://m.beautymansour.com";
+		URL[126]="https://crefactory.shopby.co.kr";
+		URL[127]="https://www.ovice.com/ko";
+		URL[128]="https://m.healtamin.co.kr";
+		URL[129]="https://camp1st.co.kr";
+		URL[130]="https://m.lil-xarad.com";
+		URL[131]="https://lil-xarad.com";
+		URL[132]="http://www.lavaudieu.co.kr/m";
+		URL[133]="https://디지털플란트.com";
+		URL[134]="https://earthniqmall.kr";
+		URL[135]="http://혜택쓰.kr";
+		URL[136]="https://drgela.com";
+		URL[137]="http://www.tarrtarr.com";
+		URL[138]="https://m.shupong.com";
+		URL[139]="http://caremall.kr";
+		URL[140]="https://lsr9373.cafe24.com";
+		URL[141]="https://www.roedeerclubhaus.com";
+		URL[142]="https://www.feelkeen.com";
+		URL[143]="https://wlab.co.kr";
+		URL[144]="https://www.seller-bridge.com";
+		URL[145]="https://likecell.co.kr";
+		URL[146]="https://digitalssaem.com";
+		URL[147]="https://www.mcfood.net";
+		URL[148]="http://www.agonstudio.com";
+		URL[149]="https://gradiens.co.kr";
+		URL[150]="https://m.saffron-recipe.com";
+		URL[151]="http://www.hyup-shin.co.kr";
+		URL[152]="https://hautuki.co.kr";
+		URL[153]="https://cowayrental.net";
+		URL[154]="http://www.skmagic114.net";
+		URL[155]="https://yg.modetour.co.kr";
+		URL[156]="http://meejee.com";
+	
+	
+		String[] NAkey = new String[157];
+		NAkey[0]="s_305439217f87";
+		NAkey[1]="s_cdc9fd0564c";
+		NAkey[2]="s_4ab77e7acd66";
+		NAkey[3]="s_322b9bf9e210";
+		NAkey[4]="s_1340dab4031e";
+		NAkey[5]="s_1e2a9f7a7d3a";
+		NAkey[6]="s_1ffc80df7140";
+		NAkey[7]="s_4e5d4552ef88";
+		NAkey[8]="s_2d9add6553e";
+		NAkey[9]="s_313e7ad9b7b0";
+		NAkey[10]="s_856d05967a3";
+		NAkey[11]="s_3a5c32a51c18";
+		NAkey[12]="s_2bccb7834ae0";
+		NAkey[13]="s_1b704dd3573d";
+		NAkey[14]="s_35cf1c7c3d84";
+		NAkey[15]="s_a288256a236";
+		NAkey[16]="s_256fc0e457eb";
+		NAkey[17]="s_502a128b863c";
+		NAkey[18]="s_10863cbe03d4";
+		NAkey[19]="s_2e89c1ed0702";
+		NAkey[20]="s_55a57719bdef";
+		NAkey[21]="s_27432606208f";
+		NAkey[22]="s_594848d7381b";
+		NAkey[23]="s_2cb815056c25";
+		NAkey[24]="s_2bccb7834ae0";
+		NAkey[25]="s_f9d8c4146db";
+		NAkey[26]="s_36b8faccf3b2";
+		NAkey[27]="s_4abb792f4270";
+		NAkey[28]="s_5117d2d2d9b7";
+		NAkey[29]="s_ce2e949de01";
+		NAkey[30]="s_1b6eb8f0b1d1";
+		NAkey[31]="s_49d2873d92a7";
+		NAkey[32]="s_5202167e7118";
+		NAkey[33]="s_3973b71cee03";
+		NAkey[34]="s_3ee8af6059b5";
+		NAkey[35]="s_ce20e43236e";
+		NAkey[36]="s_3a5c8fd94c66";
+		NAkey[37]="s_1512552ef03e";
+		NAkey[38]="s_1f1380830e8f";
+		NAkey[39]="s_1512552ef03e";
+		NAkey[40]="s_29fd979cbe58";
+		NAkey[41]="s_a27bece5e1c";
+		NAkey[42]="s_511953768237";
+		NAkey[43]="s_47182ccaeb54";
+		NAkey[44]="s_48e9d9ab3d42";
+		NAkey[45]="s_4e5ecac84e19";
+		NAkey[46]="s_3c2cfe77d5e0";
+		NAkey[47]="";
+		NAkey[48]="s_34df5d4cc48f";
+		NAkey[49]="s_10862bd52706";
+		NAkey[50]="s_276386ac93";
+		NAkey[51]="s_29fd948789b2";
+		NAkey[52]="s_54bc3a67d926";
+		NAkey[53]="s_2ae65eec7a32";
+		NAkey[54]="s_2da0b53a2787";
+		NAkey[55]="s_22b6e830895f";
+		NAkey[56]="s_55a4bfb46ef9";
+		NAkey[57]="s_53ccc3c3c36b";
+		NAkey[58]="s_67dfabee253";
+		NAkey[59]="s_3057e6934a72";
+		NAkey[60]="s_3057e6934a72";
+		NAkey[61]="s_1f1113f12a50";
+		NAkey[62]="";
+		NAkey[63]="s_76e0409a6a9";
+		NAkey[64]="s_10862bd52706";
+		NAkey[65]="s_256db6ab5546";
+		NAkey[66]="s_2571630d6c46";
+		NAkey[67]="s_53d29e5d5243";
+		NAkey[68]="s_76e071d22f9";
+		NAkey[69]="s_3caae5bfa17";
+		NAkey[70]="";
+		NAkey[71]="s_314441669b09";
+		NAkey[72]="s_4b38fdc308c";
+		NAkey[73]="s_3cabb38a6fb";
+		NAkey[74]="s_29146c701f91";
+		NAkey[75]="s_305b6fdabcd1";
+		NAkey[76]="s_3cabfe0426e";
+		NAkey[77]="s_3cabfe0426e";
+		NAkey[78]="s_419b5240b26d";
+		NAkey[79]="s_b115edacbff";
+		NAkey[80]="s_305b6f57613a";
+		NAkey[81]="s_93fb79cc342";
+		NAkey[82]="s_34e7353c10e2";
+		NAkey[83]="s_3315e3697ad5";
+		NAkey[84]="s_4abb7ab806bd";
+		NAkey[85]="s_419ba1a8f7d0";
+		NAkey[86]="s_27432504a86f";
+		NAkey[87]="s_1e2ad1d7a158";
+		NAkey[88]="s_1257e3761139";
+		NAkey[89]="s_1c53c88a1b1e";
+		NAkey[90]="s_3b456484c08c";
+		NAkey[91]="s_35cec583d6f7";
+		NAkey[92]="s_29f81d5d364e";
+		NAkey[93]="s_5776f5abd379";
+		NAkey[94]="";
+		NAkey[95]="s_29146c701f91";
+		NAkey[96]="s_856d16f944f";
+		NAkey[97]="s_462afd17ac44";
+		NAkey[98]="s_150af8609c46";
+		NAkey[99]="s_2e89c4002b70";
+		NAkey[100]="s_68539ad8d17";
+		NAkey[101]="s_322d192533e0";
+		NAkey[102]="s_4b291ef9a20";
+		NAkey[103]="s_22b24d6758d9";
+		NAkey[104]="s_199eb05afda5";
+		NAkey[105]="s_ce287f2a00f";
+		NAkey[106]="s_3a5c9366ea81";
+		NAkey[107]="s_585fcce682a5";
+		NAkey[108]="s_3fd18fd9a9fe";
+		NAkey[109]="s_282bd5144223";
+		NAkey[110]="s_4abb792f4270";
+		NAkey[111]="s_4ba40e64a946";
+		NAkey[112]="s_bfa26975414";
+		NAkey[113]="s_3c26027546f4";
+		NAkey[114]="s_4abb899820b7";
+		NAkey[115]="s_1d39c4892725";
+		NAkey[116]="s_48010912ef13";
+		NAkey[117]="s_3a5c553525b2";
+		NAkey[118]="s_305b6f57613a";
+		NAkey[119]="s_3ca994ce4c3";
+		NAkey[120]="s_43736afeb6c4";
+		NAkey[121]="s_585fcce682a5";
+		NAkey[122]="s_4f4797b407d5";
+		NAkey[123]="s_10865e5225f5";
+		NAkey[124]="s_51192e54fdca";
+		NAkey[125]="s_2743247d65c5";
+		NAkey[126]="s_4374e60511e5";
+		NAkey[127]="s_53d3d7955f97";
+		NAkey[128]="s_4f4797b407d5";
+		NAkey[129]="s_ce2e949de01";
+		NAkey[130]="s_35d05dbb31e2";
+		NAkey[131]="s_35d05dbb31e2";
+		NAkey[132]="s_bfa26975414";
+		NAkey[133]="s_93fbcc39bb0";
+		NAkey[134]="s_76d855368c2";
+		NAkey[135]="s_20e551ee0702";
+		NAkey[136]="s_2571792746b0";
+		NAkey[137]="s_53ced64ac815";
+		NAkey[138]="s_15fb5927613b";
+		NAkey[139]="s_276c5283a2";
+		NAkey[140]="s_445db9142171";
+		NAkey[141]="s_2f7298a698d8";
+		NAkey[142]="s_48010c3abd7d";
+		NAkey[143]="s_290e2d53f0aa";
+		NAkey[144]="s_322d19994f52";
+		NAkey[145]="s_856b16e7da8";
+		NAkey[146]="s_52eb04fc0d34";
+		NAkey[147]="s_49ca7f5e754d";
+		NAkey[148]="s_17cd06997bbd";
+		NAkey[149]="s_ce30f5504a9";
+		NAkey[150]="s_462f4fecb23d";
+		NAkey[151]="s_57772bba420b";
+		NAkey[152]="s_3ee831b7795f";
+		NAkey[153]="s_4629e8a23d22";
+		NAkey[154]="s_2dd2be7eda4";
+		NAkey[155]="s_1f8f72fcfd6";
+		NAkey[156]="s_68533022b17";
+	
+	
+		for(int i=0;i<=156;i++) {
+			//URL 접근 불가 시 예외처리
+			try {
+				open(URL[i]);
+				System.out.print(i + ". " + URL[i]);
+				//URL 형식 체크
+				if(URL[i].substring(0, 4).equals("http")) {
+					//html의 script 태그 wcs_add 여부 체크
+					ElementsCollection scriptsCheck = Selenide.$$("script");
+					boolean textFound = false;
+			        for (int x = 0; x < scriptsCheck.size(); x++) {
+			            if (scriptsCheck.get(x).innerHtml().contains("wcs_add")) {
+			                textFound = true;
+			                break;
+			            }
+			        }
+			        //html에 wcs_add가 있으면 NAkey 추출해서 체크
+			        if (textFound) {
+						String HtmlSplit = $("html").innerHtml().trim().replaceAll(" ", "").replaceAll("	", "").replaceAll("\n", "");
+						String[] naKeySplit = HtmlSplit.split("wcs_add\\[\"wa\"\\]\\=\"");
+						String[] naKeycompare = naKeySplit[1].split("\"");
+						if(NAkey[i].equals(naKeycompare[0])) {
+							System.out.println("는" + NAkey[i]);
+						} else {
+							//로그 미출력시 에러 발생 부분 찾기 힘들어서 모두 출력 후 엑셀에서 구분기호로 텍스트 나누기
+							System.out.println("☆NAkey가 다릅니다.");
+						}
+			        } else {
+						//로그 미출력시 에러 발생 부분 찾기 힘들어서 모두 출력 후 엑셀에서 구분기호로 텍스트 나누기
+			        	System.out.println("☆NA 스크립트가 설치되어 있지 않습니다.");
+			        }
+				} else {
+					//로그 미출력시 에러 발생 부분 찾기 힘들어서 모두 출력 후 엑셀에서 구분기호로 텍스트 나누기
+					System.out.println("☆URL 형식이 비정상 입니다.");
+				}
+			} catch (Exception e) {
+				//로그 미출력시 에러 발생 부분 찾기 힘들어서 모두 출력 후 엑셀에서 구분기호로 텍스트 나누기
+				System.out.println(i + ". " + URL[i] + "☆URL 접근이 불가합니다.");				
+			}
+	
+		}
+	}
+
+	//@Test(priority = 0)
 	public void vklog테스트몰회원가입확인() {
 		for(int i=0;i<=9;i++) {
 			open("http://vklog.loginside.co.kr/member/join.php");
@@ -1091,420 +1457,6 @@ public class BlogTest {
 			System.out.println("qwer" + i + " 번 탈퇴 완료");
 		}		
 	}
-	//@Test(priority = 0)
-	public void NA스크립트설치확인() {
-		//URL과 NAkey 개수에 따라 배열 크기 조절
-		String[] URL = new String[182];
-		URL[0] = "https://www.mudsanghoe.com";
-		URL[1] = "https://www.jpm-pet.co.kr";
-		URL[2] = "https://bongbongsm.com";
-		URL[3] = "http://www.hanyhome.com";
-		URL[4] = "http://www.sinmama.co.kr";
-		URL[5] = "http://www.samhyeon.com/m";
-		URL[6] = "http://wishartshop.com";
-		URL[7] = "https://troistouch.com";
-		URL[8] = "http://m.sookdoc.com";
-		URL[9] = "https://laalegria.co.kr";
-		URL[10] = "http://m.mygolfball.co.kr";
-		URL[11] = "http://printerzone.kr/";
-		URL[12] = "http://www.popmart.co.kr";
-		URL[13] = "http://www.ninanomarket.com";
-		URL[14] = "https://lenicgolf.com";
-		URL[15] = "http://stackandfold.com";
-		URL[16] = "http://stackfold.kr";
-		URL[17] = "http://www.mygolfball.co.kr";
-		URL[18] = "http://www.hongsamedical.com";
-		URL[19] = "https://mifmall.com";
-		URL[20] = "http://beanpro.co.kr";
-		URL[21] = "http://pibupibu.co.kr";
-		URL[22] = "http://대출24.kr";
-		URL[23] = "http://대출24.site";
-		URL[24] = "http://대출24.shop";
-		URL[25] = "http://smart-rentalmall.com";
-		URL[26] = "http://erounmart.kr";
-		URL[27] = "http://www.gayachess.co.kr";
-		URL[28] = "https://bodynpick.com";
-		URL[29] = "http://www.wonderwalk.co.kr";
-		URL[30] = "https://dtailpuppy.com";
-		URL[31] = "http://www.bingsudang.com";
-		URL[32] = "https://kikn.co.kr";
-		URL[33] = "http://www.isece.com";
-		URL[34] = "https://juliannedaisy.com";
-		URL[35] = "http://www.instagram.com/volv_studio/";
-		URL[36] = "http://www.meongsimhwan.co.kr";
-		URL[37] = "https://mong23.kr";
-		URL[38] = "http://www.kcl.re.kr";
-		URL[39] = "https://재경이네국산김치.com";
-		URL[40] = "http://printerzone.kr";
-		URL[41] = "https://ehfactory.co.kr";
-		URL[42] = "http://fudams.com";
-		URL[43] = "http://대출24.store";
-		URL[44] = "http://www.대출24.site";
-		URL[45] = "http://www.ytkor.com";
-		URL[46] = "https://난초꽃피다안과.kr";
-		URL[47] = "http://m.mojelly.com";
-		URL[48] = "https://www.18ober.com";
-		URL[49] = "https://cellchic.co.kr";
-		URL[50] = "http://istmall.co.kr";
-		URL[51] = "http://mytoyshop.co.kr";
-		URL[52] = "http://coaroo.co.kr";
-		URL[53] = "https://prootskin.kr";
-		URL[54] = "http://ddm153.co.kr";
-		URL[55] = "http://m.ddm153.co.kr";
-		URL[56] = "http://duducase.com";
-		URL[57] = "http://www.masshop.co.kr";
-		URL[58] = "https://beigemute.com";
-		URL[59] = "http://a7korea.com";
-		URL[60] = "https://lazysociety.co.kr";
-		URL[61] = "http://www.대출24.shop";
-		URL[62] = "http://m.bellki.com";
-		URL[63] = "http://daemyeong.co.kr";
-		URL[64] = "https://www.deepsecret.co.kr";
-		URL[65] = "http://www.dabomcns.net";
-		URL[66] = "https://korea.tiandy.com";
-		URL[67] = "http://balmainhaircouture.co.kr";
-		URL[68] = "https://nutripang.com";
-		URL[69] = "http://seoyneoy.co.kr";
-		URL[70] = "http://m.moat.kr";
-		URL[71] = "https://neatfood.shop";
-		URL[72] = "http://www.bns79.com";
-		URL[73] = "http://daebakcoffee.co.kr";
-		URL[74] = "https://gemmarina.co.kr";
-		URL[75] = "http://www.noclaim.co.kr";
-		URL[76] = "http://uncover.co.kr";
-		URL[77] = "http://uncover.co.kr";
-		URL[78] = "http://www.hookss.co.kr";
-		URL[79] = "http://www.buddle.kr";
-		URL[80] = "http://www.moat.kr";
-		URL[81] = "http://www.대출24.store";
-		URL[82] = "https://eoskorea.co.kr";
-		URL[83] = "http://daebakcoffee.co.kr";
-		URL[84] = "http://vialmiracle.co.kr";
-		URL[85] = "http://eoskorea.co.kr";
-		URL[86] = "http://깔끔푸드.com";
-		URL[87] = "http://포항칼라강판.com";
-		URL[88] = "http://www.대출24.kr";
-		URL[89] = "https://www.heary.kr";
-		URL[90] = "http://www.daolinspace.com";
-		URL[91] = "https://shopping.naver.com/window/style/store/101983622";
-		URL[92] = "http://www.lemate.co.kr";
-		URL[93] = "http://lemate.co.kr";
-		URL[94] = "https://elisha20.cafe24.com";
-		URL[95] = "https://gomcoffee.com";
-		URL[96] = "http://sookdoc.com";
-		URL[97] = "http://www.dr20project.com";
-		URL[98] = "http://m.drritz.co.kr";
-		URL[99] = "http://blankby.kr";
-		URL[100] = "https://booking.naver.com/booking/5/bizes/368458";
-		URL[101] = "https://laalegria.co.kr";
-		URL[102] = "http://ncnnt.com";
-		URL[103] = "https://mandugongbang.com";
-		URL[104] = "http://daldaldome.com";
-		URL[105] = "https://en.tiandy.com";
-		URL[106] = "https://m.studio-mauve.kr";
-		URL[107] = "http://m.gaebobjangsu.com";
-		URL[108] = "http://www.popbeadsdome.com";
-		URL[109] = "http://gym80.co.kr";
-		URL[110] = "http://www.fudams.com";
-		URL[111] = "http://for103.com";
-		URL[112] = "http://pop-beads.com";
-		URL[113] = "https://m.ncnnt.com";
-		URL[114] = "http://brainmindclinic.com";
-		URL[115] = "https://sobangjae.co.kr";
-		URL[116] = "http://rluvwoo.com";
-		URL[117] = "http://www.pop-beads.com/m/";
-		URL[118] = "https://ukay.kr";
-		URL[119] = "https://studio-mauve.kr";
-		URL[120] = "http://토브.com";
-		URL[121] = "http://www.bck.co.kr";
-		URL[122] = "https://hansung09.toolpark.kr";
-		URL[123] = "http://truepick.co.kr";
-		URL[124] = "http://culebox.co.kr";
-		URL[125] = "http://www.gaebobjangsu.com";
-		URL[126] = "http://xiom.store";
-		URL[127] = "https://mandugongbang.com";
-		URL[128] = "http://m.elsom.shop";
-		URL[129] = "http://hellobulk.co.kr";
-		URL[130] = "http://elsom.shop";
-		URL[131] = "http://drritz.co.kr";
-		URL[132] = "https://m.ehfactory.co.kr";
-		URL[133] = "http://m.gomcoffee.com";
-		URL[134] = "https://greenpia.shop";
-		URL[135] = "http://m.깔끔푸드.com";
-		URL[136] = "http://www.dabomcns.kr";
-		URL[137] = "https://wevolns.shop";
-		URL[138] = "http://jariro-store.com";
-		URL[139] = "https://chalboribread.com";
-		URL[140] = "https://lostmanagementcities.com";
-		URL[141] = "http://www.casano.co.kr";
-		URL[142] = "http://einsme.co.kr";
-		URL[143] = "https://www.vova.co.kr";
-		URL[144] = "http://budhi-mudra.com";
-		URL[145] = "http://openbucks.shop";
-		URL[146] = "https://viinscent.com";
-		URL[147] = "http://roenstudio.co.kr";
-		URL[148] = "http://www.embelec.co.kr";
-		URL[149] = "http://goodtong.kr";
-		URL[150] = "http://www.unidlab.co.kr";
-		URL[151] = "http://www.basrak.co.kr";
-		URL[152] = "http://goodtong.co.kr";
-		URL[153] = "http://m.balmainhairkorea.co.kr";
-		URL[154] = "https://my-bike.co.kr";
-		URL[155] = "https://jungyukdamda.co.kr";
-		URL[156] = "https://m.troistouch.com";
-		URL[157] = "http://roenstudio.kr";
-		URL[158] = "http://www.kyclub.co.kr";
-		URL[159] = "http://sale78.cafe24.com";
-		URL[160] = "https://cookingson.co.kr";
-		URL[161] = "http://pacey.co.kr";
-		URL[162] = "https://gleer.co.kr";
-		URL[163] = "http://m.basrak.co.kr";
-		URL[164] = "https://roenstudio2.cafe24.com/main.html";
-		URL[165] = "https://front.maketicket.co.kr/ticket/GD2318673";
-		URL[166] = "http://hpw0401.cafe24.com";
-		URL[167] = "http://m.openbucks.shop";
-		URL[168] = "http://www.jmella.com";
-		URL[169] = "https://poopoogalssa.com";
-		URL[170] = "https://vkvkffk.cafe24.com";
-		URL[171] = "https://maholn.com";
-		URL[172] = "http://www.mcnfit.co.kr";
-		URL[173] = "http://openbucks.shop";
-		URL[174] = "http://www.m.jmella.com";
-		URL[175] = "http://bluegram.kr";
-		URL[176] = "http://doorirang.com";
-		URL[177] = "http://xn--2o2b17h38d97fg8m7sg.com";
-		URL[178] = "http://www.mottenbailey.com";
-		URL[179] = "https://my-bike.co.kr";
-		URL[180] = "https://moment-fragrance.com";
-		URL[181] = "http://wwww.sote.co.kr";
-
-		String[] NAkey = new String[182];
-		NAkey[0] = "s_4d7494b38f59";
-		NAkey[1] = "s_20e53c544606";
-		NAkey[2] = "s_40ba550b1f4f";
-		NAkey[3] = "s_322d00f82910";
-		NAkey[4] = "s_49d299bb64fa";
-		NAkey[5] = "s_16dce5232d5a";
-		NAkey[6] = "s_282be30055d2";
-		NAkey[7] = "s_239fc2f1bf36";
-		NAkey[8] = "s_1d3ebe869243";
-		NAkey[9] = "s_52eae0d9030f";
-		NAkey[10] = "s_568c2e6b2584";
-		NAkey[11] = "s_53cde2c4b443";
-		NAkey[12] = "s_5115b786b855";
-		NAkey[13] = "s_a2405224c69";
-		NAkey[14] = "s_239f45d5ef26";
-		NAkey[15] = "s_33157f02ade6";
-		NAkey[16] = "s_33157f02ade6";
-		NAkey[17] = "s_568c2e6b2584";
-		NAkey[18] = "s_17c4c8aac6ae";
-		NAkey[19] = "s_24888a3d47f2";
-		NAkey[20] = "s_462f011031ee";
-		NAkey[21] = "s_51feadc63a7e";
-		NAkey[22] = "s_1257f0fbaf70";
-		NAkey[23] = "s_15fb438fa9b3";
-		NAkey[24] = "s_4374cbcc499c";
-		NAkey[25] = "s_33fc64e453c5";
-		NAkey[26] = "s_4ababfc34797";
-		NAkey[27] = "s_18ad9d4fd5d3";
-		NAkey[28] = "s_1ffc6585dc3b";
-		NAkey[29] = "s_4c8d138c0db8";
-		NAkey[30] = "s_3c2e26221f8b";
-		NAkey[31] = "s_2e89b1fcc9ec";
-		NAkey[32] = "s_2571421bf6cc";
-		NAkey[33] = "s_1a8076e6929a";
-		NAkey[34] = "s_1d41c73bebe8";
-		NAkey[35] = "";
-		NAkey[36] = "s_37a1fbc723fb";
-		NAkey[37] = "s_3b4550d1c3f3";
-		NAkey[38] = "s_4457bcf29846";
-		NAkey[39] = "s_eb49d39c9a3";
-		NAkey[40] = "s_53cde2c4b443";
-		NAkey[41] = "s_53d3bc4f3081";
-		NAkey[42] = "s_b113614b444";
-		NAkey[43] = "s_685249923e9";
-		NAkey[44] = "s_15fb438fa9b3";
-		NAkey[45] = "s_40b97a199e52";
-		NAkey[46] = "s_49d29937be3a";
-		NAkey[47] = "s_17c4ffdccf01";
-		NAkey[48] = "s_4f46addbaecc";
-		NAkey[49] = "s_3dff55543b44";
-		NAkey[50] = "s_3c2dff66138c";
-		NAkey[51] = "s_3fcfc276c897";
-		NAkey[52] = "s_256d66d71e1c";
-		NAkey[53] = "s_16e3fb3ce6ef";
-		NAkey[54] = "s_282bdfefbfe4";
-		NAkey[55] = "s_282bdfefbfe4";
-		NAkey[56] = "s_eafece2746f";
-		NAkey[57] = "s_239fba422892";
-		NAkey[58] = "s_199e8ad45730";
-		NAkey[59] = "s_1e2ab5220c77";
-		NAkey[60] = "s_3c6d9d29901";
-		NAkey[61] = "s_4374cbcc499c";
-		NAkey[62] = "s_599e6e4b1e8";
-		NAkey[63] = "s_1d3f3cdde705";
-		NAkey[64] = "s_511904100fe6";
-		NAkey[65] = "s_54bc98a5f64f";
-		NAkey[66] = "s_b11506bcc73";
-		NAkey[67] = "s_5116b91bdb6a";
-		NAkey[68] = "s_3315ca3aec2a";
-		NAkey[69] = "s_37a19d0d0786";
-		NAkey[70] = "s_853d4b62b9f";
-		NAkey[71] = "s_1f8f17c66cf";
-		NAkey[72] = "s_5946c9db6b8e";
-		NAkey[73] = "s_3315c9c1533b";
-		NAkey[74] = "s_31436f5b8113";
-		NAkey[75] = "s_49cbb8f8fee4";
-		NAkey[76] = "s_b0f97105ad3";
-		NAkey[77] = "s_b0f97105ad3";
-		NAkey[78] = "s_576eedcd24ac";
-		NAkey[79] = "s_322d040b8fb3";
-		NAkey[80] = "s_853d4b62b9f";
-		NAkey[81] = "s_685249923e9";
-		NAkey[82] = "s_1f1353a74f68";
-		NAkey[83] = "s_3315c9c1533b";
-		NAkey[84] = "s_10bfa850bc9";
-		NAkey[85] = "s_1f1353a74f68";
-		NAkey[86] = "s_151271e88c4e";
-		NAkey[87] = "s_1257f593adc6";
-		NAkey[88] = "s_1257f0fbaf70";
-		NAkey[89] = "s_5a3118f9bf09";
-		NAkey[90] = "s_4b37c54e5b8";
-		NAkey[91] = "";
-		NAkey[92] = "s_17ccde617501";
-		NAkey[93] = "s_17ccde617501";
-		NAkey[94] = "s_54bc91777478";
-		NAkey[95] = "s_dcbce59c4d3";
-		NAkey[96] = "s_1d3ebe869243";
-		NAkey[97] = "s_22b5369c7418";
-		NAkey[98] = "s_18b5cbb893e9";
-		NAkey[99] = "s_5116bead74ee";
-		NAkey[100] = "";
-		NAkey[101] = "s_52eae0d9030f";
-		NAkey[102] = "s_20e33e72b1d5";
-		NAkey[103] = "s_36b45c616b55";
-		NAkey[104] = "s_55a56ed81dee";
-		NAkey[105] = "s_239fbdd4754d";
-		NAkey[106] = "s_f9d6cca5ef7";
-		NAkey[107] = "s_1c572c5ca44a";
-		NAkey[108] = "s_b0a6557bb19";
-		NAkey[109] = "s_4800f69cd3ba";
-		NAkey[110] = "s_b113614b444";
-		NAkey[111] = "s_1d41ebb0c2e8";
-		NAkey[112] = "s_b0a6557bb19";
-		NAkey[113] = "s_20e33e72b1d5";
-		NAkey[114] = "s_dcbccc274f3";
-		NAkey[115] = "s_1a876dc93600";
-		NAkey[116] = "s_239faef62a5f";
-		NAkey[117] = "s_b0a6557bb19";
-		NAkey[118] = "s_511905365225";
-		NAkey[119] = "s_f9d6cca5ef7";
-		NAkey[120] = "s_767e2c3dfc3";
-		NAkey[121] = "s_49d29f49f445";
-		NAkey[122] = "s_3314bad6bdeb";
-		NAkey[123] = "s_2f70ee4cf1fc";
-		NAkey[124] = "s_2da033ed88eb";
-		NAkey[125] = "s_1c572c5ca44a";
-		NAkey[126] = "s_471669b34be3";
-		NAkey[127] = "s_36b45c616b55";
-		NAkey[128] = "s_5030119733ac";
-		NAkey[129] = "s_1340bd6c89cf";
-		NAkey[130] = "s_5030119733ac";
-		NAkey[131] = "s_bfa2ab19f80";
-		NAkey[132] = "s_53d3bc4f3081";
-		NAkey[133] = "s_dcbce59c4d3";
-		NAkey[134] = "s_5948c172da4a";
-		NAkey[135] = "s_151271e88c4e";
-		NAkey[136] = "s_b11506bd328";
-		NAkey[137] = "s_4d7354ea89b0";
-		NAkey[138] = "s_388ac8a5ed18";
-		NAkey[139] = "s_dc9a4bbdad9";
-		NAkey[140] = "s_55a4bfb46ef9";
-		NAkey[141] = "s_471800f88fac";
-		NAkey[142] = "s_b1153841cd1";
-		NAkey[143] = "s_1f136d7a6f84";
-		NAkey[144] = "s_21cdaa70b297";
-		NAkey[145] = "s_1ffb79a15d23";
-		NAkey[146] = "s_239fbf6953d7";
-		NAkey[147] = "s_4f47a2679abf";
-		NAkey[148] = "s_45467f4f0df4";
-		NAkey[149] = "s_17ccf6973ae2";
-		NAkey[150] = "s_37a2079bc564";
-		NAkey[151] = "s_4b9fc7a6c5fb";
-		NAkey[152] = "s_1b6befbb1791";
-		NAkey[153] = "s_14290d98f4f4";
-		NAkey[154] = "s_598e4f9f67e";
-		NAkey[155] = "s_b1153816c20";
-		NAkey[156] = "s_239fc2f1bf36";
-		NAkey[157] = "s_585ff0da4316";
-		NAkey[158] = "s_6852bbbca0c";
-		NAkey[159] = "s_502f7b561dc6";
-		NAkey[160] = "s_4f47a1eab159";
-		NAkey[161] = "s_305b647c0e2e";
-		NAkey[162] = "s_41a21ab8b453";
-		NAkey[163] = "s_4b9fc7a6c5fb";
-		NAkey[164] = "s_6852ed27f86";
-		NAkey[165] = "s_116f268ecec1";
-		NAkey[166] = "s_3dffd99f0256";
-		NAkey[167] = "s_1ffb79a15d23";
-		NAkey[168] = "s_3fcff3ee5ffa";
-		NAkey[169] = "s_37a1393004ec";
-		NAkey[170] = "s_265a25290cac";
-		NAkey[171] = "s_4f479fde24b7";
-		NAkey[172] = "s_a2827d14e00";
-		NAkey[173] = "s_1ffb79a15d23";
-		NAkey[174] = "s_3fcff3ee5ffa";
-		NAkey[175] = "s_445befc14ea4";
-		NAkey[176] = "s_3c2e2d3f1435";
-		NAkey[177] = "s_f9d7cc1e10c";
-		NAkey[178] = "s_eb02bc9977a";
-		NAkey[179] = "s_598e4f9f67e";
-		NAkey[180] = "s_5a319a252eaf";
-		NAkey[181] = "s_462f5378a22d";
-
-		for(int i=0;i<=181;i++) {
-			//URL 접근 불가 시 예외처리
-			try {
-				open(URL[i]);
-				System.out.print(i + ". " + URL[i]);
-				//URL 형식 체크
-				if(URL[i].substring(0, 4).equals("http")) {
-					//html의 script 태그 wcs_add 여부 체크
-					ElementsCollection scriptsCheck = Selenide.$$("script");
-					boolean textFound = false;
-			        for (int x = 0; x < scriptsCheck.size(); x++) {
-			            if (scriptsCheck.get(x).innerHtml().contains("wcs_add")) {
-			                textFound = true;
-			                break;
-			            }
-			        }
-			        //html에 wcs_add가 있으면 NAkey 추출해서 체크
-			        if (textFound) {
-						String HtmlSplit = $("html").innerHtml().trim().replaceAll(" ", "").replaceAll("	", "").replaceAll("\n", "");
-						String[] naKeySplit = HtmlSplit.split("wcs_add\\[\"wa\"\\]\\=\"");
-						String[] naKeycompare = naKeySplit[1].split("\"");
-						if(NAkey[i].equals(naKeycompare[0])) {
-							System.out.println("는" + NAkey[i]);
-						} else {
-							//로그 미출력시 에러 발생 부분 찾기 힘들어서 모두 출력 후 엑셀에서 구분기호로 텍스트 나누기
-							System.out.println("☆NAkey가 다릅니다.");
-						}
-			        } else {
-						//로그 미출력시 에러 발생 부분 찾기 힘들어서 모두 출력 후 엑셀에서 구분기호로 텍스트 나누기
-			        	System.out.println("☆NA 스크립트가 설치되어 있지 않습니다.");
-			        }
-				} else {
-					//로그 미출력시 에러 발생 부분 찾기 힘들어서 모두 출력 후 엑셀에서 구분기호로 텍스트 나누기
-					System.out.println("☆URL 형식이 비정상 입니다.");
-				}
-			} catch (Exception e) {
-				//로그 미출력시 에러 발생 부분 찾기 힘들어서 모두 출력 후 엑셀에서 구분기호로 텍스트 나누기
-				System.out.println(i + ". " + URL[i] + "☆URL 접근이 불가합니다.");				
-			}
-
-		}
-	}
-	
 	//@Test(priority = 3)
 	public void 에카1데이터쌓기() {
 		for(int i=0;i<=1;i++) {			
