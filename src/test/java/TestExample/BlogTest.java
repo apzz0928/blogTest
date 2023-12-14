@@ -875,7 +875,7 @@ public class BlogTest {
 		}		
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 2) //
 	public void 다이티카페24로그인후구매() {
 		for(int i=0;i<=10000;i++) {
             Random generator = new Random();
