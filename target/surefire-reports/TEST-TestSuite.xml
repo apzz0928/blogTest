@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="601.611" tests="2" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="872.796" tests="2" errors="0" skipped="0" failures="1">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="KR"/>
     <property name="sun.boot.library.path" value="D:\OpenJDK\jdk-11.0.2\bin"/>
-    <property name="sun.java.command" value="C:\Users\NHN\AppData\Local\Temp\surefire8117801520071244248\surefirebooter10653048737283808783.jar C:\Users\NHN\AppData\Local\Temp\surefire8117801520071244248 2023-12-14T08-56-34_916-jvmRun1 surefire17837180107767482627tmp surefire_016007907799501985851tmp"/>
+    <property name="sun.java.command" value="C:\Users\NHN\AppData\Local\Temp\surefire8707113219838629589\surefirebooter16307332849626736381.jar C:\Users\NHN\AppData\Local\Temp\surefire8707113219838629589 2023-12-19T11-16-14_147-jvmRun1 surefire17982740144442669417tmp surefire_015619541032616523075tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="D:\000. Selenium\eclipse\eclipse-workspace\BlogTest\target\test-classes;D:\000. Selenium\eclipse\eclipse-workspace\BlogTest\target\classes;C:\Users\NHN\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\NHN\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\NHN\.m2\repository\org\testng\testng\6.10\testng-6.10.jar;C:\Users\NHN\.m2\repository\com\beust\jcommander\1.48\jcommander-1.48.jar;C:\Users\NHN\.m2\repository\org\seleniumhq\selenium\selenium-java\3.12.0\selenium-java-3.12.0.jar;C:\Users\NHN\.m2\repository\org\seleniumhq\selenium\selenium-api\3.12.0\selenium-api-3.12.0.jar;C:\Users\NHN\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.12.0\selenium-chrome-driver-3.12.0.jar;C:\Users\NHN\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.12.0\selenium-edge-driver-3.12.0.jar;C:\Users\NHN\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.12.0\selenium-firefox-driver-3.12.0.jar;C:\Users\NHN\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.12.0\selenium-ie-driver-3.12.0.jar;C:\Users\NHN\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.12.0\selenium-opera-driver-3.12.0.jar;C:\Users\NHN\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.12.0\selenium-remote-driver-3.12.0.jar;C:\Users\NHN\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.12.0\selenium-safari-driver-3.12.0.jar;C:\Users\NHN\.m2\repository\org\seleniumhq\selenium\selenium-support\3.12.0\selenium-support-3.12.0.jar;C:\Users\NHN\.m2\repository\net\bytebuddy\byte-buddy\1.8.3\byte-buddy-1.8.3.jar;C:\Users\NHN\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\NHN\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\NHN\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\NHN\.m2\repository\com\google\code\gson\gson\2.8.2\gson-2.8.2.jar;C:\Users\NHN\.m2\repository\com\google\guava\guava\23.6-jre\guava-23.6-jre.jar;C:\Users\NHN\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\NHN\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\NHN\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\NHN\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\NHN\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\NHN\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar;C:\Users\NHN\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar;C:\Users\NHN\.m2\repository\com\squareup\okhttp3\okhttp\3.9.1\okhttp-3.9.1.jar;C:\Users\NHN\.m2\repository\com\squareup\okio\okio\1.13.0\okio-1.13.0.jar;C:\Users\NHN\.m2\repository\com\codeborne\selenide\4.11.4\selenide-4.11.4.jar;C:\Users\NHN\.m2\repository\io\github\bonigarcia\webdrivermanager\2.2.1\webdrivermanager-2.2.1.jar;C:\Users\NHN\.m2\repository\commons-io\commons-io\2.5\commons-io-2.5.jar;C:\Users\NHN\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\NHN\.m2\repository\org\rauschig\jarchivelib\0.7.1\jarchivelib-0.7.1.jar;C:\Users\NHN\.m2\repository\org\apache\commons\commons-compress\1.9\commons-compress-1.9.jar;C:\Users\NHN\.m2\repository\org\jsoup\jsoup\1.10.2\jsoup-1.10.2.jar;C:\Users\NHN\.m2\repository\net\lightbody\bmp\browsermob-core\2.1.5\browsermob-core-2.1.5.jar;C:\Users\NHN\.m2\repository\net\lightbody\bmp\littleproxy\1.1.0-beta-bmp-17\littleproxy-1.1.0-beta-bmp-17.jar;C:\Users\NHN\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.8.9\jackson-core-2.8.9.jar;C:\Users\NHN\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.8.9\jackson-databind-2.8.9.jar;C:\Users\NHN\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.8.9\jackson-annotations-2.8.9.jar;C:\Users\NHN\.m2\repository\dnsjava\dnsjava\2.1.8\dnsjava-2.1.8.jar;C:\Users\NHN\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.25\jcl-over-slf4j-1.7.25.jar;C:\Users\NHN\.m2\repository\com\jcraft\jzlib\1.1.3\jzlib-1.1.3.jar;C:\Users\NHN\.m2\repository\io\netty\netty-all\4.0.51.Final\netty-all-4.0.51.Final.jar;C:\Users\NHN\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.58\bcprov-jdk15on-1.58.jar;C:\Users\NHN\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.58\bcpkix-jdk15on-1.58.jar;C:\Users\NHN\.m2\repository\net\lightbody\bmp\mitm\2.1.5\mitm-2.1.5.jar;C:\Users\NHN\.m2\repository\org\apache\logging\log4j\log4j-core\2.11.0\log4j-core-2.11.0.jar;C:\Users\NHN\.m2\repository\org\apache\logging\log4j\log4j-api\2.11.0\log4j-api-2.11.0.jar;C:\Users\NHN\.m2\repository\org\apache\logging\log4j\log4j-slf4j-impl\2.11.0\log4j-slf4j-impl-2.11.0.jar;C:\Users\NHN\.m2\repository\org\slf4j\slf4j-api\1.8.0-alpha2\slf4j-api-1.8.0-alpha2.jar;C:\Users\NHN\.m2\repository\org\apache\maven\surefire\surefire-testng-utils\2.21.0\surefire-testng-utils-2.21.0.jar;C:\Users\NHN\.m2\repository\org\apache\maven\surefire\surefire-grouper\2.21.0\surefire-grouper-2.21.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\NHN\AppData\Local\Temp\surefire8117801520071244248\surefirebooter10653048737283808783.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\NHN\AppData\Local\Temp\surefire8707113219838629589\surefirebooter16307332849626736381.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.2+9"/>
@@ -60,295 +60,403 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="다이티카페24로그인후구매" classname="TestExample.BlogTest" time="589.313">
-    <failure message="Element not found {.gIndent20}&#10;Expected: exist" type="com.codeborne.selenide.ex.ElementNotFound">com.codeborne.selenide.ex.ElementNotFound: 
-Element not found {.gIndent20}
-Expected: exist
-	at TestExample.BlogTest.다이티카페24로그인후구매(BlogTest.java:1021)
+  <testcase name="다이티카페24로그인후구매" classname="TestExample.BlogTest" time="859.257">
+    <failure message="Element not found {.btnSubmitFix}&#10;Expected: visible" type="com.codeborne.selenide.ex.ElementNotFound">com.codeborne.selenide.ex.ElementNotFound: 
+Element not found {.btnSubmitFix}
+Expected: visible
+	at TestExample.BlogTest.다이티카페24로그인후구매(BlogTest.java:1016)
 Caused by: org.openqa.selenium.NoSuchElementException: 
-Unable to locate element: .gIndent20
+Unable to locate element: .btnSubmitFix
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
 System info: host: 'AD01598487', ip: '10.77.129.169', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 120.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20231116134553, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 16596, moz:profile: C:\Users\NHN\AppData\Local\..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 1821aecf-5dab-492b-9c3b-c08...}
-Session ID: 1821aecf-5dab-492b-9c3b-c083865f5cc7
-*** Element info: {Using=css selector, value=.gIndent20}
-	at TestExample.BlogTest.다이티카페24로그인후구매(BlogTest.java:1021)
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 120.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20231116134553, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 28652, moz:profile: C:\Users\NHN\AppData\Local\..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: dd528ee2-0e90-4ecb-984e-c9d...}
+Session ID: dd528ee2-0e90-4ecb-984e-c9d8d3b9a852
+*** Element info: {Using=css selector, value=.btnSubmitFix}
+	at TestExample.BlogTest.다이티카페24로그인후구매(BlogTest.java:1016)
 </failure>
-    <system-out><![CDATA[test632 구매 시작
-test632 로그인 완료
-test632 // 2 상품 상세 페이지 접근
-test632 // 4 상품 수량 설정
-test632 장바구니 담기 완료
+    <system-out><![CDATA[test703 구매 시작
+test703 로그인 완료
+test703 // 1 상품 상세 페이지 접근
+test703 // 4 상품 수량 설정
+test703 장바구니 담기 완료
 장바구니 페이지 스크롤 이동
 주문서작성 페이지 스크롤 이동
-test632 구매 완료
+test703 구매 완료
 1번째 구매 완료
-test169 구매 시작
-test169 로그인 완료
-test169 // 3 상품 상세 페이지 접근
-test169 // 5 상품 수량 설정
-test169 장바구니 담기 완료
+test1488 구매 시작
+test1488 로그인 완료
+test1488 // 1 상품 상세 페이지 접근
+test1488 // 2 상품 수량 설정
+test1488 장바구니 담기 완료
 장바구니 페이지 스크롤 이동
 주문서작성 페이지 스크롤 이동
-test169 구매 완료
+test1488 구매 완료
 2번째 구매 완료
-test1286 구매 시작
-test1286 로그인 완료
-test1286 // 5 상품 상세 페이지 접근
-test1286 // 1 상품 수량 설정
-test1286 장바구니 담기 완료
+test1668 구매 시작
+test1668 로그인 완료
+test1668 // 2 상품 상세 페이지 접근
+test1668 // 6 상품 수량 설정
+test1668 장바구니 담기 완료
 장바구니 페이지 스크롤 이동
 주문서작성 페이지 스크롤 이동
-test1286 구매 완료
+test1668 구매 완료
 3번째 구매 완료
-test338 구매 시작
-test338 로그인 완료
-test338 // 5 상품 상세 페이지 접근
-test338 // 2 상품 수량 설정
-test338 장바구니 담기 완료
+test63 구매 시작
+test63 로그인 완료
+test63 // 6 상품 상세 페이지 접근
+test63 // 5 상품 수량 설정
+test63 장바구니 담기 완료
 장바구니 페이지 스크롤 이동
 주문서작성 페이지 스크롤 이동
-test338 구매 완료
+test63 구매 완료
 4번째 구매 완료
-test518 구매 시작
-test518 로그인 완료
-test518 // 5 상품 상세 페이지 접근
-test518 // 5 상품 수량 설정
-test518 장바구니 담기 완료
+test1954 구매 시작
+test1954 로그인 완료
+test1954 // 4 상품 상세 페이지 접근
+test1954 // 3 상품 수량 설정
+test1954 장바구니 담기 완료
 장바구니 페이지 스크롤 이동
 주문서작성 페이지 스크롤 이동
-test518 구매 완료
+test1954 구매 완료
 5번째 구매 완료
-test1583 구매 시작
-test1583 로그인 완료
-test1583 // 0 상품 상세 페이지 접근
-test1583 // 1 상품 수량 설정
-test1583 장바구니 담기 완료
+test560 구매 시작
+test560 로그인 완료
+test560 // 5 상품 상세 페이지 접근
+test560 // 6 상품 수량 설정
+test560 장바구니 담기 완료
 장바구니 페이지 스크롤 이동
 주문서작성 페이지 스크롤 이동
-test1583 구매 완료
+test560 구매 완료
 6번째 구매 완료
-test1465 구매 시작
-test1465 로그인 완료
-test1465 // 3 상품 상세 페이지 접근
-test1465 // 5 상품 수량 설정
-test1465 장바구니 담기 완료
+test1001 구매 시작
+test1001 로그인 완료
+test1001 // 1 상품 상세 페이지 접근
+test1001 // 0 상품 수량 설정
+test1001 장바구니 담기 완료
 장바구니 페이지 스크롤 이동
 주문서작성 페이지 스크롤 이동
-test1465 구매 완료
+test1001 구매 완료
 7번째 구매 완료
-test53 구매 시작
-test53 로그인 완료
-test53 // 6 상품 상세 페이지 접근
-test53 // 6 상품 수량 설정
-test53 장바구니 담기 완료
+test613 구매 시작
+test613 로그인 완료
+test613 // 4 상품 상세 페이지 접근
+test613 // 4 상품 수량 설정
+test613 장바구니 담기 완료
 장바구니 페이지 스크롤 이동
 주문서작성 페이지 스크롤 이동
-test53 구매 완료
+test613 구매 완료
 8번째 구매 완료
-test1213 구매 시작
-test1213 로그인 완료
-test1213 // 2 상품 상세 페이지 접근
-test1213 // 2 상품 수량 설정
-test1213 장바구니 담기 완료
+test1984 구매 시작
+test1984 로그인 완료
+test1984 // 4 상품 상세 페이지 접근
+test1984 // 1 상품 수량 설정
+test1984 장바구니 담기 완료
 장바구니 페이지 스크롤 이동
 주문서작성 페이지 스크롤 이동
-test1213 구매 완료
+test1984 구매 완료
 9번째 구매 완료
-test947 구매 시작
-test947 로그인 완료
-test947 // 5 상품 상세 페이지 접근
-test947 // 1 상품 수량 설정
-test947 장바구니 담기 완료
+test960 구매 시작
+test960 로그인 완료
+test960 // 4 상품 상세 페이지 접근
+test960 // 5 상품 수량 설정
+test960 장바구니 담기 완료
 장바구니 페이지 스크롤 이동
 주문서작성 페이지 스크롤 이동
-test947 구매 완료
+test960 구매 완료
 10번째 구매 완료
-test1268 구매 시작
-test1268 로그인 완료
-test1268 // 6 상품 상세 페이지 접근
-test1268 // 1 상품 수량 설정
-test1268 장바구니 담기 완료
+test61 구매 시작
+test61 로그인 완료
+test61 // 2 상품 상세 페이지 접근
+test61 // 2 상품 수량 설정
+test61 장바구니 담기 완료
 장바구니 페이지 스크롤 이동
 주문서작성 페이지 스크롤 이동
-test1268 구매 완료
+test61 구매 완료
 11번째 구매 완료
-test524 구매 시작
-test524 로그인 완료
-test524 // 2 상품 상세 페이지 접근
-test524 // 4 상품 수량 설정
-test524 장바구니 담기 완료
+test939 구매 시작
+test939 로그인 완료
+test939 // 1 상품 상세 페이지 접근
+test939 // 1 상품 수량 설정
+test939 장바구니 담기 완료
 장바구니 페이지 스크롤 이동
 주문서작성 페이지 스크롤 이동
-test524 구매 완료
+test939 구매 완료
 12번째 구매 완료
-test785 구매 시작
-test785 로그인 완료
-test785 // 1 상품 상세 페이지 접근
-test785 // 6 상품 수량 설정
-test785 장바구니 담기 완료
+test704 구매 시작
+test704 로그인 완료
+test704 // 0 상품 상세 페이지 접근
+test704 // 0 상품 수량 설정
+test704 장바구니 담기 완료
 장바구니 페이지 스크롤 이동
 주문서작성 페이지 스크롤 이동
-test785 구매 완료
+test704 구매 완료
 13번째 구매 완료
-test452 구매 시작
-test452 로그인 완료
-test452 // 0 상품 상세 페이지 접근
-test452 // 4 상품 수량 설정
-test452 장바구니 담기 완료
+test1143 구매 시작
+test1143 로그인 완료
+test1143 // 1 상품 상세 페이지 접근
+test1143 // 5 상품 수량 설정
+test1143 장바구니 담기 완료
 장바구니 페이지 스크롤 이동
 주문서작성 페이지 스크롤 이동
-test452 구매 완료
+test1143 구매 완료
 14번째 구매 완료
-test1711 구매 시작
-test1711 로그인 완료
-test1711 // 0 상품 상세 페이지 접근
-test1711 // 5 상품 수량 설정
-test1711 장바구니 담기 완료
+test1565 구매 시작
+test1565 로그인 완료
+test1565 // 0 상품 상세 페이지 접근
+test1565 // 6 상품 수량 설정
+test1565 장바구니 담기 완료
 장바구니 페이지 스크롤 이동
 주문서작성 페이지 스크롤 이동
-test1711 구매 완료
+test1565 구매 완료
 15번째 구매 완료
-test1700 구매 시작
-test1700 로그인 완료
-test1700 // 5 상품 상세 페이지 접근
-test1700 // 0 상품 수량 설정
-test1700 장바구니 담기 완료
+test1741 구매 시작
+test1741 로그인 완료
+test1741 // 6 상품 상세 페이지 접근
+test1741 // 4 상품 수량 설정
+test1741 장바구니 담기 완료
 장바구니 페이지 스크롤 이동
 주문서작성 페이지 스크롤 이동
-test1700 구매 완료
+test1741 구매 완료
 16번째 구매 완료
-test361 구매 시작
-test361 로그인 완료
-test361 // 6 상품 상세 페이지 접근
-test361 // 1 상품 수량 설정
-test361 장바구니 담기 완료
+test1108 구매 시작
+test1108 로그인 완료
+test1108 // 5 상품 상세 페이지 접근
+test1108 // 0 상품 수량 설정
+test1108 장바구니 담기 완료
 장바구니 페이지 스크롤 이동
 주문서작성 페이지 스크롤 이동
-test361 구매 완료
+test1108 구매 완료
 17번째 구매 완료
-test767 구매 시작
-test767 로그인 완료
-test767 // 2 상품 상세 페이지 접근
-test767 // 1 상품 수량 설정
-test767 장바구니 담기 완료
+test3 구매 시작
+test3 로그인 완료
+test3 // 2 상품 상세 페이지 접근
+test3 // 6 상품 수량 설정
+test3 장바구니 담기 완료
 장바구니 페이지 스크롤 이동
 주문서작성 페이지 스크롤 이동
-test767 구매 완료
+test3 구매 완료
 18번째 구매 완료
-test414 구매 시작
-test414 로그인 완료
-test414 // 4 상품 상세 페이지 접근
-test414 // 0 상품 수량 설정
-test414 장바구니 담기 완료
+test1509 구매 시작
+test1509 로그인 완료
+test1509 // 0 상품 상세 페이지 접근
+test1509 // 4 상품 수량 설정
+test1509 장바구니 담기 완료
 장바구니 페이지 스크롤 이동
 주문서작성 페이지 스크롤 이동
-test414 구매 완료
+test1509 구매 완료
 19번째 구매 완료
-test1450 구매 시작
-test1450 로그인 완료
-test1450 // 0 상품 상세 페이지 접근
-test1450 // 3 상품 수량 설정
-test1450 장바구니 담기 완료
+test260 구매 시작
+test260 로그인 완료
+test260 // 2 상품 상세 페이지 접근
+test260 // 5 상품 수량 설정
+test260 장바구니 담기 완료
 장바구니 페이지 스크롤 이동
 주문서작성 페이지 스크롤 이동
-test1450 구매 완료
+test260 구매 완료
 20번째 구매 완료
-test1440 구매 시작
-test1440 로그인 완료
-test1440 // 5 상품 상세 페이지 접근
-test1440 // 0 상품 수량 설정
-test1440 장바구니 담기 완료
+test1322 구매 시작
+test1322 로그인 완료
+test1322 // 5 상품 상세 페이지 접근
+test1322 // 6 상품 수량 설정
+test1322 장바구니 담기 완료
 장바구니 페이지 스크롤 이동
 주문서작성 페이지 스크롤 이동
-test1440 구매 완료
+test1322 구매 완료
 21번째 구매 완료
-test14 구매 시작
-test14 로그인 완료
-test14 // 4 상품 상세 페이지 접근
-test14 // 3 상품 수량 설정
-test14 장바구니 담기 완료
+test126 구매 시작
+test126 로그인 완료
+test126 // 2 상품 상세 페이지 접근
+test126 // 4 상품 수량 설정
+test126 장바구니 담기 완료
 장바구니 페이지 스크롤 이동
 주문서작성 페이지 스크롤 이동
-test14 구매 완료
+test126 구매 완료
 22번째 구매 완료
-test1362 구매 시작
-test1362 로그인 완료
-test1362 // 3 상품 상세 페이지 접근
-test1362 // 4 상품 수량 설정
-test1362 장바구니 담기 완료
+test809 구매 시작
+test809 로그인 완료
+test809 // 2 상품 상세 페이지 접근
+test809 // 3 상품 수량 설정
+test809 장바구니 담기 완료
 장바구니 페이지 스크롤 이동
 주문서작성 페이지 스크롤 이동
-test1362 구매 완료
+test809 구매 완료
 23번째 구매 완료
-test466 구매 시작
-test466 로그인 완료
-test466 // 6 상품 상세 페이지 접근
-test466 // 0 상품 수량 설정
-test466 장바구니 담기 완료
+test286 구매 시작
+test286 로그인 완료
+test286 // 5 상품 상세 페이지 접근
+test286 // 6 상품 수량 설정
+test286 장바구니 담기 완료
 장바구니 페이지 스크롤 이동
 주문서작성 페이지 스크롤 이동
-test466 구매 완료
+test286 구매 완료
 24번째 구매 완료
-test813 구매 시작
-test813 로그인 완료
-test813 // 4 상품 상세 페이지 접근
-test813 // 0 상품 수량 설정
-test813 장바구니 담기 완료
+test980 구매 시작
+test980 로그인 완료
+test980 // 6 상품 상세 페이지 접근
+test980 // 4 상품 수량 설정
+test980 장바구니 담기 완료
 장바구니 페이지 스크롤 이동
 주문서작성 페이지 스크롤 이동
-test813 구매 완료
+test980 구매 완료
 25번째 구매 완료
-test1041 구매 시작
-test1041 로그인 완료
-test1041 // 5 상품 상세 페이지 접근
-test1041 // 3 상품 수량 설정
-test1041 장바구니 담기 완료
+test1793 구매 시작
+test1793 로그인 완료
+test1793 // 6 상품 상세 페이지 접근
+test1793 // 5 상품 수량 설정
+test1793 장바구니 담기 완료
 장바구니 페이지 스크롤 이동
 주문서작성 페이지 스크롤 이동
-test1041 구매 완료
+test1793 구매 완료
 26번째 구매 완료
-test1006 구매 시작
-test1006 로그인 완료
-test1006 // 1 상품 상세 페이지 접근
-test1006 // 1 상품 수량 설정
-test1006 장바구니 담기 완료
+test73 구매 시작
+test73 로그인 완료
+test73 // 0 상품 상세 페이지 접근
+test73 // 5 상품 수량 설정
+test73 장바구니 담기 완료
 장바구니 페이지 스크롤 이동
 주문서작성 페이지 스크롤 이동
-test1006 구매 완료
+test73 구매 완료
 27번째 구매 완료
-test509 구매 시작
-test509 로그인 완료
-test509 // 6 상품 상세 페이지 접근
-test509 // 3 상품 수량 설정
-test509 장바구니 담기 완료
+test869 구매 시작
+test869 로그인 완료
+test869 // 6 상품 상세 페이지 접근
+test869 // 0 상품 수량 설정
+test869 장바구니 담기 완료
 장바구니 페이지 스크롤 이동
 주문서작성 페이지 스크롤 이동
-test509 구매 완료
+test869 구매 완료
 28번째 구매 완료
-test199 구매 시작
-test199 로그인 완료
-test199 // 0 상품 상세 페이지 접근
-test199 // 2 상품 수량 설정
-test199 장바구니 담기 완료
+test808 구매 시작
+test808 로그인 완료
+test808 // 0 상품 상세 페이지 접근
+test808 // 1 상품 수량 설정
+test808 장바구니 담기 완료
 장바구니 페이지 스크롤 이동
 주문서작성 페이지 스크롤 이동
-test199 구매 완료
+test808 구매 완료
 29번째 구매 완료
-test1643 구매 시작
-test1643 로그인 완료
-test1643 // 6 상품 상세 페이지 접근
-test1643 // 1 상품 수량 설정
-test1643 장바구니 담기 완료
+test913 구매 시작
+test913 로그인 완료
+test913 // 5 상품 상세 페이지 접근
+test913 // 2 상품 수량 설정
+test913 장바구니 담기 완료
+장바구니 페이지 스크롤 이동
+주문서작성 페이지 스크롤 이동
+test913 구매 완료
+30번째 구매 완료
+test1022 구매 시작
+test1022 로그인 완료
+test1022 // 4 상품 상세 페이지 접근
+test1022 // 5 상품 수량 설정
+test1022 장바구니 담기 완료
+장바구니 페이지 스크롤 이동
+주문서작성 페이지 스크롤 이동
+test1022 구매 완료
+31번째 구매 완료
+test1092 구매 시작
+test1092 로그인 완료
+test1092 // 5 상품 상세 페이지 접근
+test1092 // 0 상품 수량 설정
+test1092 장바구니 담기 완료
+장바구니 페이지 스크롤 이동
+주문서작성 페이지 스크롤 이동
+test1092 구매 완료
+32번째 구매 완료
+test1934 구매 시작
+test1934 로그인 완료
+test1934 // 2 상품 상세 페이지 접근
+test1934 // 2 상품 수량 설정
+test1934 장바구니 담기 완료
+장바구니 페이지 스크롤 이동
+주문서작성 페이지 스크롤 이동
+test1934 구매 완료
+33번째 구매 완료
+test1790 구매 시작
+test1790 로그인 완료
+test1790 // 2 상품 상세 페이지 접근
+test1790 // 2 상품 수량 설정
+test1790 장바구니 담기 완료
+장바구니 페이지 스크롤 이동
+주문서작성 페이지 스크롤 이동
+test1790 구매 완료
+34번째 구매 완료
+test1241 구매 시작
+test1241 로그인 완료
+test1241 // 3 상품 상세 페이지 접근
+test1241 // 3 상품 수량 설정
+test1241 장바구니 담기 완료
+장바구니 페이지 스크롤 이동
+주문서작성 페이지 스크롤 이동
+test1241 구매 완료
+35번째 구매 완료
+test1784 구매 시작
+test1784 로그인 완료
+test1784 // 2 상품 상세 페이지 접근
+test1784 // 2 상품 수량 설정
+test1784 장바구니 담기 완료
+장바구니 페이지 스크롤 이동
+주문서작성 페이지 스크롤 이동
+test1784 구매 완료
+36번째 구매 완료
+test730 구매 시작
+test730 로그인 완료
+test730 // 5 상품 상세 페이지 접근
+test730 // 2 상품 수량 설정
+test730 장바구니 담기 완료
+장바구니 페이지 스크롤 이동
+주문서작성 페이지 스크롤 이동
+test730 구매 완료
+37번째 구매 완료
+test1678 구매 시작
+test1678 로그인 완료
+test1678 // 2 상품 상세 페이지 접근
+test1678 // 1 상품 수량 설정
+test1678 장바구니 담기 완료
+장바구니 페이지 스크롤 이동
+주문서작성 페이지 스크롤 이동
+test1678 구매 완료
+38번째 구매 완료
+test346 구매 시작
+test346 로그인 완료
+test346 // 5 상품 상세 페이지 접근
+test346 // 5 상품 수량 설정
+test346 장바구니 담기 완료
+장바구니 페이지 스크롤 이동
+주문서작성 페이지 스크롤 이동
+test346 구매 완료
+39번째 구매 완료
+test1486 구매 시작
+test1486 로그인 완료
+test1486 // 4 상품 상세 페이지 접근
+test1486 // 5 상품 수량 설정
+test1486 장바구니 담기 완료
+장바구니 페이지 스크롤 이동
+주문서작성 페이지 스크롤 이동
+test1486 구매 완료
+40번째 구매 완료
+test603 구매 시작
+test603 로그인 완료
+test603 // 5 상품 상세 페이지 접근
+test603 // 2 상품 수량 설정
+test603 장바구니 담기 완료
+장바구니 페이지 스크롤 이동
+주문서작성 페이지 스크롤 이동
+test603 구매 완료
+41번째 구매 완료
+test1571 구매 시작
+test1571 로그인 완료
+test1571 // 3 상품 상세 페이지 접근
+test1571 // 6 상품 수량 설정
+test1571 장바구니 담기 완료
 장바구니 페이지 스크롤 이동
 ]]></system-out>
-    <system-err><![CDATA[12월 14, 2023 8:56:37 오전 org.openqa.selenium.remote.DesiredCapabilities firefox
+    <system-err><![CDATA[12월 19, 2023 11:16:17 오전 org.openqa.selenium.remote.DesiredCapabilities firefox
 INFO: Using `new FirefoxOptions()` is preferred to `DesiredCapabilities.firefox()`
-12월 14, 2023 8:56:42 오전 org.openqa.selenium.remote.ProtocolHandshake createSession
+12월 19, 2023 11:16:23 오전 org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="import자삭방지" classname="TestExample.BlogTest" time="1.012"/>
+  <testcase name="import자삭방지" classname="TestExample.BlogTest" time="1.009"/>
 </testsuite>

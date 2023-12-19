@@ -1,20 +1,20 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 601.611 s <<< FAILURE! - in TestSuite
-다이티카페24로그인후구매(TestExample.BlogTest)  Time elapsed: 589.313 s  <<< FAILURE!
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 872.796 s <<< FAILURE! - in TestSuite
+다이티카페24로그인후구매(TestExample.BlogTest)  Time elapsed: 859.257 s  <<< FAILURE!
 com.codeborne.selenide.ex.ElementNotFound: 
-Element not found {.gIndent20}
-Expected: exist
-	at TestExample.BlogTest.다이티카페24로그인후구매(BlogTest.java:1021)
+Element not found {.btnSubmitFix}
+Expected: visible
+	at TestExample.BlogTest.다이티카페24로그인후구매(BlogTest.java:1016)
 Caused by: org.openqa.selenium.NoSuchElementException: 
-Unable to locate element: .gIndent20
+Unable to locate element: .btnSubmitFix
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
 System info: host: 'AD01598487', ip: '10.77.129.169', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 120.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20231116134553, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 16596, moz:profile: C:\Users\NHN\AppData\Local\..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 1821aecf-5dab-492b-9c3b-c08...}
-Session ID: 1821aecf-5dab-492b-9c3b-c083865f5cc7
-*** Element info: {Using=css selector, value=.gIndent20}
-	at TestExample.BlogTest.다이티카페24로그인후구매(BlogTest.java:1021)
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 120.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20231116134553, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 28652, moz:profile: C:\Users\NHN\AppData\Local\..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: dd528ee2-0e90-4ecb-984e-c9d...}
+Session ID: dd528ee2-0e90-4ecb-984e-c9d8d3b9a852
+*** Element info: {Using=css selector, value=.btnSubmitFix}
+	at TestExample.BlogTest.다이티카페24로그인후구매(BlogTest.java:1016)
 
