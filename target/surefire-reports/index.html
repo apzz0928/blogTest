@@ -5,8 +5,9 @@
   <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
-    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -23,8 +24,9 @@
   <body>
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-skipped">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,35 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                    <span class="method-stats">1 method,  1 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
                     </span>
-                    <div class="method-list-content failed suite-Suite">
+                    <div class="method-list-content skipped suite-Suite">
                       <span>
-                        <img src="failed.png" width="3%"/>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="TestExample.BlogTest" class="method navigator-link" hash-for-method="다이티카페24로그인후구매">다이티카페24로그인후구매</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
-                    </span>
-                    <div class="method-list-content passed suite-Suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestExample.BlogTest" class="method navigator-link" hash-for-method="import자삭방지">import자삭방지</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -131,9 +119,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">TestExample.BlogTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -142,65 +130,64 @@
                   <a name="다이티카페24로그인후구매">
                   </a> <!-- 다이티카페24로그인후구매 -->
                   <span class="method-name">다이티카페24로그인후구매</span>
-                  <div class="stack-trace">Element not found {.btnSubmitFix}
-Expected: visible
-Screenshot: file:/D:/000.%20Selenium/eclipse/eclipse-workspace/BlogTest/build/reports/tests/1702953042771.0.png
-Page source: file:/D:/000.%20Selenium/eclipse/eclipse-workspace/BlogTest/build/reports/tests/1702953042771.0.html
-Timeout: 4 s.
-Caused by: NoSuchElementException: Unable to locate element: .btnSubmitFix
-	at com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:31)
-	at com.codeborne.selenide.impl.ElementFinder.createElementNotFoundError(ElementFinder.java:82)
-	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:59)
-	at com.codeborne.selenide.impl.WebElementSource.findAndAssertElementIsVisible(WebElementSource.java:72)
-	at com.codeborne.selenide.commands.Click.execute(Click.java:16)
-	at com.codeborne.selenide.commands.Click.execute(Click.java:12)
-	at com.codeborne.selenide.commands.Commands.execute(Commands.java:144)
-	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:90)
-	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:65)
-	at com.sun.proxy.$Proxy7.click(Unknown Source)
-	at TestExample.BlogTest.다이티카페24로그인후구매(BlogTest.java:1016)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: .btnSubmitFix
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 133
+Current browser version is 135.0.3179.54 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;AD01598487&apos;, ip: &apos;10.77.129.169&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 120.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20231116134553, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 28652, moz:profile: C:\Users\NHN\AppData\Local\..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: dd528ee2-0e90-4ecb-984e-c9d...}
-Session ID: dd528ee2-0e90-4ecb-984e-c9d8d3b9a852
-*** Element info: {Using=css selector, value=.btnSubmitFix}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:411)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
-	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:29)
-	at com.codeborne.selenide.impl.ElementFinder.getWebElement(ElementFinder.java:56)
-	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:44)
-	... 37 more
-... Removed 32 stack frames
+Driver info: driver.version: EdgeDriver
+remote stacktrace: 	GetHandleVerifier [0x00007FF613C0E6D5+13397]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF613E9B174+2060308]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF613DF22D8+1368440]
+	(No symbol) [0x00007FF6139D55F9]
+	(No symbol) [0x00007FF6139D4AD6]
+	(No symbol) [0x00007FF6139D0FEB]
+	(No symbol) [0x00007FF6139CA797]
+	(No symbol) [0x00007FF613A0FCF4]
+	(No symbol) [0x00007FF613A03F33]
+	(No symbol) [0x00007FF6139D8B06]
+	(No symbol) [0x00007FF6139D7DC0]
+	(No symbol) [0x00007FF6139D8933]
+	(No symbol) [0x00007FF613A60184]
+	(No symbol) [0x00007FF613AF063F]
+	(No symbol) [0x00007FF613A639C3]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF613F5457D+279981]
+	simdutf::get_active_implementation [0x00007FF613B977D1+409489]
+	simdutf::get_active_implementation [0x00007FF613B92AB4+389748]
+	simdutf::get_active_implementation [0x00007FF613B92BF9+390073]
+	simdutf::get_active_implementation [0x00007FF613B861F6+338358]
+	BaseThreadInitThunk [0x00007FFCB46C7374+20]
+	RtlUserThreadStart [0x00007FFCB4E5CC91+33]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:130)
+	at TestExample.BlogTest.getDriver(BlogTest.java:73)
+	at TestExample.BlogTest.beforeTest(BlogTest.java:54)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 33 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">TestExample.BlogTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="import자삭방지">
-                  </a> <!-- import자삭방지 -->
-                  <span class="method-name">import자삭방지</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-skipped -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -209,10 +196,10 @@ Session ID: dd528ee2-0e90-4ecb-984e-c9d8d3b9a852
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;edge&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;TestExample.BlogTest&quot;/&gt;
     &lt;/classes&gt;
@@ -254,20 +241,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, '다이티카페24로그인후구매')
 data.setCell(0, 2, 'TestExample.BlogTest')
-data.setCell(0, 3, 859252);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'import자삭방지')
-data.setCell(1, 2, 'TestExample.BlogTest')
-data.setCell(1, 3, 1011);
+data.setCell(0, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 14 minutes</span>
+              <span class="suite-total-time">Total running time: 0 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -295,26 +278,23 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">TestExample.BlogTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">beforeTest(firefox)</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">beforeTest(edge)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">다이티카페24로그인후구매</span>
-                <span class="method-start">6495 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">import자삭방지</span>
-                <span class="method-start">865751 ms</span>
+                <span class="method-start">3080 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">866762 ms</span>
+                <span class="method-start">3096 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
     </div> <!-- wrapper -->
   </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
 </html>

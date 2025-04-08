@@ -29,6 +29,10 @@ import static com.codeborne.selenide.Condition.*;
 import com.codeborne.selenide.testng.ScreenShooter;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxOptions;
 
 public class TestScript {
@@ -48,53 +52,42 @@ public class TestScript {
 	@Parameters("browser")
 	@BeforeClass
 	public void beforeTest(String browser) throws MalformedURLException {
-		baseUrl = "http://new.acecounter.com/admin/login";
-		hubUrl = "http://10.77.129.79:5555/wd/hub"; //포트번호 변수로 바꿔서 브라우저마다 허브의 포트번호 맞춰주기
-		domain = "apzz";
-		pw = "qordlf!@34";
-		
-		String urlToRemoteWD = hubUrl;
-		DesiredCapabilities cap;
-		ScreenShooter.captureSuccessfulTests = true;
+	    ScreenShooter.captureSuccessfulTests = false;
 
-		if (browser.equals("chrome")) {
-			TestBrowser = "chrome";
-			/*ChromeOptions options = new ChromeOptions();
-			driver = new RemoteWebDriver(new URL(urlToRemoteWD), options);*/
-			cap = DesiredCapabilities.chrome();
-			RemoteWebDriver driver = new RemoteWebDriver(new URL(urlToRemoteWD), cap);
-			WebDriverRunner.setWebDriver(driver);
-			driver.manage().window().setSize(new Dimension(1650, 1000));
-			driver.manage().window().maximize();
-		} else if (browser.equals("firefox")) {
-			TestBrowser = "firefox";
-			//cap = DesiredCapabilities.firefox();
-			//RemoteWebDriver driver = new RemoteWebDriver(new URL(urlToRemoteWD), cap);
-			FirefoxOptions options = new FirefoxOptions();
-			driver = new RemoteWebDriver(new URL(urlToRemoteWD), options);
-			WebDriverRunner.setWebDriver(driver);
-			driver.manage().window().setSize(new Dimension(1650, 1000));
-		} else if (browser.equals("edge")) {
-			TestBrowser = "edge";
-			/*EdgeOptions options = new EdgeOptions();
-			driver = new RemoteWebDriver(new URL(urlToRemoteWD), options);*/
-			cap = DesiredCapabilities.edge();
-			RemoteWebDriver driver = new RemoteWebDriver(new URL(urlToRemoteWD), cap);
-			WebDriverRunner.setWebDriver(driver);
-			driver.manage().window().setSize(new Dimension(1650, 1000));
-		} else if (browser.equals("internetExplorer")) {
-			TestBrowser = "internetExplorer";
-			/*InternetExplorerOptions options = new InternetExplorerOptions();
-			driver = new RemoteWebDriver(new URL(urlToRemoteWD), options);*/
-			cap = DesiredCapabilities.internetExplorer();
-			cap.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true); // 보안설정 변경
-			cap.setCapability(InternetExplorerDriver.NATIVE_EVENTS, false); // ie text 입력 속도 향상을 위한 부분
-			cap.setCapability("requireWindowFocus", true); // ie text 입력 속도 향상을 위한 부분
-			cap.setCapability(InternetExplorerDriver.IE_ENSURE_CLEAN_SESSION, true); // ie 캐시 삭제를 위한 부분
-			RemoteWebDriver driver = new RemoteWebDriver(new URL(urlToRemoteWD), cap);
-			WebDriverRunner.setWebDriver(driver);
-			driver.manage().window().setSize(new Dimension(1650, 1000));
-		}
+	    WebDriver driver = getDriver(browser);
+	    WebDriverRunner.setWebDriver(driver);
+	    driver.manage().window().setSize(new Dimension(1800, 1080)); // 모든 브라우저에 대해 동일한 창 크기 설정
+	}
+	
+	private WebDriver setupChromeDriver() {
+	    System.setProperty("webdriver.chrome.driver", "D:\\000. Selenium\\Driver\\chromedriver-win64\\chromedriver.exe");
+	    ChromeOptions options = new ChromeOptions();
+	    return new ChromeDriver(options);
+	}
+
+	private WebDriver setupEdgeDriver() {
+	    System.setProperty("webdriver.edge.driver", "D:\\000. Selenium\\Driver\\edgedriver_win64\\msedgedriver.exe");
+	    EdgeOptions options = new EdgeOptions();
+	    return new EdgeDriver(options);
+	}
+
+	private WebDriver setupRemoteDriver(DesiredCapabilities capabilities) throws MalformedURLException {
+	    String hubUrl = "http://172.31.176.1:5555/wd/hub";
+	    //String hubUrl = "http://10.77.129.169:5555/wd/hub";
+	    return new RemoteWebDriver(new URL(hubUrl), capabilities);
+	}
+
+	private WebDriver getDriver(String browser) throws MalformedURLException {
+	    switch (browser.toLowerCase()) {
+	        case "chrome":
+	            return setupChromeDriver();
+	        case "edge":
+	            return setupEdgeDriver();
+	        case "firefox":
+	            return setupRemoteDriver(DesiredCapabilities.firefox());
+	        default:
+	            throw new IllegalArgumentException("Unsupported browser: " + browser);
+	    }
 	}
 	@SuppressWarnings("unused")
 	private static void js(String javaScriptSource) {
@@ -1101,7 +1094,7 @@ public class TestScript {
 	}
 	@AfterClass
 	public void afterTest() {
-		closeWebDriver();
+	//	closeWebDriver();
 	}
 
 }
