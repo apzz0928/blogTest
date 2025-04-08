@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Apr 08 10:07:01 KST 2025</td>
+<td>Started on:</td><td>Tue Apr 08 15:17:28 KST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>3 seconds (3096 ms)</td>
+<tr><td>Total time:</td><td>4 seconds (4590 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,114 +75,52 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='TestExample.BlogTest.beforeTest()'><b>beforeTest</b><br>Test class: TestExample.BlogTest<br>Parameters: edge</td>
-<td><div><pre>org.openqa.selenium.SessionNotCreatedException: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 133
-Current browser version is 135.0.3179.54 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+<td title='TestExample.BlogTest.beforeTest()'><b>beforeTest</b><br>Test class: TestExample.BlogTest<br>Parameters: chrome</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 74
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.32 seconds
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;AD01598487&apos;, ip: &apos;10.77.129.169&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;
-Driver info: driver.version: EdgeDriver
-remote stacktrace: 	GetHandleVerifier [0x00007FF613C0E6D5+13397]
-	Microsoft::Applications::Events::EventProperty::empty [0x00007FF613E9B174+2060308]
-	Microsoft::Applications::Events::EventProperty::empty [0x00007FF613DF22D8+1368440]
-	(No symbol) [0x00007FF6139D55F9]
-	(No symbol) [0x00007FF6139D4AD6]
-	(No symbol) [0x00007FF6139D0FEB]
-	(No symbol) [0x00007FF6139CA797]
-	(No symbol) [0x00007FF613A0FCF4]
-	(No symbol) [0x00007FF613A03F33]
-	(No symbol) [0x00007FF6139D8B06]
-	(No symbol) [0x00007FF6139D7DC0]
-	(No symbol) [0x00007FF6139D8933]
-	(No symbol) [0x00007FF613A60184]
-	(No symbol) [0x00007FF613AF063F]
-	(No symbol) [0x00007FF613A639C3]
-	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF613F5457D+279981]
-	simdutf::get_active_implementation [0x00007FF613B977D1+409489]
-	simdutf::get_active_implementation [0x00007FF613B92AB4+389748]
-	simdutf::get_active_implementation [0x00007FF613B92BF9+390073]
-	simdutf::get_active_implementation [0x00007FF613B861F6+338358]
-	BaseThreadInitThunk [0x00007FFCB46C7374+20]
-	RtlUserThreadStart [0x00007FFCB4E5CC91+33]
-
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
-	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:130)
-	at TestExample.BlogTest.getDriver(BlogTest.java:73)
+Driver info: driver.version: unknown
+Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
+System info: host: &apos;AD01598487&apos;, ip: &apos;10.77.129.169&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --disable-web-security, --no-sandbox], binary: C:\Program Files\Google\Chr..., extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --disable-web-security, --no-sandbox], binary: C:\Program Files\Google\Chr..., extensions: []}}}]
+Capabilities {}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:161)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:143)
+	at TestExample.BlogTest.getDriver(BlogTest.java:77)
 	at TestExample.BlogTest.beforeTest(BlogTest.java:54)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1548946718", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1548946718'><pre>org.openqa.selenium.SessionNotCreatedException: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 133
-Current browser version is 135.0.3179.54 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace332365138", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace332365138'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 74
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.32 seconds
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;AD01598487&apos;, ip: &apos;10.77.129.169&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;
-Driver info: driver.version: EdgeDriver
-remote stacktrace: 	GetHandleVerifier [0x00007FF613C0E6D5+13397]
-	Microsoft::Applications::Events::EventProperty::empty [0x00007FF613E9B174+2060308]
-	Microsoft::Applications::Events::EventProperty::empty [0x00007FF613DF22D8+1368440]
-	(No symbol) [0x00007FF6139D55F9]
-	(No symbol) [0x00007FF6139D4AD6]
-	(No symbol) [0x00007FF6139D0FEB]
-	(No symbol) [0x00007FF6139CA797]
-	(No symbol) [0x00007FF613A0FCF4]
-	(No symbol) [0x00007FF613A03F33]
-	(No symbol) [0x00007FF6139D8B06]
-	(No symbol) [0x00007FF6139D7DC0]
-	(No symbol) [0x00007FF6139D8933]
-	(No symbol) [0x00007FF613A60184]
-	(No symbol) [0x00007FF613AF063F]
-	(No symbol) [0x00007FF613A639C3]
-	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF613F5457D+279981]
-	simdutf::get_active_implementation [0x00007FF613B977D1+409489]
-	simdutf::get_active_implementation [0x00007FF613B92AB4+389748]
-	simdutf::get_active_implementation [0x00007FF613B92BF9+390073]
-	simdutf::get_active_implementation [0x00007FF613B861F6+338358]
-	BaseThreadInitThunk [0x00007FFCB46C7374+20]
-	RtlUserThreadStart [0x00007FFCB4E5CC91+33]
-
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
-	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:130)
-	at TestExample.BlogTest.getDriver(BlogTest.java:73)
+Driver info: driver.version: unknown
+Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
+System info: host: &apos;AD01598487&apos;, ip: &apos;10.77.129.169&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --disable-web-security, --no-sandbox], binary: C:\Program Files\Google\Chr..., extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --disable-web-security, --no-sandbox], binary: C:\Program Files\Google\Chr..., extensions: []}}}]
+Capabilities {}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:161)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:143)
+	at TestExample.BlogTest.getDriver(BlogTest.java:77)
 	at TestExample.BlogTest.beforeTest(BlogTest.java:54)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -215,8 +153,8 @@ remote stacktrace: 	GetHandleVerifier [0x00007FF613C0E6D5+13397]
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 </pre></div></td>
-<td>3</td>
-<td>TestExample.BlogTest@4b2a01d4</td></tr>
+<td>4</td>
+<td>TestExample.BlogTest@35390ee3</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
@@ -229,7 +167,7 @@ remote stacktrace: 	GetHandleVerifier [0x00007FF613C0E6D5+13397]
 <td title='TestExample.BlogTest.afterTest()'><b>afterTest</b><br>Test class: TestExample.BlogTest</td>
 <td></td>
 <td>0</td>
-<td>TestExample.BlogTest@4b2a01d4</td></tr>
+<td>TestExample.BlogTest@35390ee3</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -239,114 +177,52 @@ remote stacktrace: 	GetHandleVerifier [0x00007FF613C0E6D5+13397]
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='TestExample.BlogTest.다이티카페24로그인후구매()'><b>다이티카페24로그인후구매</b><br>Test class: TestExample.BlogTest</td>
-<td><div><pre>org.openqa.selenium.SessionNotCreatedException: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 133
-Current browser version is 135.0.3179.54 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+<td title='TestExample.BlogTest.소셜비즈기본기능확인()'><b>소셜비즈기본기능확인</b><br>Test class: TestExample.BlogTest</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 74
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.32 seconds
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;AD01598487&apos;, ip: &apos;10.77.129.169&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;
-Driver info: driver.version: EdgeDriver
-remote stacktrace: 	GetHandleVerifier [0x00007FF613C0E6D5+13397]
-	Microsoft::Applications::Events::EventProperty::empty [0x00007FF613E9B174+2060308]
-	Microsoft::Applications::Events::EventProperty::empty [0x00007FF613DF22D8+1368440]
-	(No symbol) [0x00007FF6139D55F9]
-	(No symbol) [0x00007FF6139D4AD6]
-	(No symbol) [0x00007FF6139D0FEB]
-	(No symbol) [0x00007FF6139CA797]
-	(No symbol) [0x00007FF613A0FCF4]
-	(No symbol) [0x00007FF613A03F33]
-	(No symbol) [0x00007FF6139D8B06]
-	(No symbol) [0x00007FF6139D7DC0]
-	(No symbol) [0x00007FF6139D8933]
-	(No symbol) [0x00007FF613A60184]
-	(No symbol) [0x00007FF613AF063F]
-	(No symbol) [0x00007FF613A639C3]
-	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF613F5457D+279981]
-	simdutf::get_active_implementation [0x00007FF613B977D1+409489]
-	simdutf::get_active_implementation [0x00007FF613B92AB4+389748]
-	simdutf::get_active_implementation [0x00007FF613B92BF9+390073]
-	simdutf::get_active_implementation [0x00007FF613B861F6+338358]
-	BaseThreadInitThunk [0x00007FFCB46C7374+20]
-	RtlUserThreadStart [0x00007FFCB4E5CC91+33]
-
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
-	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:130)
-	at TestExample.BlogTest.getDriver(BlogTest.java:73)
+Driver info: driver.version: unknown
+Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
+System info: host: &apos;AD01598487&apos;, ip: &apos;10.77.129.169&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --disable-web-security, --no-sandbox], binary: C:\Program Files\Google\Chr..., extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --disable-web-security, --no-sandbox], binary: C:\Program Files\Google\Chr..., extensions: []}}}]
+Capabilities {}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:161)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:143)
+	at TestExample.BlogTest.getDriver(BlogTest.java:77)
 	at TestExample.BlogTest.beforeTest(BlogTest.java:54)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1367594377", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1367594377'><pre>org.openqa.selenium.SessionNotCreatedException: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 133
-Current browser version is 135.0.3179.54 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace386040589", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace386040589'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 74
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.32 seconds
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;AD01598487&apos;, ip: &apos;10.77.129.169&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;
-Driver info: driver.version: EdgeDriver
-remote stacktrace: 	GetHandleVerifier [0x00007FF613C0E6D5+13397]
-	Microsoft::Applications::Events::EventProperty::empty [0x00007FF613E9B174+2060308]
-	Microsoft::Applications::Events::EventProperty::empty [0x00007FF613DF22D8+1368440]
-	(No symbol) [0x00007FF6139D55F9]
-	(No symbol) [0x00007FF6139D4AD6]
-	(No symbol) [0x00007FF6139D0FEB]
-	(No symbol) [0x00007FF6139CA797]
-	(No symbol) [0x00007FF613A0FCF4]
-	(No symbol) [0x00007FF613A03F33]
-	(No symbol) [0x00007FF6139D8B06]
-	(No symbol) [0x00007FF6139D7DC0]
-	(No symbol) [0x00007FF6139D8933]
-	(No symbol) [0x00007FF613A60184]
-	(No symbol) [0x00007FF613AF063F]
-	(No symbol) [0x00007FF613A639C3]
-	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF613F5457D+279981]
-	simdutf::get_active_implementation [0x00007FF613B977D1+409489]
-	simdutf::get_active_implementation [0x00007FF613B92AB4+389748]
-	simdutf::get_active_implementation [0x00007FF613B92BF9+390073]
-	simdutf::get_active_implementation [0x00007FF613B861F6+338358]
-	BaseThreadInitThunk [0x00007FFCB46C7374+20]
-	RtlUserThreadStart [0x00007FFCB4E5CC91+33]
-
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
-	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:130)
-	at TestExample.BlogTest.getDriver(BlogTest.java:73)
+Driver info: driver.version: unknown
+Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
+System info: host: &apos;AD01598487&apos;, ip: &apos;10.77.129.169&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --disable-web-security, --no-sandbox], binary: C:\Program Files\Google\Chr..., extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --disable-web-security, --no-sandbox], binary: C:\Program Files\Google\Chr..., extensions: []}}}]
+Capabilities {}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:161)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:143)
+	at TestExample.BlogTest.getDriver(BlogTest.java:77)
 	at TestExample.BlogTest.beforeTest(BlogTest.java:54)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -380,7 +256,7 @@ remote stacktrace: 	GetHandleVerifier [0x00007FF613C0E6D5+13397]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 </pre></div></td>
 <td>0</td>
-<td>TestExample.BlogTest@4b2a01d4</td></tr>
+<td>TestExample.BlogTest@35390ee3</td></tr>
 </table><p>
 </body>
 </html>
