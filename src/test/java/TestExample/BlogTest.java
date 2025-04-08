@@ -57,31 +57,55 @@ public class BlogTest {
     }
 
     private WebDriver getDriver(String browser) throws MalformedURLException {
-        //String hubUrl = "http://172.31.176.1:5555/wd/hub";
+    	//String hubUrl = "http://172.31.176.1:5555/wd/hub";
         String hubUrl = "http://10.77.129.169:5555/wd/hub";
-        WebDriver driver;
+        WebDriver driver; // WebDriver 객체를 초기화합니다.
 
-        switch (browser.toLowerCase()) {
+        switch (browser.toLowerCase()) { // 브라우저 이름을 소문자로 변환하여 분기 처리
             case "chrome":
-                System.setProperty("webdriver.chrome.driver", "D:\\000. Selenium\\Driver\\chromedriver-win64\\chromedriver.exe");
+                // ChromeDriver 경로를 명시적으로 설정
+                System.setProperty("webdriver.chrome.driver", "D:\\000. Selenium\\Driver\\chromedriver-win64\\chromedriver.exe"); 
+                
+                // Chrome 옵션 설정
                 ChromeOptions chromeOptions = new ChromeOptions();
-                driver = new ChromeDriver(chromeOptions);
+                chromeOptions.addArguments("--remote-allow-origins=*"); // 원격 오리진 허용
+                chromeOptions.addArguments("--disable-web-security");  // WebSocket 문제 해결
+                chromeOptions.addArguments("--no-sandbox");            // 샌드박스 문제 회피
+                driver = new ChromeDriver(chromeOptions); // 설정된 옵션으로 ChromeDriver 생성
                 break;
+
             case "edge":
-                System.setProperty("webdriver.edge.driver", "D:\\000. Selenium\\Driver\\edgedriver_win64\\msedgedriver.exe");
+                // EdgeDriver 경로를 명시적으로 설정
+                System.setProperty("webdriver.edge.driver", "D:\\000. Selenium\\Driver\\edgedriver_win64\\msedgedriver.exe"); 
+                
+                // Edge 옵션 설정 (기본 설정 사용)
                 EdgeOptions edgeOptions = new EdgeOptions();
-                driver = new EdgeDriver(edgeOptions);
+                edgeOptions.addArguments("--remote-allow-origins=*"); // 원격 오리진 허용
+                edgeOptions.addArguments("--disable-web-security");  // WebSocket 문제 해결
+                edgeOptions.addArguments("--no-sandbox");            // 샌드박스 문제 회피
+                driver = new EdgeDriver(edgeOptions); // 설정된 옵션으로 EdgeDriver 생성
                 break;
-            case "firefox":
-                System.setProperty("webdriver.gecko.driver", "D:\\000. Selenium\\Driver\\geckodriver-win64\\geckodriver.exe");
+                /*
+            case "firefox": //에러발생해서 수정필		
+                // FirefoxDriver 경로를 명시적으로 설정
+                System.setProperty("webdriver.gecko.driver", "D:\\000. Selenium\\Driver\\geckodriver-win64\\geckodriver.exe"); 
+                
                 FirefoxOptions firefoxOptions = new FirefoxOptions();
-                driver = new RemoteWebDriver(new URL(hubUrl), firefoxOptions);
+                firefoxOptions.addArguments("--remote-allow-origins=*"); // 원격 오리진 허용
+                firefoxOptions.addArguments("--disable-web-security");  // WebSocket 문제 해결
+                firefoxOptions.addArguments("--no-sandbox");            // 샌드박스 문제 회피
+                // firefoxOptions.addArguments("--headless"); // 주석 처리하여 사용하지 않도록 함
+
+                driver = new FirefoxDriver(firefoxOptions);
                 break;
+                */
+
             default:
-                throw new IllegalArgumentException("Unsupported browser: " + browser);
+                // 지원하지 않는 브라우저 요청 시 예외를 던집니다.
+                throw new IllegalArgumentException("Unsupported browser: " + browser); 
         }
 
-        return driver;
+        return driver; // 생성된 WebDriver 객체를 반환합니다.
     }
 
 	private static void js(String javaScriptSource) {
